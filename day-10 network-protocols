@@ -1,0 +1,83 @@
+# 📡 Networking Protocols :
+
+## What is a Protocol?
+A protocol is a set of rules that allows devices to communicate over a network.  
+It defines how data is sent, received, formatted, and processed between systems.
+
+Without protocols, communication between computers and servers would not be possible.
+
+---
+
+## How Protocols Work
+1. Data is created by the sender.
+2. Data is broken into packets.
+3. Protocols add headers and instructions.
+4. Packets travel through the network.
+5. Receiver reassembles packets.
+6. Response is sent back.
+
+This process happens in seconds when we browse the internet.
+
+---
+
+## Important Protocols
+
+### TCP (Transmission Control Protocol)
+- Reliable and connection-oriented  
+- Ensures data arrives correctly  
+- Used in web browsing, emails, downloads  
+
+### IP (Internet Protocol)
+- Provides IP addresses  
+- Handles routing of packets  
+- Works together with TCP (TCP/IP)
+
+### HTTP / HTTPS
+- HTTP: Used for websites  
+- HTTPS: Secure and encrypted version  
+- Runs on ports 80 and 443  
+
+### DNS (Domain Name System)
+- Converts domain names into IP addresses  
+- Example: google.com → IP address  
+
+### FTP (File Transfer Protocol)
+- Used to transfer files between systems  
+- Common in servers and labs  
+
+### ARP (Address Resolution Protocol)
+- Maps IP address to MAC address  
+- Works inside local networks  
+
+---
+
+## Why Protocols Matter in Cybersecurity
+Understanding protocols helps in:
+- Network scanning  
+- Packet analysis  
+- Ethical hacking labs  
+- Detecting attacks  
+- Securing networks  
+
+Most cyber attacks target weaknesses in protocols or their configurations.
+
+---
+
+## Real Example
+When opening a website:
+DNS finds IP → TCP connects → HTTPS encrypts → Server responds → Page loads.
+
+All of this uses networking protocols.
+
+---
+
+## Tools to Practice
+- Nmap  
+- Wireshark  
+- Cisco Packet Tracer  
+- Kali Linux  
+
+---
+
+## Learning Goal
+Building strong networking fundamentals for cybersecurity and ethical hacking.
