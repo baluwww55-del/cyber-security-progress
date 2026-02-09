@@ -1,0 +1,134 @@
+# NETWORK TOPOLOGIES : 
+
+## What is Network Topology
+Network topology is the way devices like computers, switches, and routers are connected in a network.  
+Different topologies were created over time to solve problems like cost, reliability, performance, and scalability.
+
+Evolution:
+Bus → Ring → Star → Mesh → Tree  
+Each new topology fixed the drawbacks of the previous one.
+
+---
+
+## BUS TOPOLOGY
+
+Definition:  
+All devices are connected to a single backbone cable. Data travels through that cable to reach all devices.
+
+Why it came:  
+Early networks needed a cheap and simple method to connect computers. It used less cable and was easy to install.
+
+Advantages:
+- Low cost  
+- Simple setup  
+- Uses less cable  
+- Suitable for small networks  
+
+Drawbacks:
+- If main cable fails, entire network stops  
+- Hard to troubleshoot  
+- Performance becomes slow with many devices  
+- Not scalable  
+
+Status:
+Mostly outdated and rarely used today.
+
+---
+
+## RING TOPOLOGY
+
+Definition:  
+Each device connects to two other devices, forming a circular structure. Data travels in one direction around the ring.
+
+Why it came:  
+Created to reduce collisions and improve performance compared to bus topology.
+
+Advantages:
+- Organized data transmission  
+- Fewer collisions  
+- Predictable performance  
+
+Drawbacks:
+- Failure of one device can stop the network  
+- Hard to add or remove devices  
+- Difficult maintenance  
+
+Status:
+Outdated and rarely used today.
+
+---
+
+## STAR TOPOLOGY
+
+Definition:  
+All devices connect to a central hub or switch. All communication passes through the central device.
+
+Why it came:  
+To improve reliability and make troubleshooting easier than bus and ring topologies.
+
+Advantages:
+- Easy to install and manage  
+- Easy troubleshooting  
+- One cable failure does not affect others  
+- Scalable  
+- Good performance  
+
+Drawbacks:
+- If central switch fails, network stops  
+- Requires more cable  
+- Higher cost than bus topology  
+
+Status:
+Most commonly used topology today.
+
+---
+
+## MESH TOPOLOGY
+
+Definition:  
+Each device connects to multiple devices. In full mesh, every device connects to every other device.
+
+Why it came:  
+To provide maximum reliability and avoid single point of failure.
+
+Advantages:
+- Very reliable  
+- High fault tolerance  
+- High security  
+- Multiple paths for data  
+
+Drawbacks:
+- Very expensive  
+- Complex wiring  
+- Hard to maintain  
+- Dif
+## TREE TOPOLOGY
+
+Definition:  
+Combination of star and bus topology. Devices are arranged in hierarchical structure like a tree.
+
+Why it came:  
+Large networks needed structure and scalability for growth.
+
+Advantages:
+- Scalable  
+- Easy expansion  
+- Hierarchical management  
+- Suitable for large organizations  
+
+Drawbacks:
+- Backbone failure affects many devices  
+- Complex wiring  
+- Expensive maintenance  
+
+Status:
+Used in large organizations and universities.
+
+---
+
+## Key Understanding
+
+- Different topologies were created to solve real network problems.
+- No topology is perfect.
+- Modern networks mainly use Star and Hybrid topologies.
+- Topology knowledge is important for networking and cybersecurity.
