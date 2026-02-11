@@ -1,0 +1,80 @@
+# 📡 Cisco Packet Tracer & Guided vs Unguided Media (Networking for Cybersecurity)
+
+## 📘 Overview
+Today I practiced networking using Cisco Packet Tracer and learned about Guided and Unguided Media.  
+These are core fundamentals for cybersecurity because all attacks and defenses happen through networks.
+
+---
+
+## 🖥️ Cisco Packet Tracer
+
+Cisco Packet Tracer is a network simulation tool used to design, configure, and test networks.
+
+### What I Practiced
+- Creating basic network topologies  
+- Connecting routers, switches, and PCs  
+- Assigning IP addresses  
+- Testing connectivity using ping  
+- Observing packet flow in simulation mode  
+- Troubleshooting network issues  
+
+### Why It Matters for Cybersecurity
+- Helps understand real network structures  
+- Shows how data travels between devices  
+- Helps identify weak points in networks  
+- Useful for SOC analysts and ethical hackers  
+
+---
+
+## 🔌 Guided Media (Wired)
+
+Guided media uses physical cables to transmit data.
+
+### Types
+- Twisted Pair Cable  
+- Coaxial Cable  
+- Fiber Optic Cable  
+
+### Security Importance
+- Harder to intercept  
+- Requires physical access  
+- More stable connection  
+- Used in offices and data centers  
+- Fiber optic is most secure  
+
+---
+
+## 📡 Unguided Media (Wireless)
+
+Unguided media sends data through air using signals.
+
+### Types
+- Wi-Fi  
+- Bluetooth  
+- Radio Waves  
+
+### Security Importance
+- Easier to intercept  
+- Vulnerable to sniffing attacks  
+- Needs encryption (WPA2/WPA3)  
+- Requires monitoring tools  
+- Common target for attackers  
+
+---
+
+## 🛡️ Role in Cybersecurity
+Understanding transmission media helps in:
+- Network defense  
+- Packet analysis  
+- Traffic monitoring  
+- Wireless security testing  
+- Ethical hacking  
+- Incident response  
+
+If you understand how data moves,  
+you understand how attacks happen.
+
+---
+
+## 🚀 Learning Progress
+- Comp
