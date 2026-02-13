@@ -1,0 +1,103 @@
+## Switching Techniques in Networking
+
+Today I studied switching techniques, a fundamental concept in computer networking that determines how data travels from one device to another across a network.
+
+Understanding switching is essential for networking, cybersecurity, and real-world infrastructure.
+
+---
+
+## 🔌 What is Switching?
+Switching is the process of forwarding data from a source to the correct destination in a network.
+
+It ensures:
+- Efficient communication
+- Proper data delivery
+- Network performance optimization
+
+In simple terms:
+Switching = How data moves inside a network.
+
+---
+
+## 🧠 Types of Switching Techniques
+
+### 1. Circuit Switching
+A dedicated communication path is established before data transfer begins.
+
+Examples:
+- Traditional telephone networks
+
+Key Features:
+- Dedicated path for entire session
+- Stable and reliable
+- Low latency after connection
+- Not efficient for modern data networks
+
+---
+
+### 2. Packet Switching
+Data is divided into small packets and sent independently across the network.
+
+Examples:
+- Internet
+- Email
+- Web browsing
+
+Key Features:
+- Efficient bandwidth usage
+- Packets take different paths
+- Reassembled at destination
+- Used in modern TCP/IP networks
+
+---
+
+### 3. Message Switching (Old Method)
+The entire message is sent to a node, stored, then forwarded to the next node.
+
+Key Features:
+- No dedicated path required
+- Slower process
+- Mostly obsolete today
+
+---
+
+## 🔐 Importance in Cybersecurity
+Switching knowledge is important for:
+- Packet analysis
+- Network monitoring
+- Traffic inspection
+- Network segmentation
+- Detecting suspicious activity
+
+Used in tools like:
+- Wireshark
+- Cisco Packet Tracer
+- Nmap
+
+---
+
+## 📚 Key Takeaways
+- Switching controls how data travels in networks
+- Packet switching is used in modern internet
+- Circuit switching is used in telephony
+- Important foundation for networking and cybersecurity
+
+---
+
+## 🚀 Learning Progress
+Continuing daily learning in:
+- Networking
+- Cybersecurity
+- Ethical hacking
+
+Staying consistent and building strong fundamentals.
+
+---
+
+## 🏷 Tags
+#Networking  
+#CyberSecurity  
+#CCNA  
+#Switching  
+#LearningJourney  
+#TechStudent
