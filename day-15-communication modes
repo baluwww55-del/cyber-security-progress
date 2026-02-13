@@ -1,0 +1,68 @@
+## Communication Modes in Networking :
+
+Today I learned about communication modes used to transmit data between devices in a network.  
+Communication modes define how data flows between sender and receiver.
+
+Understanding this is important for networking and cybersecurity because it helps in analyzing traffic, packet flow, and detecting attacks.
+
+--------------------------------------------------
+
+1. SIMPLEX MODE
+- Data flows in only one direction.
+- One device sends, the other only receives.
+- No reply possible.
+
+Examples:
+Keyboard → Computer  
+TV Broadcast  
+Radio
+
+Use case:
+Used where communication is one-way only.
+
+--------------------------------------------------
+
+2. HALF-DUPLEX MODE
+- Data flows in both directions.
+- But NOT at the same time.
+- Devices take turns.
+
+Examples:
+Walkie-talkie  
+Old hub networks
+
+Use case:
+Used when both devices communicate but not simultaneously.
+
+--------------------------------------------------
+
+3. FULL-DUPLEX MODE
+- Data flows in both directions at the same time.
+- Sending and receiving happen simultaneously.
+
+Examples:
+Phone calls  
+Modern Ethernet  
+Video calls
+
+Use case:
+Used in modern networks for faster and efficient communication.
+
+--------------------------------------------------
+
+Why this matters in Cybersecurity:
+- Helps understand network traffic flow  
+- Useful for packet sniffing  
+- Helps detect abnormal behavior  
+- Important for network analysis and attacks detection  
+
+--------------------------------------------------
+
+Key takeaway:
+Communication modes are the foundation of how devices talk in a network.  
+Strong basics in networking = strong base for ethical hacking.
+
+#DayXX  
+#Networking  
+#CyberSecurity  
+#GitHubLearning
