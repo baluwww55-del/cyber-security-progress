@@ -1,0 +1,80 @@
+## Networking Devices – Basics: 
+
+Today I learned about important networking devices: Modem, Ethernet Card (NIC), Hub, Switch, and Bridge.
+
+## 1. Modem
+A modem converts digital signals into analog signals and vice versa so a network can connect to the internet through an ISP.
+
+Key Points:
+- Connects network to the internet
+- Required for internet access
+- Works with routers
+
+Cybersecurity Note:
+Modems/routers can be targeted by attackers through firmware vulnerabilities.
+
+---
+
+## 2. Ethernet Card (NIC – Network Interface Card)
+A NIC allows a computer or device to connect to a network. Every device must have a NIC to communicate.
+
+Key Points:
+- Has a unique MAC address
+- Can be wired or wireless
+- Enables network communication
+
+Cybersecurity Note:
+Used in MAC spoofing and packet sniffing attacks.
+
+---
+
+## 3. Hub
+A hub is a basic networking device that sends data to all devices in the network.
+
+Key Points:
+- No intelligence
+- Broadcasts data to everyone
+- Causes collisions
+- Mostly outdated
+
+Cybersecurity Note:
+Easy for attackers to sniff network traffic in hub-based networks.
+
+---
+
+## 4. Switch
+A switch sends data only to the intended device using MAC addresses.
+
+Key Points:
+- Smarter than hub
+- Reduces network traffic
+- Used in modern networks
+- Faster communication
+
+Cybersecurity Note:
+Vulnerable to MAC flooding and ARP spoofing.
+
+---
+
+## 5. Bridge
+A bridge connects two networks and filters traffic between them.
+
+Key Points:
+- Connects network segments
+- Reduces unnecessary traffic
+- Works at data link layer
+
+Cybersecurity Note:
+Can be used in man-in-the-middle attack setups if compromised.
+
+---
+
+## Why This Matters in Cybersecurity
+Understanding networking devices helps in:
+- Packet analysis
+- Network scanning
+- Sniffing attacks
+- ARP spoofing
+- Man-in-the-middle attacks
+
+Strong networking basics = strong cybersecurity foundation.
