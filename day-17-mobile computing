@@ -1,0 +1,61 @@
+Mobile Computing Concepts: SIM, GSM, CDMA:
+## 🔹 SIM (Subscriber Identity Module)
+- Small chip inside a mobile phone  
+- Identifies the user on a cellular network  
+- Stores IMSI (International Mobile Subscriber Identity)  
+- Used for authentication and network access  
+- Can be inserted into different devices  
+- Used in GSM, LTE, and 5G networks  
+
+**Definition:**  
+SIM is a smart card that allows a mobile device to connect and authenticate to a cellular network.
+
+---
+
+## 🔹 GSM (Global System for Mobile Communications)
+- Digital cellular network standard  
+- Most widely used mobile communication technology  
+- Uses SIM cards  
+- Supports voice calls, SMS, and mobile data  
+- Based on TDMA (Time Division Multiple Access)  
+- Used globally  
+- Foundation for modern 3G, 4G, and 5G networks  
+
+**Definition:**  
+GSM is a cellular technology used for mobile communication worldwide.
+
+---
+
+## 🔹 CDMA (Code Division Multiple Access)
+- Digital cellular communication technology  
+- Allows multiple users to share same frequency band  
+- Earlier did not require SIM cards  
+- Device linked directly to carrier network  
+- Used mainly in older mobile networks  
+- Mostly replaced by LTE and 5G  
+
+**Definition:**  
+CDMA is a cellular technology where multiple devices share a frequency channel using unique codes.
+
+---
+
+## 🔸 Difference Between GSM and CDMA
+
+| Feature | GSM | CDMA |
+|--------|-----|------|
+| SIM card | Required | Not required (earlier) |
+| Device switching | Easy | Difficult |
+| Global usage | High | Limited |
+| Current status | Still used (evolved to LTE/5G) | Mostly outdated |
+
+---
+
+## 🔸 Mobile Computing Includes
+- SIM technology  
+- GSM and CDMA networks  
+- Smartphones and tablets  
+- Wireless communication  
+- 4G LTE and 5G  
+
+**Definition:**  
+Mobile computing is the use of portable devices and wireless networks to communicate and access data while moving.
