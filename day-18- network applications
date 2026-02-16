@@ -1,0 +1,90 @@
+# Network Applications – Study Notes
+
+## Overview
+Network applications are software programs that communicate over a network to provide services such as messaging, multimedia sharing, video communication, and internet access. They operate mainly at the application layer of the OSI/TCP-IP model and use various protocols to exchange data between devices.
+
+---
+
+## Types of Network Applications
+
+### 1. MMS (Multimedia Messaging Service)
+MMS allows users to send multimedia content such as images, audio, and video through mobile networks.  
+It works over cellular technologies like 3G, 4G, and 5G and is an extension of SMS.
+
+**Key points:**
+- Sends multimedia messages  
+- Uses cellular network  
+- Store-and-forward mechanism  
+- Older but still relevant in telecom systems  
+
+---
+
+### 2. Chat / Instant Messaging Applications
+Chat applications enable real-time text communication between users over the internet.  
+Examples include WhatsApp, Telegram, and Slack.
+
+**Key points:**
+- Real-time messaging  
+- Uses internet protocols (TCP, WebSockets)  
+- Requires servers for message delivery  
+- Supports text, media, and voice  
+
+---
+
+### 3. Video Conferencing Applications
+Video conferencing allows live audio and video communication between multiple users.  
+Examples include Zoom, Google Meet, and Microsoft Teams.
+
+**Key points:**
+- Real-time video and audio  
+- Uses RTP, VoIP, WebRTC  
+- Requires high bandwidth  
+- Sensitive to latency and packet loss  
+
+---
+
+### 4. Wi-Fi
+Wi-Fi is a wireless networking technology that connects devices to the internet without cables.  
+It operates under IEEE 802.11 standards and is commonly used in homes, colleges, and offices.
+
+**Key points:**
+- Wireless LAN technology  
+- Uses radio waves  
+- Limited range (local area)  
+- Provides internet access to devices  
+
+---
+
+### 5. WiMAX
+WiMAX (Worldwide Interoperability for Microwave Access) is a long-range wireless communication technology used for metropolitan area networks.
+
+**Key points:**
+- Covers large areas (cities)  
+- Long-distance wireless internet  
+- Based on IEEE 802.16  
+- Used in MAN (Metropolitan Area Networks)  
+
+---
+
+## Characteristics of Network Applications
+- Use client–server or peer-to-peer architecture  
+- Require network protocols for communication  
+- Depend on bandwidth, latency, and reliability  
+- Enable digital communication and data sharing  
+
+---
+
+## Common Protocols Used
+- HTTP/HTTPS – Web communication  
+- SMTP/POP3/IMAP – Email  
+- FTP/SFTP – File transfer  
+- RTP/VoIP – Audio and video  
+- DNS – Domain name resolution  
+
+---
+
+## Importance
+Network applications are essential for modern communication.  
+They support messaging, meetings, file sharing, and internet access, forming the backbone of digital systems and cloud services.
+
+Understanding network applications helps in fields like networking, cybersecurity, cloud computing, and system administration.
