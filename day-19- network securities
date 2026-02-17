@@ -1,0 +1,31 @@
+Today I learned about different types of security holes that can expose systems and networks to attacks. Security risks do not come only from hackers using advanced tools; many breaches happen because of simple weaknesses in physical security, software configuration, or user behavior.
+
+### 1. Physical Security Holes
+- Unauthorized access to server rooms or restricted areas  
+- Unlocked computers and stolen devices  
+- Infected USB devices plugged into systems  
+- Lack of CCTV, access cards, or monitoring  
+If an attacker gets physical access to a machine, they can often bypass many digital protections.
+
+### 2. Software Security Holes
+- Unpatched operating systems and applications  
+- Weak passwords or default credentials  
+- Misconfigured servers and open ports  
+- Vulnerabilities like SQL injection or buffer overflow  
+Attackers scan networks for outdated or vulnerable software to gain access.
+
+### 3. Inconsistent Usage Holes (Human Errors)
+- Reusing passwords across multiple accounts  
+- Clicking phishing emails or malicious links  
+- Ignoring system updates and warnings  
+- Using public Wi-Fi without protection  
+- Sharing login credentials  
+Human mistakes are one of the most common causes of security incidents.
+
+### Conclusion
+Strong security requires:
+- Proper physical protection of devices and infrastructure  
+- Regular software updates and secure configurations  
+- Consistent and safe user practices  
+
+Cybersecurity is effective only when people, processes, and technology work together.
