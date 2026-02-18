@@ -1,0 +1,140 @@
+## Network Protection Methods – Study Notes
+
+## 1. Authentication
+Authentication is the process of verifying who a user is before allowing access to a system or network.
+
+Common methods:
+- Username and password
+- One-Time Password (OTP)
+- Security tokens
+- Biometric login
+
+Purpose:
+Ensures only legitimate users can access the network or system.
+
+Example:
+Logging into Wi-Fi or a system using a password.
+
+---
+
+## 2. Authorization
+Authorization decides what a user is allowed to do after authentication.
+
+Key idea:
+Authentication = Who are you  
+Authorization = What can you access
+
+Types:
+- Role-Based Access Control (RBAC)
+- Admin vs normal user permissions
+- File and network access levels
+
+Purpose:
+Prevents users from accessing sensitive data they should not access.
+
+Example:
+Only an admin can modify system settings, while normal users can only view data.
+
+---
+
+## 3. Biometrics
+Biometric security uses physical or behavioral characteristics to verify identity.
+
+Types:
+- Fingerprint scanning
+- Face recognition
+- Iris scan
+- Voice recognition
+
+Advantages:
+- Difficult to duplicate
+- No need to remember passwords
+- Fast and secure authentication
+
+Used in:
+- Smartphones
+- Secure office entry systems
+- Banking and financial systems
+
+---
+
+## 4. VPN (Virtual Private Network)
+A VPN creates a secure encrypted tunnel between a user and a network.
+
+Functions:
+- Encrypts internet traffic
+- Hides IP address
+- Protects data on public Wi-Fi
+- Allows secure remote access
+
+Uses:
+- Remote work connections
+- Secure browsing
+- Accessing private company networks
+
+Example:
+An employee connecting securely to a company server from home.
+
+---
+
+## 5. Firewall
+A firewall is a security system that monitors and controls incoming and outgoing network traffic based on security rules.
+
+Types:
+- Hardware firewall
+- Software firewall
+
+Functions:
+- Blocks unauthorized access
+- Filters network traffic
+- Prevents cyber attacks
+- Allows only trusted connections
+
+Example:
+Blocking unknown IP addresses trying to access a network.
+
+---
+
+## 6. Smart Controls
+Smart controls are automated security mechanisms that monitor, manage, and protect a network intelligently without constant manual intervention.
+
+They use rules, policies, and sometimes AI to detect unusual activity and respond quickly.
+
+Functions:
+- Automatically block suspicious activity
+- Monitor network traffic in real time
+- Send alerts for unauthorized access
+- Control which devices can connect
+- Enforce security policies automatically
+
+Examples:
+- Smart routers blocking unknown devices
+- Login alerts for unusual activity
+- Network monitoring systems
+- Admin control dashboards
+- AI-based threat detection tools
+
+Advantages:
+- Reduces human error
+- Faster threat detection
+- Continuous monitoring
+- Improves overall network security
+
+Use Cases:
+- Smart homes
+- Corporate networks
+- Campus networks
+- IoT device management
+
+---
+
+## Conclusion
+A secure network uses multiple protection layers:
+- Authentication verifies identity
+- Authorization controls permissions
+- Biometrics strengthens login security
+- VPN secures communication
+- Firewalls protect network boundaries
+- Smart controls automate and monitor security
+
+Together, these methods create a strong and secure network environment.
