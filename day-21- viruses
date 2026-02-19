@@ -1,0 +1,65 @@
+## 🔹 Virus:
+A computer virus is a malicious program that attaches itself to files or software and spreads when the infected file is executed.
+
+### Characteristics:
+- Self-replicating
+- Spreads through files and programs
+- Needs user action to activate
+- Can corrupt or delete data
+- Slows down system performance
+
+
+## 🔹 Cookies
+Cookies are small text files stored in a browser by websites to remember user information.
+
+### Types of Cookies:
+- Session Cookies – Temporary, deleted after browser closes
+- Persistent Cookies – Stored for long-term use
+- Secure Cookies – Encrypted for safety
+- Third-Party Cookies – Used for tracking and advertisements
+
+Note: Cookies are not viruses but can track browsing activity.
+
+
+## 🔹 Hackers
+A hacker is a person with technical knowledge who accesses computer systems or networks.
+
+### Types of Hackers:
+- White Hat Hackers – Ethical security professionals
+- Black Hat Hackers – Malicious attackers
+- Grey Hat Hackers – Operate between ethical and unethical boundaries
+
+
+## 🔹 Crackers
+A cracker is a person who breaks software protection or system security for illegal purposes.
+
+Difference:
+- Hacker → Can be ethical
+- Cracker → Always malicious
+
+
+# 🦠 Types of Computer Viruses
+
+## 1. Boot Sector Virus
+- Infects the boot sector of a hard disk
+- Runs when the computer starts
+- Spreads through infected USB drives
+
+## 2. File Infector Virus
+- Attaches to executable files (.exe)
+- Spreads when the file is opened
+- Can damage programs and data
+
+## 3. Macro Virus
+- Targets Word and Excel documents
+- Spreads through email attachments
+- Runs when the document is opened
+
+## 4. Worm
+- Self-replicating malware
+- Spreads automatically through networks
+- Does not require a host file
+
+
+# 🔐 Conclusion
+Understanding viruses, cookies, hackers, and different types of malware is essential for building strong cybersecurity fundamentals. Proper awareness helps in protecting systems, networks, and personal data from cyber threats.
