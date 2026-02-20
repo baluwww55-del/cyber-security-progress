@@ -1,0 +1,30 @@
+## Features of Computer Virus
+
+## 1. Automatic Restart
+Some viruses force the computer to restart automatically. This helps the virus activate during system boot and makes it harder for users to remove it.
+
+## 2. System Heating
+Viruses often run continuously in the background and use high CPU and memory. This increases system workload and can cause the laptop or PC to heat up more than usual.
+
+## 3. Slow Performance
+A virus consumes system resources like RAM, CPU, and storage. Because of this, the computer becomes slow, applications take longer to open, and overall performance drops.
+
+## 4. File Replication
+One major feature of a virus is self-replication. It creates copies of itself and spreads into other files, folders, USB drives, and sometimes across networks.
+
+## 5. Hiding Automatically
+Viruses are designed to stay hidden. They may disguise themselves as system files or run in the background so the user does not easily detect them.
+
+## 6. Memory Usage
+Many viruses stay active in system memory (RAM). They keep running silently and reload every time the computer starts, making them persistent.
+
+## 7. Unauthorized Activities
+A virus can perform actions without the user’s permission, such as opening unknown programs, showing pop-ups, changing settings, or downloading harmful files.
+
+## 8. Data Damage or Theft
+Some viruses delete files, corrupt data, or steal sensitive information like passwords and personal data.
+
+---
+
+# 📌 Conclusion
+A computer virus is a harmful program that spreads, hides itself, slows down system performance, and may damage or steal data while using system resources without the user’s knowledge.
