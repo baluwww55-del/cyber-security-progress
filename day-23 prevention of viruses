@@ -1,0 +1,114 @@
+# 🛡️ Prevention of Network Viruses
+
+Network viruses spread through systems, emails, downloads, and open network connections.  
+Preventing them requires layered security, not just one tool.
+  
+
+## 1. Firewall Protection
+A firewall acts as the first line of defense between a network and the internet.
+
+**Functions:**
+- Monitors incoming and outgoing traffic  
+- Blocks unauthorized access  
+- Filters suspicious IP addresses  
+- Closes unused ports  
+
+**Types:**
+- Hardware firewall  
+- Software firewall  
+
+
+## 2. Antivirus & Anti-Malware
+Antivirus software detects and removes malicious programs.
+
+**Features:**
+- Real-time scanning  
+- Automatic virus definition updates  
+- Quarantine infected files  
+- Ransomware protection  
+
+**Examples:**  
+Windows Defender, Avast, Kaspersky, Bitdefender
+
+
+
+## 3. Regular Software Updates
+Outdated systems are easy targets for attackers.
+
+**Why updates matter:**
+- Fix security vulnerabilities  
+- Patch bugs and exploits  
+- Improve system performance  
+
+Always enable automatic updates.
+
+
+## 4. Strong Authentication
+Control who accesses the network.
+
+**Best practices:**
+- Use strong passwords  
+- Enable Two-Factor Authentication (2FA)  
+- Use biometric authentication  
+- Apply role-based access control  
+
+Never share login credentials.
+
+
+
+## 5. Network Segmentation
+Divide the network into smaller sections.
+
+**Benefits:**
+- Limits virus spread  
+- Improves monitoring  
+- Increases security control  
+
+If one segment is infected, others stay safe.
+
+
+## 6. Secure Wi-Fi Network
+Unsecured Wi-Fi invites attackers.
+
+**Steps:**
+- Use WPA2/WPA3 encryption  
+- Change default router password  
+- Disable WPS  
+- Update router firmware  
+
+
+## 7. Email & Phishing Protection
+Many viruses enter through email attachments and links.
+
+**Prevention:**
+- Avoid unknown attachments  
+- Use spam filters  
+- Verify sender email  
+- Do not click suspicious links  
+
+User awareness is critical.
+
+
+## 8. Regular Data Backup
+Backups protect against ransomware and data loss.
+
+**Backup strategy:**
+- Use cloud + offline backups  
+- Follow 3-2-1 rule  
+- Test backups regularly  
+
+No backup = no recovery.
+
+
+## 🔐 Conclusion
+Network virus prevention requires multiple layers of security:
+
+- Firewall  
+- Antivirus  
+- Updates  
+- Strong authentication  
+- Network segmentation  
+- User awareness  
+- Backup systems  
+
+Security is a continuous process, not a one-time setup.
