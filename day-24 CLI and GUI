@@ -1,0 +1,47 @@
+# 🖥️ GUI vs CLI & 🌐 Traffic Analysis (Cisco Packet Tracer)
+
+## 📅 What I Learned Today
+Today I learned the difference between **GUI** and **CLI**, and how to perform **traffic analysis using Cisco Packet Tracer**.  
+These are core networking fundamentals every network engineer must understand.
+
+---
+
+## 🖱️ GUI (Graphical User Interface)
+
+**Definition:**  
+A visual interface that allows users to interact with systems using icons, menus, and buttons.
+
+### 🔹 Features
+- Easy to use  
+- Mouse-based navigation  
+- Beginner friendly  
+- Slower for advanced configuration  
+
+### 🔹 Example in Networking
+In **Cisco Packet Tracer**, routers and switches can be configured visually using the GUI by clicking and setting parameters.
+
+### 🔹 When to Use
+- Learning networking basics  
+- Small configurations  
+- Visualizing network topology  
+
+---
+
+## 💻 CLI (Command Line Interface)
+
+**Definition:**  
+A text-based interface where users type commands to configure and manage devices.
+
+### 🔹 Features
+- Faster and more powerful  
+- Used by professionals  
+- Requires command knowledge  
+- Full control over devices  
+
+### 🔹 Basic Cisco Commands
+```bash
+enable
+configure terminal
+interface fastethernet 0/1
+ip address 192.168.1.1 255.255.255.0
+no shutdown
