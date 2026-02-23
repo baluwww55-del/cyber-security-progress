@@ -1,0 +1,110 @@
+# 🌐 Networking Fundamentals – Summary Notes
+
+## 1️⃣ Types of Networks
+
+Networks are classified based on geographical coverage area.
+
+### • PAN (Personal Area Network)
+- Very small range (few meters)
+- Example: Bluetooth, Mobile Hotspot
+
+### • LAN (Local Area Network)
+- Covers a small area like home, school, office
+- High speed and low latency
+
+### • MAN (Metropolitan Area Network)
+- Covers a city or large campus
+- Connects multiple LANs
+
+### • WAN (Wide Area Network)
+- Covers large geographical areas (countries/continents)
+- Example: Internet
+
+---
+
+## 2️⃣ Data Transmission
+
+Data transmission refers to the transfer of data between devices.
+
+### 🔹 Transmission Modes
+
+- **Simplex** → One-way communication only  
+  Example: Keyboard to computer  
+
+- **Half-Duplex** → Two-way communication, but one at a time  
+  Example: Walkie-talkie  
+
+- **Full-Duplex** → Two-way communication simultaneously  
+  Example: Phone call  
+
+### 🔹 Transmission Types
+
+- **Wired Communication**
+  - Ethernet cables
+  - Fiber optics
+  - Stable and high speed
+
+- **Wireless Communication**
+  - Wi-Fi
+  - Bluetooth
+  - Cellular networks
+  - Flexible but can face interference
+
+---
+
+## 3️⃣ Bandwidth
+
+- Bandwidth is the **maximum capacity** of a network.
+- Measured in **bits per second (bps)**.
+- Example: 100 Mbps connection.
+
+📌 Think of bandwidth as the width of a highway.  
+More bandwidth = More data can flow.
+
+---
+
+## 4️⃣ Throughput
+
+- Throughput is the **actual data transfer rate** achieved.
+- Always less than or equal to bandwidth.
+
+### Factors Affecting Throughput:
+- Network congestion
+- Distance
+- Hardware limitations
+- Signal interference
+
+📌 If bandwidth is highway size, throughput is actual traffic speed.
+
+---
+
+## 5️⃣ Communication in a Connected World
+
+Modern communication depends on networks for:
+
+- Email
+- Video conferencing
+- Cloud computing
+- Online banking
+- Social media
+- IoT devices
+
+### Common Networking Protocols:
+- TCP/IP
+- HTTP / HTTPS
+- FTP
+- DNS
+
+---
+
+## 🔑 Key Takeaways
+
+- PAN, LAN, MAN, WAN define network size.
+- Data transmission can be simplex, half-duplex, or full-duplex.
+- Bandwidth = Maximum capacity.
+- Throughput = Real-world performance.
+- The modern world runs on interconnected networks.
+
+---
+
+💡 Strong networking fundamentals build the base for cybersecurity, cloud computing, and system administration.
