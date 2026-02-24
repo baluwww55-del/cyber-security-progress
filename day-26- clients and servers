@@ -1,0 +1,70 @@
+# Client–Server Communication in Networking
+
+## Definition
+Client–server communication is a networking model where a **client** requests services or data, and a **server** processes the request and sends back a response over a network using standard protocols.
+
+---
+
+## Basic Concept
+- **Client:** Device or application that sends a request  
+  Example: Web browser, mobile app  
+- **Server:** Device or system that provides data or services  
+  Example: Web server, database server  
+
+---
+
+## Communication Process (Step-by-Step)
+1. Client sends a request (HTTP request, file request, etc.)
+2. DNS converts domain name → IP address
+3. Connection established using TCP/IP
+4. Server processes the request
+5. Server sends response
+6. Client receives and displays data
+
+---
+
+## Common Protocols Used
+- **HTTP / HTTPS** – Web communication  
+- **FTP** – File transfer  
+- **SMTP** – Sending emails  
+- **DNS** – Domain name resolution  
+- **TCP/UDP** – Data transport  
+
+---
+
+## Types of Client–Server Systems
+- Web browser ↔ Web server  
+- App ↔ Database server  
+- Email client ↔ Mail server  
+- Cloud services ↔ Users  
+
+---
+
+## Advantages
+- Centralized management  
+- Easy maintenance  
+- Scalable  
+- Secure (with proper configuration)  
+
+---
+
+## Disadvantages
+- Server downtime affects clients  
+- High server load can slow performance  
+- Requires strong security measures  
+
+---
+
+## Real-Life Example
+When you open a website:
+1. Browser (client) sends request  
+2. Server processes it  
+3. Server sends webpage  
+4. Browser displays content  
+
+---
+
+## Key Takeaway
+Client–server communication is the foundation of the internet. Every website, app, and online service depends on this request–response model.
+
+---
