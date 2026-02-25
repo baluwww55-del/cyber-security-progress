@@ -1,0 +1,43 @@
+# Peer-to-Peer (P2P) Network
+
+## Overview
+A Peer-to-Peer (P2P) network is a decentralized network where each computer (peer) acts as both a client and a server. There is no central server, and all devices share resources directly with each other.
+
+## Key Characteristics
+- Decentralized network
+- All nodes are equal
+- Direct communication between peers
+- Easy to set up
+- Low cost
+- Suitable for small networks
+
+## Applications of P2P Networks
+1. File Sharing  
+   Used for sharing files directly between users (torrent systems).
+
+2. Cryptocurrency  
+   Blockchain networks like Bitcoin use P2P technology.
+
+3. VoIP Communication  
+   Early Skype used P2P connections.
+
+4. Distributed Computing  
+   Multiple computers share processing power.
+
+5. Home and Small Office Networks  
+   Used for sharing files, printers, and internet.
+
+## Advantages
+- No dedicated server needed
+- Cost-effective
+- Easy installation
+- No single point of failure
+
+## Disadvantages
+- Security risks
+- Hard to manage centrally
+- No centralized backup
+- Performance issues in large networks
+
+## Conclusion
+P2P networks are decentralized and useful for resource sharing. They are simple and affordable but require proper security when used on a large scale.
