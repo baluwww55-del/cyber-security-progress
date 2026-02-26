@@ -1,0 +1,109 @@
+# Networking Fundamentals: Components, Types, Connections, Infrastructure & ISP
+
+## 1. Network Components
+
+Network components are devices and media that allow communication between systems.
+
+### End Devices
+- Computer
+- Laptop
+- Smartphone
+- Server
+- IoT devices
+
+### Intermediary Devices
+- Router – Connects different networks
+- Switch – Connects devices within a LAN
+- Hub – Broadcasts data to all devices
+- Firewall – Provides security
+- Access Point – Provides wireless connectivity
+- Modem – Connects network to ISP
+
+### Transmission Media
+- Twisted Pair Cable (Ethernet)
+- Coaxial Cable
+- Fiber Optic Cable
+- Wireless (Wi-Fi, Bluetooth)
+
+---
+
+## 2. Types of Networks
+
+### Based on Coverage Area
+- PAN (Personal Area Network)
+- LAN (Local Area Network)
+- MAN (Metropolitan Area Network)
+- WAN (Wide Area Network)
+
+### Based on Architecture
+- Client–Server Network
+- Peer-to-Peer (P2P) Network
+
+---
+
+## 3. Network Connections
+
+### Wired Connections
+- Ethernet cable
+- Fiber optic cable
+
+Advantages:
+- High speed
+- Stable
+- Secure
+
+### Wireless Connections
+- Wi-Fi
+- Bluetooth
+- Cellular networks
+
+Advantages:
+- Flexible
+- Easy installation
+Disadvantages:
+- Less secure than wired
+- Possible interference
+
+---
+
+## 4. Network Infrastructure
+
+Network infrastructure is the complete setup that supports network communication.
+
+Includes:
+- Networking hardware (routers, switches, servers)
+- Software (network operating systems)
+- Protocols (TCP/IP, HTTP, FTP)
+- Security systems (firewall, IDS/IPS)
+- Data centers
+- Cloud services
+
+Purpose:
+- Reliable communication
+- Security
+- Scalability
+- Performance
+
+---
+
+## 5. ISP Connectivity
+
+ISP (Internet Service Provider) provides internet access to users.
+
+### Working Flow
+User Device → Router → Modem → ISP → Internet
+
+### Types of ISP Connections
+- DSL
+- Fiber
+- Cable
+- Satellite
+- Mobile data
+
+---
+
+## Key Points
+- Network components enable communication.
+- Infrastructure supports and manages the network.
+- Different network types exist based on size and design.
+- ISP connects local networks to the global internet.
