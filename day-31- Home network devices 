@@ -1,0 +1,26 @@
+## Day Learning – Home Network Devices
+
+Today I learned about home network devices used in small networks like houses and offices.
+
+A common home network device has two ports:
+
+1. WAN Port (Wide Area Network)
+   - Connects to the Internet
+   - Connected to ISP / Modem
+
+2. LAN Port (Local Area Network)
+   - Connects to local devices
+   - Example: Computer, Mobile, Printer
+
+These devices help to share internet connection between multiple devices in a home network.
+
+Examples of home network devices:
+- Router
+- Modem
+- Switch
+- Access Point
+
+Key Takeaways:
+- WAN is for internet connection
+- LAN is for local devices
+- Router connects both WAN and LAN
