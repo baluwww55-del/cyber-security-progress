@@ -1,0 +1,76 @@
+# 📡 Wireless Standards in Networking
+
+Today I learned about wireless standards used in computer networking. These standards define how devices communicate wirelessly over short and long distances.
+
+---
+
+## 1️⃣ Wi-Fi Standards (IEEE 802.11)
+
+Wi-Fi is used for Wireless Local Area Networks (WLAN).
+
+| Standard | Frequency Band | Maximum Speed | Key Feature |
+|-----------|----------------|---------------|--------------|
+| 802.11a | 5 GHz | 54 Mbps | Less interference |
+| 802.11b | 2.4 GHz | 11 Mbps | Longer range |
+| 802.11g | 2.4 GHz | 54 Mbps | Faster than 802.11b |
+| 802.11n | 2.4 / 5 GHz | Up to 600 Mbps | Uses MIMO technology |
+| 802.11ac (Wi-Fi 5) | 5 GHz | ~1 Gbps | High-speed performance |
+| 802.11ax (Wi-Fi 6) | 2.4 / 5 GHz | Multi-Gbps | Better efficiency & device handling |
+
+👉 Used in homes, offices, campuses for internet access.
+
+---
+
+## 2️⃣ Bluetooth (IEEE 802.15.1)
+
+- Short-range wireless communication  
+- Low power consumption  
+- Used for Personal Area Networks (PAN)  
+- Common in headphones, keyboards, smart devices  
+- Bluetooth Low Energy (BLE) is used in IoT devices  
+
+👉 Best for connecting personal devices.
+
+---
+
+## 3️⃣ Zigbee (IEEE 802.15.4)
+
+- Very low power usage  
+- Supports mesh networking  
+- Designed for automation and IoT  
+- Used in smart homes and sensor networks  
+
+👉 Ideal for low-data smart devices.
+
+---
+
+## 4️⃣ Cellular Standards
+
+| Generation | Main Focus |
+|------------|------------|
+| 2G | Voice communication |
+| 3G | Internet access |
+| 4G LTE | High-speed mobile data |
+| 5G | Ultra-fast speed & low latency |
+
+👉 Used in Wide Area Networks (WAN) for mobile connectivity.
+
+---
+
+# 🔎 Key Comparison
+
+| Standard | Range | Speed | Power Consumption | Use Case |
+|----------|--------|--------|------------------|------------|
+| Wi-Fi | Medium | High | Medium | Internet access |
+| Bluetooth | Short | Low | Very Low | Personal devices |
+| Zigbee | Short-Medium | Very Low | Extremely Low | Smart automation |
+| Cellular | Very Large | Very High | High | Mobile broadband |
+
+---
+
+## ✅ Key Takeaways
+
+- Wi-Fi is used for high-speed local networking.
+- Bluetooth is used for short-range personal communication.
+- Zigbee is designed for IoT and automation.
+- Cellular networks provide long-distance mobile connectivity.
