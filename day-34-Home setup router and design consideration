@@ -1,0 +1,29 @@
+## Setting Up a Home Router & Design Considerations
+
+Today I learnt how to set up a home router and the important design considerations for a home network.
+
+### Home Router Setup
+A home router connects multiple devices to the internet and manages communication between them.
+
+Steps to set up a home router:
+
+1. Connect the modem to the router using an Ethernet cable (WAN/Internet port).
+2. Power on the modem first, then turn on the router.
+3. Open a web browser and enter the router's default IP address (192.168.1.1 or 192.168.0.1).
+4. Log in using the default username and password.
+5. Configure Wi-Fi settings by setting the SSID (network name) and a strong password.
+6. Enable security such as WPA2 or WPA3 encryption.
+7. Connect devices like laptops, smartphones, and smart TVs to the network.
+
+### Home Network Design Considerations
+
+- Router placement should be central to provide better coverage.
+- Use strong passwords to improve network security.
+- Consider the number of devices connected to the network.
+- Ensure sufficient bandwidth for activities like streaming, gaming, and video calls.
+- Choose modern routers that support dual-band Wi-Fi for better performance.
+
+### Key Takeaways
+- A router is the central device in a home network.
+- Proper setup improves connectivity and security.
+- Good network design ensures stable and efficient internet access.
