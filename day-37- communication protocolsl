@@ -1,0 +1,33 @@
+## Communication Protocols
+
+## Overview
+Today I learned about **Communication Protocols** in networking and why they are important for communication between devices in a network.
+
+Protocols define the rules that control how data is transmitted and received across a network.
+
+## Key Concepts Learned
+
+### 1. Message Format
+Defines the structure of the message that is sent between devices so the receiver can understand the data correctly.
+
+### 2. Message Size
+Protocols specify the maximum size of a message. Large messages are divided into smaller parts to ensure reliable transmission.
+
+### 3. Timing
+Timing determines when data should be transmitted and how fast bits travel across the network.
+
+### 4. Encoding
+Before transmission, messages are converted into bits (0s and 1s).  
+These bits are sent through the network using electrical signals, light signals, or radio waves.
+
+### 5. Encapsulation
+Encapsulation is the process of adding headers to data.  
+These headers contain important information like source and destination addresses.
+
+### 6. Message Pattern
+Defines how devices communicate with each other, such as:
+- Request and Response
+- Streaming
+
+## Summary
+Communication protocols ensure that devices in a network can communicate efficiently, reliably, and in an organized manner.
