@@ -1,0 +1,36 @@
+# TCP/IP Model & Communication Model (Part 1)
+
+Today I learned about the **TCP/IP model**, which is the fundamental architecture used for communication over the Internet.
+
+## TCP/IP Model (4 Layers)
+
+1. **Network Access Layer**
+   - Handles physical network hardware and data transmission.
+   - Examples: Ethernet, Wi-Fi.
+
+2. **Internet Layer**
+   - Responsible for logical addressing and routing of packets.
+   - Main Protocol: IP (Internet Protocol).
+
+3. **Transport Layer**
+   - Ensures reliable communication between devices.
+   - Protocols: TCP (reliable) and UDP (faster but less reliable).
+
+4. **Application Layer**
+   - Provides network services to end-user applications.
+   - Examples: HTTP, FTP, DNS, SMTP.
+
+## Communication Model (Part 1)
+
+Also learned the basic **communication model**, which explains how data moves from sender to receiver through a network.
+
+Basic components include:
+- Sender
+- Message
+- Medium
+- Receiver
+
+This concept helps understand how devices exchange data across networks.
+
+## Key Takeaway
+The TCP/IP model organizes network communication into layers so each layer performs a specific function, making networking efficient and scalable.
