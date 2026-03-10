@@ -1,0 +1,61 @@
+## Day XX – OSI Model & Difference Between OSI and TCP/IP
+
+Today I learned about the **OSI (Open Systems Interconnection) Model** and the **difference between OSI and TCP/IP models**, which explain how data travels across a network.
+
+---
+
+### OSI Model (7 Layers)
+
+1. **Physical Layer**
+   - Responsible for transmitting raw bits over physical media like cables, fiber, or wireless signals.
+
+2. **Data Link Layer**
+   - Handles node-to-node communication and error detection.
+   - Uses MAC addresses.
+
+3. **Network Layer**
+   - Responsible for routing and logical addressing (IP addresses).
+
+4. **Transport Layer**
+   - Ensures reliable communication between devices.
+   - Protocols: TCP, UDP.
+
+5. **Session Layer**
+   - Establishes, manages, and terminates sessions between applications.
+
+6. **Presentation Layer**
+   - Handles data formatting, encryption, and compression.
+
+7. **Application Layer**
+   - Provides services directly to the user.
+   - Examples: HTTP, FTP, SMTP, DNS.
+
+---
+
+### TCP/IP Model (4 Layers)
+
+1. **Network Access Layer**
+2. **Internet Layer**
+3. **Transport Layer**
+4. **Application Layer**
+
+---
+
+### Difference Between OSI and TCP/IP
+
+| Feature | OSI Model | TCP/IP Model |
+|-------|-------|-------|
+| Layers | 7 Layers | 4 Layers |
+| Type | Conceptual Model | Practical Model |
+| Developed By | ISO | DARPA |
+| Usage | Used for understanding networking | Used in real internet communication |
+
+---
+
+### Key Takeaway
+
+The **OSI model** is a theoretical framework used to understand networking concepts, while the **TCP/IP model** is the practical protocol suite used in real-world internet communication.
+
+---
+
+✅ Learning networking step by step to build a strong foundation in **Computer Networks**.
