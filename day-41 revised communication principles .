@@ -1,0 +1,39 @@
+## 📘 Communication Principles : revision 
+
+### 1️⃣ Communication Standards
+Communication standards are established guidelines that ensure different networking devices and technologies can communicate effectively.  
+They provide a common framework so equipment from different manufacturers can work together.  
+Organizations such as IEEE, ISO, IETF, and ITU develop these standards.  
+Standards help maintain interoperability, reliability, and consistency in network communication.
+
+### 2️⃣ Communication Protocols
+Communication protocols are a set of rules that govern how data is transmitted and received across a network.  
+They define the format, timing, sequencing, and error control of data transmission.  
+Protocols ensure that devices understand each other during communication.  
+Examples include HTTP, FTP, TCP, IP, and SMTP.
+
+**Common Protocols:**
+
+- **HTTP** – Used for transferring web pages between web servers and browsers.  
+- **FTP** – Used for transferring files between computers over a network.  
+- **TCP** – Ensures reliable and ordered delivery of data between devices.  
+- **IP** – Responsible for addressing and routing data packets across networks.  
+- **SMTP** – Used for sending emails between mail servers.
+
+### 3️⃣ Communication Models
+Communication models describe how data flows between devices in a network.  
+They explain the structure and process involved in sending and receiving information.  
+Models help in understanding how different layers and components interact during communication.  
+Common examples include the OSI model and the TCP/IP model.
+
+**OSI Model**
+The OSI (Open Systems Interconnection) model is a conceptual framework used to understand how networking systems communicate.  
+It divides network communication into **seven layers**, each with a specific function.  
+This layered structure helps in designing, implementing, and troubleshooting networks.  
+The layers include Physical, Data Link, Network, Transport, Session, Presentation, and Application.
+
+**TCP/IP Model**
+The TCP/IP model is the practical networking model used in the internet today.  
+It organizes network communication into **four layers**: Network Access, Internet, Transport, and Application.  
+This model defines how data is transmitted across interconnected networks.  
+TCP/IP forms the foundation of modern internet communication.
