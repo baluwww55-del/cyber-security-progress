@@ -1,0 +1,70 @@
+# Network Media
+
+Data is transmitted across a network using **network media**.  
+Network media provides the **channel through which data travels from the source device to the destination device**.
+
+Modern networks mainly use **three types of media** to connect devices.
+
+---
+
+## 1. Metal Wires within Cables (Copper Cables)
+
+- Data is transmitted as **electrical signals**.
+- Commonly used in **Ethernet networks**.
+- Examples: **Cat5e, Cat6, Cat7 cables**.
+
+### Advantages
+- Low cost
+- Easy installation
+- Widely used in Local Area Networks (LAN)
+
+### Disadvantages
+- Limited transmission distance
+- Susceptible to electromagnetic interference
+
+---
+
+## 2. Glass or Plastic Fibers (Fiber-Optic Cables)
+
+- Data is transmitted as **pulses of light**.
+- Provides **very high-speed communication**.
+- Used for **long-distance network connections**.
+
+### Advantages
+- Very high bandwidth
+- Long-distance transmission
+- Immune to electromagnetic interference
+
+### Disadvantages
+- Higher cost
+- Installation and maintenance are complex
+
+---
+
+## 3. Wireless Transmission
+
+- Data is transmitted using **electromagnetic waves**.
+- Does not require physical cables.
+
+### Examples
+- Wi-Fi
+- Bluetooth
+- Cellular networks (4G / 5G)
+
+### Advantages
+- Mobility and flexibility
+- Easy setup without cables
+
+### Disadvantages
+- Lower security compared to wired networks
+- Signal interference can occur
+
+---
+
+## Summary
+
+| Media Type | Transmission Method | Example |
+|------------|--------------------|---------|
+| Copper Cable | Electrical Signals | Ethernet |
+| Fiber Optic | Light Pulses | Internet Backbone |
+| Wireless | Electromagnetic Waves | Wi-Fi, Bluetooth |
