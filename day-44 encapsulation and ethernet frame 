@@ -1,0 +1,79 @@
+# Encapsulation and Ethernet Frame
+
+## 1. Encapsulation
+
+Encapsulation is the process of **adding headers and trailers to data** as it moves through the layers of a network model.
+
+Each layer adds its own information to help deliver the data correctly.
+
+### Simple Analogy
+
+Sending a letter:
+
+- Letter → Actual message (Data)
+- Envelope → Header information
+- Address on envelope → Destination information
+
+The letter is placed inside the envelope before sending.
+
+This process is similar to **encapsulation in networking**.
+
+### Encapsulation Process
+
+When data is sent over a network:
+
+1. Application Layer – Creates the message  
+2. Transport Layer – Adds **port numbers**  
+3. Network Layer – Adds **IP addresses**  
+4. Data Link Layer – Adds **MAC addresses**  
+5. Physical Layer – Converts data to **bits and signals**
+
+Each layer wraps the data with additional information.
+
+### De-encapsulation
+
+At the receiving device, the process is reversed.
+
+Each layer removes its header until the original data reaches the application.
+
+---
+
+# Ethernet Frame
+
+An **Ethernet frame** is the format used to send data over a **Local Area Network (LAN)**.
+
+## Ethernet Frame Structure
+
+| Field | Size | Description |
+|-----|-----|-------------|
+| Preamble | 7 bytes | Synchronizes the receiver |
+| Start Frame Delimiter | 1 byte | Indicates the start of the frame |
+| Destination MAC Address | 6 bytes | Address of the receiving device |
+| Source MAC Address | 6 bytes | Address of the sending device |
+| Type/Length | 2 bytes | Identifies the protocol used |
+| Data | 46–1500 bytes | Actual transmitted data |
+| Frame Check Sequence (FCS) | 4 bytes | Error detection |
+
+## Purpose of Ethernet Frame
+
+The Ethernet frame helps network devices to:
+
+- Identify the **source device**
+- Identify the **destination device**
+- Detect **transmission errors**
+
+---
+
+# Key Definitions
+
+**Encapsulation**
+
+> The process of adding headers and trailers to data as it moves through network layers before transmission.
+
+**De-encapsulation**
+
+> The process of removing headers and trailers from received data at the destination device.
+
+**Ethernet Frame**
+
+> A structured data unit used at the **Data Link Layer** to transmit data within a LAN.
