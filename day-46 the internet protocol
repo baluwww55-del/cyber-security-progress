@@ -1,0 +1,112 @@
+IPv4 Addressing – Octets and Dotted Decimal Notation
+
+Overview
+
+IPv4 is the addressing system used to uniquely identify devices on a network.
+Each device connected to the internet or a local network is assigned an IPv4 address.
+
+---
+
+IPv4 Address Length
+
+An IPv4 address is 32 bits long.
+
+Example of a 32-bit binary IPv4 address:
+
+11010001101001011100100000000001
+
+Binary format is difficult for humans to read and remember.
+
+---
+
+Dividing the Address into Octets
+
+To make the address readable, the 32 bits are divided into four groups of 8 bits.
+
+Each group of 8 bits is called an octet.
+
+Example:
+
+11010001.10100101.11001000.00000001
+
+Structure:
+
+[8 bits] . [8 bits] . [8 bits] . [8 bits]
+
+Total:
+
+8 + 8 + 8 + 8 = 32 bits
+
+---
+
+Binary to Decimal Conversion
+
+Each octet is converted from binary to decimal to make it easier for humans to read.
+
+Binary| Decimal
+11010001| 209
+10100101| 165
+11001000| 200
+00000001| 1
+
+Final dotted-decimal IPv4 address:
+
+209.165.200.1
+
+---
+
+Range of Each Octet
+
+Each octet contains 8 bits.
+
+The number of possible values is:
+
+2^8 = 256
+
+So each octet ranges from:
+
+0 – 255
+
+---
+
+IPv4 Address Format
+
+IPv4 addresses follow this format:
+
+[0–255].[0–255].[0–255].[0–255]
+
+Example IPv4 addresses:
+
+192.168.1.1
+10.0.0.1
+172.16.0.1
+
+---
+
+Purpose of IPv4
+
+IPv4 addresses allow devices to identify and communicate with each other on a network.
+
+Example network:
+
+Device| Example IP Address
+Router| 192.168.1.1
+Laptop| 192.168.1.10
+Smartphone| 192.168.1.11
+Server| 209.165.200.1
+
+Without IP addressing, devices would not know where to send data.
+
+---
+
+Key Points
+
+- IPv4 address length: 32 bits
+- Divided into 4 octets
+- Each octet = 8 bits
+- Each octet range: 0 – 255
+- Written in dotted-decimal notation
+
+Example:
+
+209.165.200.1
