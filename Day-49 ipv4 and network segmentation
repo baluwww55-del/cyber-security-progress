@@ -1,0 +1,95 @@
+# IPv4 Communication: Unicast, Broadcast, and Multicast
+
+## Overview
+In IPv4 networking, communication happens in three main ways:
+- Unicast → One-to-One
+- Broadcast → One-to-All
+- Multicast → One-to-Group
+
+---
+
+## 1. Unicast
+
+Definition:
+Communication between one sender and one receiver.
+
+Key Points:
+- Uses a unique IP address
+- Most common type of communication
+- Efficient and direct
+
+Examples:
+- Web browsing
+- SSH, FTP
+
+Diagram:
+Sender ---> Receiver
+
+---
+
+## 2. Broadcast
+
+Definition:
+Communication from one sender to all devices in the network.
+
+Key Points:
+- Uses broadcast IP (e.g., 192.168.1.255)
+- All devices receive the message
+- Can cause network congestion
+
+Examples:
+- ARP request
+- DHCP discovery
+
+Diagram:
+        ---> Device A
+Sender ---> Device B
+        ---> Device C
+
+---
+
+## 3. Multicast
+
+Definition:
+Communication from one sender to a selected group.
+
+Key Points:
+- Uses IP range 224.0.0.0 – 239.255.255.255
+- Only interested devices receive data
+- Efficient for group communication
+
+Examples:
+- Video streaming
+- Online meetings
+
+Diagram:
+        ---> Group Member A
+Sender ---> Group Member B
+        ---> Group Member C
+
+---
+
+## Comparison Table
+
+| Feature       | Unicast     | Broadcast     | Multicast      |
+|--------------|------------|--------------|---------------|
+| Type         | One-to-One | One-to-All   | One-to-Group  |
+| Efficiency   | High       | Low          | High          |
+| Traffic      | Low        | High         | Moderate      |
+| Example      | Web        | ARP          | Streaming     |
+
+---
+
+## Network Segmentation
+
+- Broadcast traffic stays within a subnet
+- Routers block broadcast traffic
+- Segmentation reduces congestion and improves performance
+
+---
+
+## Key Takeaways
+
+- Unicast is the default communication
+- Broadcast is useful but heavy on network
+- Multicast is efficient for group communication
