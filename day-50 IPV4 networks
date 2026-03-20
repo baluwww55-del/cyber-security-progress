@@ -1,0 +1,89 @@
+# 🌐 IPv4 Address Types – Quick Notes
+
+## 🔁 1. Loopback Address
+
+**Range:** 127.0.0.0 – 127.255.255.255  
+**Common:** 127.0.0.1 (localhost)
+
+**Purpose:**
+- Used for a device to communicate with itself
+- Helps in testing network services
+
+**Example:**
+```bash
+ping 127.0.0.1
+```
+
+**Key Idea:**  
+Internal testing – no external network involved
+
+---
+
+## 🔗 2. APIPA (Automatic Private IP Addressing)
+
+**Range:** 169.254.0.0 – 169.254.255.255  
+
+**Purpose:**
+- Assigned automatically when DHCP server is unavailable
+- Enables local network communication only
+
+**Important Note:**
+- Not specifically designed for P2P
+- Can allow limited peer-to-peer communication
+
+**Key Idea:**  
+Backup IP when no DHCP server is found
+
+---
+
+## 🌍 3. Public IP Address
+
+**Purpose:**
+- Used for communication over the internet
+- Assigned by Internet Service Provider (ISP)
+
+**Characteristics:**
+- Globally unique
+- Required for accessing external networks
+
+**Key Idea:**  
+Your device’s identity on the internet
+
+---
+
+## 🏠 4. Private IP Address
+
+**Ranges:**
+- 10.0.0.0 – 10.255.255.255
+- 172.16.0.0 – 172.31.255.255
+- 192.168.0.0 – 192.168.255.255
+
+**Purpose:**
+- Used within local area networks (LAN)
+
+**Characteristics:**
+- Not routable on the internet
+- Assigned by routers (DHCP)
+
+**Key Idea:**  
+Internal network addressing
+
+---
+
+## ⚡ Summary Table
+
+| Type      | Range                          | Usage                    |
+|----------|--------------------------------|--------------------------|
+| Loopback | 127.0.0.0 – 127.255.255.255    | Self communication       |
+| APIPA    | 169.254.0.0 – 169.254.255.255  | No DHCP fallback         |
+| Private  | 10.x / 172.16–31.x / 192.168.x | Local network            |
+| Public   | Varies                         | Internet communication   |
+
+---
+
+## 🧠 Quick Memory Trick
+
+- Loopback → Me talking to myself  
+- APIPA → No DHCP, emergency IP  
+- Private → Inside network  
+- Public → Internet identity  
