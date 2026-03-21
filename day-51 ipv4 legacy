@@ -1,0 +1,84 @@
+# 📘 Networking Notes – IPv4 Addressing
+
+## 9.2.5 Legacy Classful Addressing
+
+Legacy IPv4 addressing divided IP addresses into fixed classes:
+
+| Class | Range | Default Subnet Mask | Purpose |
+|------|------|---------------------|--------|
+| A | 0.0.0.0 – 127.255.255.255 | 255.0.0.0 | Large networks |
+| B | 128.0.0.0 – 191.255.255.255 | 255.255.0.0 | Medium networks |
+| C | 192.0.0.0 – 223.255.255.255 | 255.255.255.0 | Small networks |
+| D | 224.0.0.0 – 239.255.255.255 | N/A | Multicast |
+| E | 240.0.0.0 – 255.255.255.255 | N/A | Experimental |
+
+### 🔹 Limitations:
+- Inefficient allocation of IP addresses
+- Large wastage of address space
+- Not flexible for modern networking
+
+### ✅ Solution:
+- Replaced by CIDR (Classless Inter-Domain Routing)
+
+---
+
+## 9.2.6 Assignment of IP Addresses
+
+Devices can obtain IP addresses in two ways:
+
+### 🔹 Static IP Addressing
+- Manually assigned
+- Does not change
+- Used for servers and network devices
+
+### 🔹 Dynamic IP Addressing (DHCP)
+- Automatically assigned by DHCP server
+- Temporary (leased)
+- Common in home and office networks
+
+### 📌 DHCP Process:
+1. Discover
+2. Offer
+3. Request
+4. Acknowledge
+
+---
+
+## 9.2.7 Public vs Private IPv4 Address
+
+### 🔹 Private IP Addresses
+Used within local networks (not routable on the internet)
+
+| Range |
+|------|
+| 10.0.0.0 – 10.255.255.255 |
+| 172.16.0.0 – 172.31.255.255 |
+| 192.168.0.0 – 192.168.255.255 |
+
+Example:
+- 192.168.1.1 (Router)
+- 192.168.1.10 (Device)
+
+---
+
+### 🔹 Public IP Addresses
+- Assigned by ISP
+- Globally unique
+- Used for internet communication
+
+---
+
+### 🔥 NAT (Network Address Translation)
+- Converts private IP → public IP
+- Allows multiple devices to share one public IP
+- Helps conserve IPv4 addresses
+
+---
+
+## 🧠 Summary
+
+- Classful addressing = outdated and inefficient
+- DHCP = automatic IP assignment
+- Private IP = local use only
+- Public IP = internet identity
+- NAT = bridge between private and public networks
