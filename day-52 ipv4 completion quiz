@@ -1,0 +1,108 @@
+# 📡 Network Segmentation (Cisco Networking Basics)
+
+## 🔹 What is Network Segmentation?
+Network segmentation is the process of dividing a network into smaller parts (subnets) to improve:
+- Performance
+- Security
+- Manageability
+
+---
+
+## 🔹 Broadcast Domain
+
+### 📌 Definition
+A broadcast domain is a group of devices that receive the same broadcast message.
+
+### 📢 Example
+- ARP Request:  
+  "Who has IP 192.168.1.10? Send me your MAC address."
+
+➡️ This message is sent to **all devices in the same network**
+
+---
+
+## 🔹 Problem with Large Broadcast Domains
+
+- Too many broadcasts = network congestion
+- Reduced performance
+- Harder troubleshooting
+- Security risks
+
+---
+
+## 🔹 Role of Devices
+
+### 🔁 Switch
+- Forwards broadcasts to all ports
+- Does NOT break broadcast domains
+
+### 🚦 Router
+- Does NOT forward broadcasts
+- Breaks broadcast domains
+- Connects different networks
+
+---
+
+## 🔹 Example Scenario
+
+### Network 1:
+- 192.168.1.0/24
+- Devices: 192.168.1.50, 192.168.1.51, etc.
+
+### Network 2:
+- 192.168.2.0/24
+- Devices: 192.168.2.9, 192.168.2.10, etc.
+
+### Router Interfaces:
+- G0/0 → 192.168.1.1/24
+- G0/1 → 192.168.2.1/24
+
+➡️ Router separates both networks into different broadcast domains
+
+---
+
+## 🔹 Key Concept
+
+> Routers do NOT forward broadcast traffic
+
+✔ Broadcast stays within its network  
+✔ Improves performance  
+✔ Enhances security  
+
+---
+
+## 🔹 Why Network Segmentation?
+
+- ✅ Reduces network traffic
+- ✅ Improves performance
+- ✅ Enhances security
+- ✅ Easier troubleshooting
+- ✅ Better scalability
+
+---
+
+## 🔹 Real-World Insight
+
+Without segmentation:
+- Entire network = one big noisy room
+
+With segmentation:
+- Network = organized departments with controlled communication
+
+---
+
+## 🔹 Quick Revision
+
+- Broadcast = message to all devices
+- Switch = forwards broadcasts
+- Router = blocks broadcasts
+- Segmentation = splitting network into smaller parts
+
+---
+
+## 🎯 Summary
+
+Network segmentation is essential for building efficient and secure networks.  
+Routers play a key role by separating broadcast domains and controlling traffic flow.
+
+---
