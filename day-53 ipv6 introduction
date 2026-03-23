@@ -1,0 +1,43 @@
+# 🌐 IPv6 Basics & Transition Mechanisms
+
+## 📌 Why IPv6?
+- IPv4 uses 32-bit addressing (~4.3 billion addresses)
+- Rapid growth of internet devices led to IPv4 exhaustion
+- IPv6 introduced with 128-bit addressing (virtually unlimited addresses)
+
+## 🚀 Key Features of IPv6
+- 128-bit address space
+- Uses hexadecimal format separated by colons
+- Supports address compression (::)
+- No NAT required (end-to-end connectivity)
+- Auto-configuration (SLAAC)
+- Efficient routing
+- Built-in security (IPsec)
+
+## ⚠️ IPv4 to IPv6 Transition
+- Full migration from IPv4 to IPv6 is not immediate
+- Transition mechanisms are required for compatibility
+
+## 🔁 Transition Mechanisms
+
+### 1. Dual Stack
+- Devices run both IPv4 and IPv6 simultaneously
+- Communication prefers IPv6, falls back to IPv4
+- Provides smooth transition but increases complexity
+
+### 2. Tunneling
+- IPv6 packets are encapsulated inside IPv4 packets
+- Allows IPv6 communication over IPv4 networks
+- Adds overhead and may reduce performance
+
+### 3. Translation
+- Converts IPv4 and IPv6 packets for communication
+- Uses techniques like NAT64 and DNS64
+- Enables interaction between IPv4-only and IPv6-only devices
+- May break end-to-end connectivity
+
+## 🧠 Summary
+- IPv4 exhaustion led to IPv6 adoption
+- IPv6 provides a large address space and improved features
+- Dual Stack, Tunneling, and Translation are key transition methods
+- All three are commonly used together in real-world networks
