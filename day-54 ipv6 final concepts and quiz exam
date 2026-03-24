@@ -1,0 +1,135 @@
+# 🌐 IPv6 Addressing & Notation — Notes
+
+## 📌 Overview
+IPv6 (Internet Protocol version 6) replaces IPv4 and solves address exhaustion.
+
+- IPv4 → 32-bit (~4.3 billion addresses)
+- IPv6 → 128-bit (~3.4 × 10^38 addresses)
+
+---
+
+## 🔢 IPv6 Address Structure
+
+- 128 bits total
+- Written in hexadecimal (base-16)
+- 8 groups (hextets)
+- Each group = 16 bits = 4 hex digits
+
+### Example:
+```
+2001:0db8:0000:0000:02aa:00ff:fe9a:4ca2
+```
+
+---
+
+## 🔠 Hexadecimal System
+
+| Decimal | Hex |
+|--------|-----|
+| 0–9    | 0–9 |
+| 10–15  | A–F |
+
+---
+
+## ✂️ IPv6 Shortening Rules
+
+### 1. Omit Leading Zeros
+Remove leading zeros in any hextet.
+
+```
+Original:
+2001:0db8:0000:0000:02aa:00ff:fe9a:4ca2
+
+Shortened:
+2001:db8:0:0:2aa:ff:fe9a:4ca2
+```
+
+---
+
+### 2. Double Colon (::)
+
+- Replace consecutive `0000` blocks with `::`
+- Can be used only once per address
+
+```
+2001:db8:0:0:2aa:ff:fe9a:4ca2
+→ 2001:db8::2aa:ff:fe9a:4ca2
+```
+
+⚠️ Important:
+- Only one `::` allowed (avoids ambiguity)
+
+---
+
+## 🧠 Key Rules
+
+- Always 8 hextets before compression
+- Use hexadecimal (0–9, A–F)
+- Remove leading zeros
+- Use `::` only once
+- `::` represents one or more groups of `0000`
+
+---
+
+## 🌍 Types of IPv6 Addresses
+
+### 1. Unicast
+- One-to-one communication
+
+### 2. Multicast
+- One-to-many communication
+
+### 3. Anycast
+- One-to-nearest communication
+
+---
+
+## 🧩 Address Representation
+
+### Full Format
+```
+2001:0db8:0000:0000:02aa:00ff:fe9a:4ca2
+```
+
+### Shortened Format
+```
+2001:db8::2aa:ff:fe9a:4ca2
+```
+
+---
+
+## ⚙️ IPv6 Prefix
+
+```
+2001:db8::/32
+```
+
+- `/32` = network portion
+- Remaining bits = host portion
+
+---
+
+## 🚀 Why IPv6
+
+- Huge address space
+- No NAT required
+- Better routing efficiency
+- Built-in security (IPsec)
+- Supports IoT scale
+
+---
+
+## 🧪 Exam Tips
+
+- Do not use `::` more than once
+- Always remove leading zeros
+- Practice compressing & expanding addresses
+- Know full vs shortened format
+
+---
+
+## 🏁 Final Takeaway
+
+IPv6 = Hex + Compression Rules
+
+Master the pattern → it becomes easy.
