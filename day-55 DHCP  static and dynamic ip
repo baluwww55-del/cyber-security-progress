@@ -1,0 +1,98 @@
+# 📡 DHCP Basics: Static vs Dynamic IP Addressing
+
+## 📘 Introduction
+
+In computer networks, every device requires an IP address to communicate. These IP addresses can be assigned either **statically** or **dynamically** using DHCP (Dynamic Host Configuration Protocol).
+
+---
+
+## 🔒 Static IP Address
+
+A **Static IP address** is a fixed IP assigned to a device that does not change over time.
+
+### ✅ Characteristics:
+
+* Manually configured or reserved via DHCP
+* Remains constant
+* Used for critical devices
+
+### 📌 Common Use Cases:
+
+* Servers
+* Network printers
+* Routers
+* CCTV systems
+
+### 👍 Advantages:
+
+* Reliable and consistent
+* Easy to locate devices on the network
+
+### 👎 Disadvantages:
+
+* Requires manual management
+* Not scalable for large networks
+
+---
+
+## 🔄 Dynamic IP Address
+
+A **Dynamic IP address** is automatically assigned by a DHCP server and may change over time.
+
+### ⚙️ How it Works (DORA Process):
+
+1. **Discover** – Device requests an IP address
+2. **Offer** – DHCP server offers an IP
+3. **Request** – Device requests the offered IP
+4. **Acknowledge** – Server confirms assignment
+
+### ✅ Characteristics:
+
+* Automatically assigned
+* Uses lease time
+* IP may change after lease expiration
+
+### 📌 Common Use Cases:
+
+* Laptops
+* Smartphones
+* Home networks
+* Guest devices
+
+### 👍 Advantages:
+
+* Easy to manage
+* Scalable
+* Efficient IP utilization
+
+### 👎 Disadvantages:
+
+* IP may change
+* Less control compared to static IP
+
+---
+
+## ⚖️ Key Differences
+
+| Feature    | Static IP                 | Dynamic IP       |
+| ---------- | ------------------------- | ---------------- |
+| Assignment | Manual / Reserved         | Automatic (DHCP) |
+| IP Change  | No                        | May change       |
+| Management | Manual                    | Automatic        |
+| Best For   | Servers, critical devices | End-user devices |
+
+---
+
+## 💡 Important Note
+
+A dynamic IP address does **not always change**. It may remain the same for a long time but can change when:
+
+* The lease expires
+* The device reconnects
+* The network restarts
+
+---
+
+## 🚀 Conclusion
+
+Static IP addresses provide stability and are used for essential devices, while dynamic IP addresses offer flexibility and automation for general network usage. Both methods are essential in modern networking environments.
