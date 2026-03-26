@@ -1,0 +1,90 @@
+# DHCP (Dynamic Host Configuration Protocol) - Quick Notes
+
+## 🧠 What is DHCP?
+DHCP (Dynamic Host Configuration Protocol) is a network protocol that automatically assigns IP addresses and other network configuration details to devices on a network.
+
+When a device (like a laptop or phone) connects to a network, it does not initially have an IP address. DHCP handles this assignment automatically.
+
+---
+
+## 🔄 DHCP Process (DORA)
+
+The DHCP communication follows a 4-step process known as **DORA**:
+
+1. **Discover**
+   - Client broadcasts: "Is there any DHCP server available?"
+
+2. **Offer**
+   - DHCP server responds with an available IP address.
+
+3. **Request**
+   - Client requests to use the offered IP address.
+
+4. **Acknowledge**
+   - Server confirms and assigns the IP officially.
+
+---
+
+## 🌐 Information Provided by DHCP
+
+DHCP assigns more than just an IP address:
+
+- **IP Address** → Unique identity of the device  
+- **Subnet Mask** → Defines network boundaries  
+- **Default Gateway** → Route to access the internet  
+- **DNS Server** → Resolves domain names to IP addresses  
+- **Lease Time** → Duration the IP is valid  
+
+---
+
+## ☕ Real-World Example (Public Wi-Fi)
+
+When connecting to a public network (coffee shop, airport, etc.):
+
+1. Device connects to Wi-Fi  
+2. DHCP request is sent automatically  
+3. Router (DHCP server) assigns an IP address  
+4. Device can now access the internet  
+
+---
+
+## ⚙️ Key Points
+
+- DHCP enables **automatic network configuration**
+- Eliminates the need for manual IP setup
+- Commonly, the **router acts as the DHCP server**
+- Supports large networks efficiently
+
+---
+
+## ⚠️ Without DHCP
+
+If DHCP did not exist:
+- Users would need to manually configure:
+  - IP address
+  - Subnet mask
+  - Gateway
+  - DNS
+- High chance of configuration errors
+- Not practical for public or large-scale networks
+
+---
+
+## 🧩 Simple Analogy
+
+DHCP is like a **hotel reception system**:
+
+- You arrive → Connect to network  
+- You get a room → Assigned IP address  
+- You get directions → Gateway + DNS  
+- You stay temporarily → Lease time  
+- You renew or leave → IP reassigned  
+
+---
+
+## 🚀 Summary
+
+DHCP simplifies networking by:
+- Automating IP assignment
+- Reducing human errors
+- Enabling seamless connectivity in public and private networks
