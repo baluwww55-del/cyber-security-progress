@@ -1,0 +1,77 @@
+# 🌐 Networking Basics — Gateways & Network Boundaries
+
+## 📌 Overview
+This module covers how routers function as gateways and how they define boundaries between networks.
+
+---
+
+## 🚪 Router as a Default Gateway
+
+A **default gateway** is the device that allows hosts to communicate with devices on other networks.
+
+### 🔑 Key Idea:
+- If a host wants to communicate **outside its local network**, it sends data to the **router (default gateway)**.
+
+### 🧠 Concept:
+- Same network → Direct communication  
+- Different network → Go through router  
+
+---
+
+## 🌍 Router as a Network Boundary
+
+Routers separate different networks and control traffic between them.
+
+### 🔑 Key Functions:
+- Connect multiple networks  
+- Forward packets between networks  
+- Act as a boundary between IP subnets  
+
+### 🧠 Concept:
+- Each network is independent  
+- Routers define where one network ends and another begins  
+
+---
+
+## 🔍 Important Observations
+
+When two hosts are on **different networks**:
+
+- ✅ They will have **different IP addresses**
+- ✅ They will have **different default gateway addresses**
+- ❌ They will NOT share the same MAC address
+- ❌ They will NOT share the same IP address
+
+---
+
+## 🧠 Golden Rule
+
+> Same Network → Direct Communication  
+> Different Network → Use Router (Default Gateway)
+
+---
+
+## 📊 Example Scenario
+
+| Device | IP Address       | Network        | Default Gateway |
+|--------|----------------|---------------|-----------------|
+| Host A | 192.168.1.10  | 192.168.1.0/24 | 192.168.1.1     |
+| Host B | 192.168.2.10  | 192.168.2.0/24 | 192.168.2.1     |
+
+### 🔎 Explanation:
+- Host A and Host B are on **different networks**
+- They must communicate **through a router**
+- Each network has its **own gateway**
+
+---
+
+## 🚀 Takeaway
+
+Routers are:
+- The **exit point** for external communication  
+- The **boundary** between networks  
+
+Understanding this is critical for:
+- Subnetting  
+- Routing  
+- Network design  
