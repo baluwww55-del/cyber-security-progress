@@ -1,0 +1,125 @@
+# 📘 Networking Basics: MAC, IP & ARP (Cisco Concepts)
+
+---
+
+## 🔹 1. IP Address (Logical Address)
+
+**Definition:**  
+An IP address is a logical identifier assigned to a device for communication across networks.
+
+**Types:**
+- IPv4 → `192.168.1.1`
+- IPv6 → `2001:db8::1`
+
+**Key Points:**
+- Works at **Layer 3 (Network Layer)**
+- Used for routing between networks
+- Can change (dynamic via DHCP or static)
+
+**Role:**
+- Identifies *where the device is in the network*
+
+---
+
+## 🔹 2. MAC Address (Physical Address)
+
+**Definition:**  
+A MAC (Media Access Control) address is a unique hardware identifier assigned to a network interface.
+
+**Example:**
+  00:1A:2B:3C:4D:5E
+
+**Key Points:**
+- Works at **Layer 2 (Data Link Layer)**
+- Burned into NIC (Network Interface Card)
+- Globally unique (theoretically)
+- Used only within local network (LAN)
+
+**Role:**
+- Identifies *the actual physical device*
+
+---
+
+## 🔹 3. ARP (Address Resolution Protocol)
+
+**Definition:**  
+ARP is used in **IPv4 networks** to map an IP address to a MAC address.
+
+---
+
+## 🔄 ARP Process (IPv4)
+
+1. Device wants to send data to an IP  
+2. Checks ARP table (cache)  
+3. If not found → sends **ARP Request (broadcast)**  
+4. Target device replies with **ARP Reply (unicast)**  
+5. MAC address stored for future use  
+
+---
+
+## 🔹 4. ND (Neighbor Discovery Protocol)
+
+**Definition:**  
+ND is the IPv6 equivalent of ARP.
+
+**Key Points:**
+- Used in **IPv6**
+- Replaces ARP functionality
+- Uses ICMPv6 messages
+- More efficient and secure than ARP
+
+---
+
+## 🔁 ARP vs ND
+
+| Feature        | ARP (IPv4)        | ND (IPv6)           |
+|----------------|------------------|---------------------|
+| Protocol Type  | Broadcast-based  | Multicast-based     |
+| Network Type   | IPv4             | IPv6                |
+| Function       | IP → MAC mapping | IP → MAC mapping    |
+| Efficiency     | Less efficient   | More efficient      |
+
+---
+
+## 📂 ARP Table
+
+**Definition:**  
+Stores IP-to-MAC mappings for quick access.
+
+**Command:** arp -a
+
+---
+
+## 📌 Key Concept (From Your Screenshot Question)
+
+**Question:**  
+What protocols determine MAC address from a known IP?
+
+**Answer:**
+- ARP → for IPv4  
+- ND → for IPv6  
+
+---
+
+## 💡 Core Understanding
+IP Address → Logical identity (used for routing)
+MAC Address → Physical identity (used for delivery)
+ARP → Resolves IP to MAC (IPv4)
+ND → Resolves IP to MAC (IPv6)
+
+
+---
+
+## 🚀 Real Insight
+
+- Communication inside LAN = MAC-based  
+- Communication across networks = IP-based  
+- ARP/ND = bridge between Layer 3 and Layer 2  
+
+---
+
+## 🧠 One-Line Memory Hack
+
+> "IP finds the network, MAC finds the device, ARP makes them talk."
+
+---
