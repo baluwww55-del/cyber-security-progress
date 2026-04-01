@@ -1,0 +1,89 @@
+# 📡 Networking Basics – Quick Notes
+
+## 🔹 Broadcast Containment
+
+### Definition
+Broadcast containment is the process of limiting the spread of broadcast traffic within a network.
+
+### Key Points
+- A **broadcast** is a message sent to all devices in a network.
+- Too many broadcasts can cause **network congestion**.
+- Networks are divided into **broadcast domains** to control this.
+
+### Devices Behavior
+- **Switch** → Forwards broadcast traffic within the same network
+- **Router** → Stops broadcasts and separates broadcast domains
+
+### Takeaway
+Routers are used to **contain broadcasts** and improve network performance.
+
+---
+
+## 🔹 Access Layer Communication
+
+### Definition
+The access layer is where end devices (PCs, printers, etc.) connect to the network.
+
+### Key Points
+- Devices communicate within a LAN using **MAC addresses**
+- Communication happens through **switches**
+- No router is needed for communication within the same network
+
+### Takeaway
+Devices in the same network communicate directly using **MAC addresses via switches**.
+
+---
+
+## 🔹 ARP (Address Resolution Protocol)
+
+### Definition
+ARP is used to map an IP address to a MAC address.
+
+### Purpose
+Computers use:
+- **IP address** → Logical identification
+- **MAC address** → Physical communication
+
+ARP connects these two.
+
+---
+
+## 🔄 ARP Process
+
+1. Host A wants to communicate with Host B
+2. Host A knows Host B's **IP address**
+3. Host A sends an **ARP Request (broadcast)**:
+   - "Who has this IP address?"
+4. Host B responds with an **ARP Reply (unicast)**:
+   - Sends its **MAC address**
+
+---
+
+## ✅ Key Answer (Important)
+
+**Q: What does Host A learn from the ARP reply?**
+
+**A: Host B’s MAC address**
+
+---
+
+## ⚡ Quick Summary
+
+- **IP Address** → Identifies the device
+- **MAC Address** → Used for actual data delivery
+- **ARP** → Resolves IP → MAC
+
+---
+
+## 🚀 Big Picture
+
+- Access Layer → Device communication
+- Broadcast → Discovery mechanism
+- ARP → Address resolution
+- Router → Broadcast control
+
+---
+
+## 🧠 One-Line Memory Trick
+
+> "IP finds the device, MAC delivers the data."
