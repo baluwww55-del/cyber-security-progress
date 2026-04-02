@@ -1,0 +1,139 @@
+# 🌐 Network Routing — Notes
+
+## 📌 What is Routing?
+
+Routing is the process of forwarding data packets between different networks to reach their destination.
+
+- Works at Layer 3 (Network Layer) of the OSI model  
+- Performed by routers  
+
+---
+
+## 🧠 Why Routing is Needed
+
+- Enables communication between different networks  
+- Ensures correct and efficient packet delivery  
+- Supports scalability of networks  
+
+---
+
+## 🔑 Key Concepts
+
+### IP Address
+- Unique identifier for a device  
+- Example: 192.168.1.1  
+
+### Router
+- Connects multiple networks  
+- Forwards packets based on routing decisions  
+
+### Routing Table
+Contains:
+- Destination network  
+- Next hop  
+- Interface  
+- Metric (cost)  
+
+---
+
+## 🔁 Types of Routing
+
+### Static Routing
+- Manually configured routes  
+
+**Pros:**
+- Simple  
+- Predictable  
+
+**Cons:**
+- Not scalable  
+- No automatic updates  
+
+---
+
+### Dynamic Routing
+- Routes updated automatically using protocols  
+
+**Protocols:**
+- RIP (Routing Information Protocol)  
+- OSPF (Open Shortest Path First)  
+- BGP (Border Gateway Protocol)  
+
+**Pros:**
+- Scalable  
+- Adapts to network changes  
+
+**Cons:**
+- Complex  
+- Uses more resources  
+
+---
+
+## 🧭 Routing Process
+
+1. Packet created with destination IP  
+2. Sent to default gateway  
+3. Router checks routing table  
+4. Best path selected  
+5. Packet forwarded to next hop  
+6. Repeats until destination reached  
+
+---
+
+## 📊 Routing Metrics
+
+- Hop count  
+- Bandwidth  
+- Delay  
+- Cost  
+
+Lower metric = better route  
+
+---
+
+## 🔀 Routing Protocol Types
+
+### Distance Vector
+- Shares routing table with neighbors  
+- Example: RIP  
+
+### Link State
+- Builds full network topology  
+- Example: OSPF  
+
+### Path Vector
+- Maintains path information  
+- Example: BGP  
+
+---
+
+## 🌍 Real-World Example
+
+- User sends request to a website  
+- Router forwards through multiple networks  
+- Each router selects best path  
+- Data reaches server and returns response  
+
+---
+
+## ⚠️ Common Issues
+
+- Routing loops  
+- Congestion  
+- Incorrect routing tables  
+- Packet loss  
+
+---
+
+## 🧩 Summary
+
+- Routing connects different networks  
+- Uses routing tables and protocols  
+- Types: Static and Dynamic  
+- Goal: Efficient data delivery  
+
+---
+
+## 🚀 TL;DR
+
+Routing = Smart path selection for data across networks
