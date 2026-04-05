@@ -1,0 +1,123 @@
+# 🌐 Networking Notes — Routing Basics
+
+## 📌 1. Why Routing is Needed
+
+In real-world networks, devices don’t just communicate within a single LAN—they need to communicate across multiple networks.
+
+- Same network → direct communication  
+- Different network → requires a router  
+
+**Routing = process of finding the best path to a destination**
+
+---
+
+## 📦 2. Packet Encapsulation
+
+When sending data:
+
+- Data → IP Packet → Ethernet Frame  
+
+### Flow:
+Data → Segment → Packet (IP) → Frame (Ethernet)
+
+- IP packet = logical addressing  
+- Ethernet frame = physical delivery  
+
+---
+
+## 🖧 3. What is a Router?
+
+A router is a **Layer 3 device** that:
+
+- Connects multiple networks  
+- Reads IP addresses  
+- Forwards packets  
+
+### Functions:
+- Path selection  
+- Packet forwarding  
+- Traffic control  
+
+---
+
+## 🔄 4. Local vs Remote Communication
+
+| Type        | Description          |
+|------------|----------------------|
+| Local Host  | Same network         |
+| Remote Host | Different network    |
+
+If destination is remote:
+→ Packet is sent to the **default gateway (router)**
+
+---
+
+## 📊 5. Routing Table
+
+A routing table is used by routers to decide where to send packets.
+
+### It contains:
+- Network addresses  
+- Best path to reach them  
+- Exit interface  
+
+---
+
+## 🧠 6. Routing Table Entries
+
+### Static Routing
+- Manually configured  
+- More control  
+- Less flexible  
+
+### Dynamic Routing
+- Learned automatically  
+- Uses routing protocols  
+- More scalable  
+
+---
+
+## 🚦 7. Routing Decision Process
+
+1. Check destination IP  
+2. Search routing table  
+3. Find best match  
+4. Forward packet  
+
+If no route is found:
+→ Packet is **dropped**
+
+---
+
+## 🛣️ 8. Default Route
+
+- Used when no specific route exists  
+- Represented as: `0.0.0.0/0`  
+- Acts as a fallback path  
+
+---
+
+## ⚙️ 9. Key Points
+
+- Routing tables store **network addresses**, not individual devices  
+- Routers forward packets based on rules  
+- Routing is essential for internet communication  
+
+---
+
+## 🔥 TL;DR
+
+- Routing = best path selection  
+- Router = Layer 3 device  
+- Routing table = decision map  
+- Static vs Dynamic routing  
+- Default route = fallback  
+- No route → packet dropped  
+
+---
+
+## 💡 Insight
+
+"Packets travel like passengers,  
+Routers act like traffic controllers,  
+Routing tables define the roads."
