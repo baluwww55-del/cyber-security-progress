@@ -1,0 +1,31 @@
+# 🌐 Routing Between Networks — Notes
+
+## 📌 Overview
+Routing is the process of forwarding packets between different networks using routers. Routers make decisions based on IP addresses and routing tables.
+
+---
+
+## 🚀 Key Concepts
+
+### 🔹 What is Routing?
+- Routing = selecting a path for data to travel from source to destination.
+- Performed by **routers (Layer 3 devices)**.
+- Uses **IP addresses**, not MAC addresses.
+
+---
+
+### 🔹 Router Functions
+1. **Path Determination**
+   - Decides best route using routing table
+2. **Packet Forwarding**
+   - Sends packet to next hop
+
+---
+
+### 🔹 Routing Table
+A router’s database containing:
+- Network destinations
+- Next-hop addresses
+- Outgoing interfaces
+
+#### Example:
