@@ -1,0 +1,118 @@
+# 📡 TCP & Port Numbers — Notes
+
+## 🔹 What is TCP?
+
+**TCP (Transmission Control Protocol)** is a connection-oriented protocol that ensures reliable data transmission between devices over a network.
+
+### Key Characteristics:
+- Reliable (guarantees delivery)
+- Ordered (data arrives in sequence)
+- Error-checked (retransmits lost data)
+- Connection-based (requires setup)
+
+---
+
+## 🔹 TCP 3-Way Handshake
+
+```
+1. SYN      → Client requests connection
+2. SYN-ACK  ← Server acknowledges
+3. ACK      → Client confirms
+```
+
+- Establishes a reliable connection before data transfer
+
+---
+
+## 🔹 TCP Connection Lifecycle
+
+```
+Connection Setup → Data Transfer → Connection Termination
+```
+
+- Termination uses FIN signals
+- Ensures all data is delivered before closing
+
+---
+
+## 🔹 What are Port Numbers?
+
+A **port number** is a logical identifier used to route data to a specific application on a device.
+
+- IP Address = Device
+- Port Number = Application
+
+---
+
+## 🔹 Port Number Ranges
+
+| Range        | Type              | Description                     |
+|--------------|------------------|---------------------------------|
+| 0 – 1023     | Well-known       | Reserved for standard services  |
+| 1024 – 49151 | Registered       | Used by applications            |
+| 49152 – 65535| Dynamic/Private  | Temporary use                   |
+
+---
+
+## 🔹 Common Port Numbers
+
+| Port | Protocol | Service |
+|------|---------|--------|
+| 20/21| TCP     | FTP    |
+| 22   | TCP     | SSH    |
+| 23   | TCP     | Telnet |
+| 25   | TCP     | SMTP   |
+| 53   | TCP/UDP | DNS    |
+| 80   | TCP     | HTTP   |
+| 443  | TCP     | HTTPS  |
+
+---
+
+## 🔹 TCP vs UDP
+
+| Feature     | TCP        | UDP        |
+|-------------|------------|------------|
+| Connection  | Yes        | No         |
+| Reliability | High       | Low        |
+| Speed       | Slower     | Faster     |
+| Use Case    | Web, Email | Streaming  |
+
+---
+
+## 🔹 TCP Connection Identification
+
+```
+<Source IP, Source Port, Destination IP, Destination Port>
+```
+
+### Example:
+```
+192.168.1.2:5000 → 142.250.183.14:443
+```
+
+- Ensures correct delivery to the right application
+
+---
+
+## 🔹 Real-World Example
+
+- Browser uses TCP
+- Connects to port 80 (HTTP) or 443 (HTTPS)
+- Server responds with webpage data
+
+---
+
+## 🔹 Key Takeaways
+
+- TCP ensures reliable and ordered communication
+- Ports identify applications
+- TCP + Port = correct data delivery
+
+---
+
+## 🔹 TL;DR
+
+```
+TCP = Reliable communication
+Port = Application endpoint
+```
