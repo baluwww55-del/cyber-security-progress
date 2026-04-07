@@ -1,0 +1,99 @@
+# 📡 UDP (User Datagram Protocol) — Notes
+
+## 🔹 Overview
+- UDP (User Datagram Protocol) is a **connectionless, unreliable** transport layer protocol.
+- Operates at the **Transport Layer (Layer 4)** of the OSI model.
+- Designed for **fast, lightweight communication**.
+
+---
+
+## ⚙️ Key Characteristics
+
+- **Connectionless**
+  - No connection setup before sending data
+
+- **Unreliable**
+  - No guarantee of delivery
+
+
+  - No acknowledgments or retransmissions
+
+- **Datagram-based**
+  - Data is sent in independent packets called *datagrams*
+
+- **Low latency**
+  - Faster than TCP due to minimal overhead
+
+- **No flow or congestion control**
+
+---
+
+## 🧱 UDP Header Format
+
+0      7 8     15 16    23 24    31 +--------+--------+--------+--------+ | Source Port     | Destination Port| +--------+--------+--------+--------+ | Length          | Checksum        | +--------+--------+--------+--------+ |                Data               | +----------------------------------+
+
+### Fields
+- **Source Port (16 bits):** Sender's port number  
+- **Destination Port (16 bits):** Receiver's port number  
+- **Length (16 bits):** Total length of header + data  
+- **Checksum (16 bits):** Error detection  
+
+---
+
+## 🔄 Operation (Working)
+
+1. Application generates data  
+2. UDP encapsulates data into a datagram  
+3. Adds header (ports, length, checksum)  
+4. Sends to IP layer  
+5. IP routes packet to destination  
+6. Receiver delivers data to application  
+
+> No verification if data is received successfully.
+
+---
+
+## ⚖️ UDP vs TCP
+
+| Feature        | UDP                  | TCP                     |
+|---------------|----------------------|--------------------------|
+| Connection    | Connectionless       | Connection-oriented      |
+| Reliability   | No                   | Yes                      |
+| Speed         | Fast                 | Slower                   |
+| Flow Control  | No                   | Yes                      |
+| Ordering      | Not guaranteed       | Guaranteed               |
+| Use Case      | Real-time apps       | Reliable transfer        |
+
+---
+
+## 📌 Use Cases
+
+- Online gaming  
+- Live streaming  
+- VoIP (Voice over IP)  
+- DNS queries  
+- DHCP  
+
+---
+
+## ⚠️ Limitations
+
+- No guarantee of delivery  
+- No packet ordering  
+- No congestion control  
+- Possible data loss  
+
+---
+
+## 🧠 When to Use UDP
+
+Use UDP when:
+- Speed is more important than reliability  
+- Real-time delivery is required  
+- Some data loss is acceptable  
+
+---
+
+## 🧾 Summary
+
+> UDP is a fast, lightweight protocol that prioritizes speed over reliability, making it ideal for real-time applications.
