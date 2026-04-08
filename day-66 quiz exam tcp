@@ -1,0 +1,152 @@
+Networking Basics – TCP, UDP & Application Services
+
+
+## 📦 Transport Layer (Layer 4)
+Responsible for:
+- End-to-end communication
+- Segmentation & reassembly
+- Error detection
+- Flow control
+
+
+## 🔵 TCP (Transmission Control Protocol)
+
+### ✅ Features
+- Connection-oriented
+- Reliable
+- Ordered delivery
+- Error recovery
+- Flow control
+
+### 🔁 3-Way Handshake
+1. SYN
+2. SYN-ACK
+3. ACK
+
+###  Characteristics
+- Slower
+- Uses sequence numbers
+- Retransmits lost packets
+
+###  Use Cases
+- HTTP / HTTPS
+- FTP
+- SMTP, IMAP, POP3
+- SSH
+
+---
+
+##  UDP (User Datagram Protocol)
+
+###  Features
+- Connectionless
+- No reliability
+- No ordering
+- No retransmission
+
+###  Characteristics
+- Faster
+- Low overhead
+- No handshake
+
+###  Use Cases
+- Streaming (video/audio)
+- Online gaming
+- VoIP
+- DNS
+
+---
+
+##  TCP vs UDP
+
+| Feature     | TCP            | UDP            |
+|------------|---------------|---------------|
+| Connection | Yes           | No            |
+| Reliability| High          | Low           |
+| Speed      | Slower        | Faster        |
+| Ordering   | Yes           | No            |
+
+---
+
+##  Port Numbers
+
+###  Range
+0 – 65535
+
+### Types
+
+#### Well-Known Ports (0–1023)
+| Port | Protocol |
+|------|---------|
+| 80   | HTTP    |
+| 443  | HTTPS   |
+| 21   | FTP     |
+| 22   | SSH     |
+| 25   | SMTP    |
+| 53   | DNS     |
+
+#### Registered Ports (1024–49151)
+- Used by applications
+
+#### Dynamic Ports (49152–65535)
+- Temporary (client-side)
+
+---
+
+##  Application Layer Services
+
+### Role
+- Interface between user and network
+- Provides services to applications
+
+---
+
+### Common Protocols
+
+####  HTTP / HTTPS
+- Web communication
+- HTTPS = Secure
+
+####  Email
+- SMTP → Send
+- POP3 → Download
+- IMAP → Sync
+
+####  FTP
+- File transfer
+
+####  DNS
+- Domain → IP resolution
+
+####  DHCP
+- Automatic IP assignment
+
+---
+
+##  TCP/IP Model
+
+| Layer           | Protocols        |
+|----------------|------------------|
+| Application    | HTTP, FTP, DNS   |
+| Transport      | TCP, UDP         |
+| Internet       | IP               |
+| Network Access | Ethernet         |
+
+---
+
+##  Key Points
+
+- TCP = Reliable, slower
+- UDP = Fast, unreliable
+- Ports identify services
+- Application layer = user interaction
+
+---
+
+##  Quick Tips
+
+- Reliability needed → TCP
+- Speed needed → UDP
+- HTTP → Port 80
+- HTTPS → Port 443
+- DNS → UDP
