@@ -1,0 +1,104 @@
+# 🌐 Networking Basics – Checkpoint Exam Notes  
+**Topics Covered:** Gateways, ARP Process, Routing Between Networks  
+
+---
+
+## 📌 1. Default Gateway
+
+### 🔹 Definition
+A default gateway is a device (usually a router) that connects a local network to other networks.
+
+### 🔹 Key Points
+- Used when the destination IP is outside the local network
+- Acts as an exit point for packets
+- Configured on hosts (PCs, servers)
+
+### 🔹 How It Works
+1. Host checks destination IP
+2. If destination is:
+   - Same network → send directly
+   - Different network → send to default gateway
+3. Gateway forwards packet to other networks
+
+---
+
+## 📌 2. ARP (Address Resolution Protocol)
+
+### 🔹 Purpose
+Maps an IP address to a MAC address
+
+### 🔹 Why It Matters
+- IP = logical addressing
+- MAC = physical delivery  
+- ARP connects both
+
+### 🔹 ARP Process
+1. Device checks ARP cache
+2. If no entry:
+   - Sends ARP Request (Broadcast): "Who has this IP?"
+3. Target replies:
+   - ARP Reply (Unicast) with MAC address
+4. Mapping stored in ARP table
+
+### 🔹 Key Characteristics
+- Works only within a local network
+- Uses broadcast + unicast
+- Cached for efficiency
+
+---
+
+## 📌 3. Routing Between Networks
+
+### 🔹 Definition
+Routing is forwarding packets between different networks using routers.
+
+### 🔹 Router Role
+- Connects multiple networks
+- Uses routing tables to decide paths
+
+### 🔹 Routing Table Includes
+- Destination network
+- Next hop
+- Interface
+
+### 🔹 Packet Flow
+1. Source sends packet to default gateway
+2. Router checks routing table
+3. Chooses best path
+4. Forwards packet hop-by-hop
+5. Destination network reached
+6. ARP used for final delivery
+
+---
+
+## 📌 4. Summary Table
+
+| Concept          | Function                          |
+|-----------------|----------------------------------|
+| Default Gateway | Exit point to other networks     |
+| ARP             | Resolves IP to MAC               |
+| Router          | Forwards packets                 |
+| Routing Table   | Determines best path             |
+
+---
+
+## 📌 5. Key Relationships
+
+- ARP + Gateway → Needed to reach outside network
+- Routing + Gateway → Enables inter-network communication
+- ARP + Routing → Ensure final packet delivery
+
+---
+
+## 🚀 Quick Mental Model
+
+Same network → direct send (ARP)  
+Different network → send to gateway → router handles rest  
+
+---
+
+## ✅ Exam Takeaways
+
+- ARP = local resolution tool
+- Gateway = network exit point
+- Routing = path decision system
