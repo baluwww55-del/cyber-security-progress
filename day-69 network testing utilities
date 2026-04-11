@@ -1,0 +1,203 @@
+# 🌐 Networking Utilities & Troubleshooting Commands
+
+## 📌 Overview
+Essential commands for diagnosing network issues, verifying connectivity, and understanding network behavior.
+
+---
+
+## 🔧 1. ping
+**Purpose:** Check connectivity between your system and another host.
+
+```bash
+ping <hostname_or_ip>
+```
+
+**Example:**
+```bash
+ping google.com
+```
+
+**Key Points:**
+- Uses ICMP protocol
+- Measures latency (RTT)
+- Detects packet loss
+
+---
+
+## 🔧 2. traceroute / tracert
+**Purpose:** Trace the path packets take to a destination.
+
+**Linux/macOS:**
+```bash
+traceroute <hostname_or_ip>
+```
+
+**Windows:**
+```bash
+tracert <hostname_or_ip>
+```
+
+**Key Points:**
+- Displays network hops
+- Identifies delays/failures
+
+---
+
+## 🔧 3. ipconfig / ifconfig
+**Purpose:** Display network interface configuration.
+
+**Windows:**
+```bash
+ipconfig
+```
+
+**Linux/macOS:**
+```bash
+ifconfig
+```
+
+**Modern Linux:**
+```bash
+ip addr
+```
+
+**Key Points:**
+- Shows IP, subnet, gateway
+- Verifies network setup
+
+---
+
+## 🔧 4. netstat
+**Purpose:** Display active connections and ports.
+
+```bash
+netstat -an
+```
+
+**Key Points:**
+- Lists active connections
+- Shows listening ports
+
+---
+
+## 🔧 5. nslookup
+**Purpose:** Resolve domain names to IP addresses.
+
+```bash
+nslookup <domain>
+```
+
+**Example:**
+```bash
+nslookup google.com
+```
+
+**Key Points:**
+- DNS troubleshooting
+- Shows DNS server response
+
+---
+
+## 🔧 6. dig (Linux/macOS)
+**Purpose:** Advanced DNS lookup.
+
+```bash
+dig <domain>
+```
+
+**Key Points:**
+- Detailed DNS info
+- Query time and records
+
+---
+
+## 🔧 7. arp
+**Purpose:** View ARP cache (IP ↔ MAC mapping).
+
+```bash
+arp -a
+```
+
+---
+
+## 🔧 8. route
+**Purpose:** View routing table.
+
+```bash
+route print   # Windows
+route -n      # Linux
+```
+
+---
+
+## 🔧 9. curl
+**Purpose:** Test HTTP/HTTPS endpoints.
+
+```bash
+curl http://example.com
+```
+
+---
+
+## 🔧 10. wget
+**Purpose:** Download files from the web.
+
+```bash
+wget http://example.com/file.zip
+```
+
+---
+
+## 🧠 Troubleshooting Workflow
+
+1. Check IP configuration
+```bash
+ipconfig / ifconfig
+```
+
+2. Test local system
+```bash
+ping 127.0.0.1
+```
+
+3. Test gateway
+```bash
+ping <gateway_ip>
+```
+
+4. Test internet connectivity
+```bash
+ping 8.8.8.8
+```
+
+5. Test DNS
+```bash
+nslookup google.com
+```
+
+6. Trace route
+```bash
+traceroute google.com
+```
+
+---
+
+## ⚡ Pro Tips
+- IP works but domain fails → DNS issue  
+- Localhost fails → system/network stack issue  
+- Gateway unreachable → router/network issue  
+- Use netstat for security monitoring  
+
+---
+
+## 🚀 Summary
+
+| Task            | Command        |
+|-----------------|---------------|
+| Connectivity    | ping          |
+| Path tracing    | traceroute    |
+| Configuration   | ipconfig      |
+| DNS lookup      | nslookup/dig  |
+| Monitoring      | netstat       |
+
+---
