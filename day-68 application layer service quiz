@@ -1,0 +1,152 @@
+# 📘 Application Layer Services – Networking Basics (Cisco)
+
+## 1. Client-Server Model
+- Client: Requests services (e.g., web browser)
+- Server: Provides services (e.g., web server)
+
+### Key Points:
+- Centralized architecture
+- Scalable
+- Examples:
+  - HTTP (Web)
+  - SMTP (Email)
+  - FTP (File transfer)
+
+---
+
+## 2. Network Application Services
+Provides interface between user applications and the network.
+
+### Functions:
+- Data formatting
+- Communication handling
+- Resource sharing
+
+### Common Protocols:
+- HTTP → Web communication
+- HTTPS → Secure web
+- FTP → File transfer
+- SMTP → Send email
+- POP3 / IMAP → Receive email
+- DNS → Name resolution
+
+---
+
+## 3. Domain Name System (DNS)
+- Converts domain names to IP addresses
+
+### Example:
+google.com → 142.250.x.x
+
+### Process:
+1. Client sends DNS query
+2. DNS server replies with IP
+3. Client connects to server
+
+### Types of DNS Servers:
+- Recursive resolver
+- Root server
+- TLD server
+- Authoritative server
+
+---
+
+## 4. Web Clients and Servers
+
+### HTTP (Port 80):
+- Stateless protocol
+- Request–Response model
+
+### HTTPS (Port 443):
+- Secure (uses TLS/SSL encryption)
+
+### Flow:
+Client → HTTP Request → Server  
+Server → HTTP Response → Client  
+
+---
+
+## 5. FTP Clients and Servers
+- Used for file transfer
+
+### FTP (Port 21):
+- Requires login
+- Uses two channels:
+  - Control channel
+  - Data channel
+
+### Variants:
+- FTPS (secure)
+- SFTP (SSH-based)
+
+---
+
+## 6. Virtual Terminals
+
+### Telnet (Port 23):
+- Remote access
+- Not secure (plaintext)
+
+### SSH (Port 22):
+- Secure remote access
+- Encrypted communication
+
+---
+
+## 7. Email and Messaging
+
+### Components:
+- MUA (Mail User Agent) → User interface
+- MTA (Mail Transfer Agent) → Sends email
+
+### Protocols:
+- SMTP → Send email
+- POP3 → Download email
+- IMAP → Sync email
+
+### Flow:
+Sender → SMTP → Mail Server → Recipient Server → POP3/IMAP → Receiver
+
+---
+
+## 8. Protocols and Ports
+
+| Protocol | Port | Function |
+|----------|------|---------|
+| HTTP     | 80   | Web |
+| HTTPS    | 443  | Secure web |
+| FTP      | 21   | File transfer |
+| DNS      | 53   | Name resolution |
+| SMTP     | 25   | Send email |
+| POP3     | 110  | Receive email |
+| IMAP     | 143  | Sync email |
+| SSH      | 22   | Secure remote |
+| Telnet   | 23   | Remote (insecure) |
+
+---
+
+## 9. Key Concepts
+- Application layer = user interaction layer
+- Uses protocols to define communication
+- Works with lower layers (Transport, Network)
+
+---
+
+## Quick Revision
+- DNS → Name to IP
+- HTTP → Web (insecure)
+- HTTPS → Web (secure)
+- FTP → File transfer
+- SMTP → Send mail
+- POP3 / IMAP → Receive mail
+- SSH is secure, Telnet is not
+
+---
+
+## Exam Tips
+- Remember protocol + port numbers
+- Understand communication flow
+- Know differences:
+  - HTTP vs HTTPS
+  - POP3 vs IMAP
+  - Telnet vs SSH
