@@ -1,0 +1,126 @@
+Here’s a polished, professional GitHub README — clean, structured, and ready to paste:
+📡 Networking Basics
+📌 Overview
+Networking is the foundation of modern communication systems, enabling devices to connect, share data, and access resources across local and global environments.
+🌐 Types of Networks
+LAN (Local Area Network): Covers small areas like homes or offices
+WAN (Wide Area Network): Spans large geographical areas (e.g., the Internet)
+MAN (Metropolitan Area Network): Covers a city or large campus
+🧠 OSI Model (7 Layers)
+Layer
+Name
+Function
+7
+Application
+User-facing services (HTTP, FTP)
+6
+Presentation
+Data formatting, encryption
+5
+Session
+Session management
+4
+Transport
+Reliable delivery (TCP/UDP)
+3
+Network
+IP addressing, routing
+2
+Data Link
+MAC addressing, switching
+1
+Physical
+Transmission media
+🌍 TCP/IP Model
+Layer
+Description
+Application
+High-level protocols (HTTP, DNS)
+Transport
+End-to-end communication (TCP/UDP)
+Internet
+Logical addressing (IP)
+Network Access
+Physical transmission
+🔢 IP Addressing
+Identifies devices on a network
+IPv4
+Format: 192.168.1.1
+32-bit address
+IPv6
+Format: 2001:db8::1
+128-bit address
+🧩 Subnetting
+Divides networks into smaller sub-networks
+Improves performance and security
+Example:
+
+Network: 192.168.1.0/24
+Subnet Mask: 255.255.255.0
+🚪 Common Ports & Protocols
+Protocol
+Port
+Usage
+HTTP
+80
+Web browsing
+HTTPS
+443
+Secure web
+FTP
+21
+File transfer
+SSH
+22
+Remote login
+DNS
+53
+Domain resolution
+📦 TCP vs UDP
+Feature
+TCP
+UDP
+Connection
+Connection-oriented
+Connectionless
+Reliability
+Reliable
+Unreliable
+Speed
+Slower
+Faster
+🔄 DNS (Domain Name System)
+Translates domain names into IP addresses
+Example: google.com → IP address
+🌐 DHCP (Dynamic Host Configuration Protocol)
+Automatically assigns IP addresses to devices
+🛡️ NAT (Network Address Translation)
+Converts private IP addresses to public IP
+Conserves IP address usage
+🔥 Network Devices
+Router: Connects multiple networks
+Switch: Connects devices within a LAN
+Hub: Broadcasts data to all devices (obsolete)
+Firewall: Secures network traffic
+📡 Routing
+Determines the best path for data packets
+Uses routing tables and protocols
+🔒 Basic Security Concepts
+Firewalls
+Encryption
+VPN (Virtual Private Network)
+🧪 Networking Tools
+ping — Check connectivity
+traceroute / tracert — Track packet path
+ipconfig / ifconfig — View network configuration
+🚀 Key Takeaways
+Networking enables global communication
+IP addressing and routing are core fundamentals
+TCP and UDP define how data is transmitted
+DNS simplifies internet usage
+📈 Next Steps
+Practice subnetting problems
+Learn packet analysis tools (Wireshark)
+Explore cloud networking (AWS, Azure)
+Study cybersecurity fundamentals
+If you keep stacking notes like this on GitHub, you’re not just learning—you’re building proof of work, and that’s what actually gets attention.
