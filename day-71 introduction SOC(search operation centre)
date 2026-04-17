@@ -1,0 +1,130 @@
+# Cybersecurity SOC Journey (After 70 Days of Networking)
+
+## Overview
+After completing 70 days of networking fundamentals, I have started my Cybersecurity SOC (Security Operations Center) journey.
+
+This phase focuses on defensive security, monitoring, and incident response.
+
+---
+
+## Objective
+- Learn security monitoring
+- Analyze logs
+- Detect threats
+- Understand incident response
+- Work with SIEM tools
+
+---
+
+## Networking Foundation (Completed)
+- OSI & TCP/IP Models
+- IP Addressing & Subnetting
+- DNS, DHCP, NAT
+- Routing & Switching
+- Protocols: HTTP/HTTPS, FTP, SSH, TCP/UDP
+- Basic Packet Analysis (Wireshark)
+
+---
+
+## SOC Learning Roadmap
+
+### 1. Security Fundamentals
+- CIA Triad (Confidentiality, Integrity, Availability)
+- Authentication vs Authorization
+- Common Attacks:
+  - Phishing
+  - Malware
+  - Brute Force
+  - DDoS
+
+---
+
+### 2. Blue Team Basics
+- Defensive security approach
+- Monitoring systems and traffic
+- Introduction to MITRE ATT&CK
+
+---
+
+### 3. Log Analysis
+- Windows Event Logs
+- Linux Logs
+- Firewall Logs
+- Web Server Logs
+
+Focus:
+- Detect anomalies
+- Identify suspicious activity
+
+---
+
+### 4. SIEM Tools
+- Splunk
+- ELK Stack (Elasticsearch, Logstash, Kibana)
+
+Concepts:
+- Log collection
+- Correlation rules
+- Alerts and dashboards
+
+---
+
+### 5. Threat Detection
+- Indicators of Compromise (IOCs)
+- Indicators of Attack (IOAs)
+
+Examples:
+- Multiple failed login attempts
+- Unusual outbound traffic
+- Suspicious IP connections
+
+---
+
+### 6. Incident Response Lifecycle
+1. Detection
+2. Analysis
+3. Containment
+4. Eradication
+5. Recovery
+6. Lessons Learned
+
+---
+
+## Tools & Skills
+- Wireshark
+- SIEM tools
+- Basic Python / Bash scripting
+- Linux & Windows fundamentals
+
+---
+
+## Daily Plan
+- Theory (1–2 hours)
+- Hands-on labs (TryHackMe / HackTheBox)
+- Notes and documentation
+- Revision
+
+---
+
+## Progress
+- Completed: Networking (70 Days)
+- Current: SOC Fundamentals
+
+---
+
+## Next Steps
+- Learn Splunk (SPL queries)
+- Build home lab
+- Practice log analysis
+- Study real-world attacks
+
+---
+
+## Key Insight
+A SOC analyst must understand normal behavior to detect abnormal activity.
+
+---
+
+## Conclusion
+Transition from:
+Networking → Cybersecurity (Defense & Monitoring)
