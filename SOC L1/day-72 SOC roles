@@ -1,0 +1,215 @@
+# 🛡️ SOC & Cybersecurity Roles – Clean Notes
+
+## 🔹 What is SOC (Security Operations Center)?
+
+A **SOC (Security Operations Center)** is a centralized team that monitors, detects, investigates, and responds to cybersecurity threats in real time.
+
+### Key Responsibilities:
+
+* Monitor security alerts (SIEM tools like Splunk, QRadar)
+* Detect suspicious activity
+* Respond to incidents
+* Perform threat hunting
+* Maintain security posture
+
+---
+
+## 🔹 SOC Analyst Levels
+
+### 🟢 Tier 1 – Analyst (L1)
+
+**Role:** First line of defense
+**Focus:** Monitoring and basic triage
+
+**Responsibilities:**
+
+* Monitor alerts from SIEM tools
+* Identify false positives vs real threats
+* Escalate incidents to Tier 2
+* Follow predefined playbooks
+
+**Skills Needed:**
+
+* Basic networking (TCP/IP, DNS)
+* Log analysis
+* Understanding of common attacks
+
+---
+
+### 🟡 Tier 2 – Analyst (L2)
+
+**Role:** Deep investigation
+**Focus:** Incident analysis and response
+
+**Responsibilities:**
+
+* Investigate escalated alerts
+* Perform root cause analysis
+* Contain and remediate threats
+* Create detection rules
+
+**Skills Needed:**
+
+* Threat analysis
+* Malware basics
+* Incident response tools
+
+---
+
+### 🔴 Tier 3 – Analyst (L3 / Threat Hunter)
+
+**Role:** Proactive defense
+**Focus:** Advanced threat hunting
+
+**Responsibilities:**
+
+* Hunt hidden threats
+* Develop new detection techniques
+* Analyze attacker behavior (TTPs)
+* Improve SOC processes
+
+**Skills Needed:**
+
+* Advanced networking
+* Threat intelligence
+* Scripting (Python, PowerShell)
+
+---
+
+## 🔹 CISO (Chief Information Security Officer)
+
+**Role:** Top-level security leader
+**Focus:** Strategy and governance
+
+**Responsibilities:**
+
+* Define security policies
+* Manage risk and compliance
+* Lead security teams
+* Communicate with executives
+
+---
+
+## 🔹 Reverse Engineer
+
+**Role:** Break down software/malware
+**Focus:** Understand how things work internally
+
+**Responsibilities:**
+
+* Analyze malware binaries
+* Identify vulnerabilities
+* Study attacker techniques
+
+**Skills Needed:**
+
+* Assembly language
+* Debugging tools (Ghidra, IDA)
+* OS internals
+
+---
+
+## 🔹 Custom Detection Analyst
+
+**Role:** Build detection logic
+**Focus:** Catch threats others miss
+
+**Responsibilities:**
+
+* Create custom SIEM rules
+* Develop detection queries (KQL, SPL)
+* Tune alerts to reduce false positives
+
+---
+
+## 🔹 Forensic Analyst (Digital Forensics)
+
+**Role:** Investigate after an attack
+**Focus:** Evidence collection and analysis
+
+**Responsibilities:**
+
+* Analyze disks, memory, logs
+* Recover deleted data
+* Timeline reconstruction
+* Support legal investigations
+
+**Skills Needed:**
+
+* Tools (Autopsy, FTK, Volatility)
+* File systems knowledge
+* Attention to detail
+
+---
+
+## 🔹 Security Architect
+
+**Role:** Design secure systems
+**Focus:** Prevent attacks before they happen
+
+**Responsibilities:**
+
+* Design network and system security
+* Choose security technologies
+* Define architecture standards
+* Ensure scalability and security balance
+
+**Skills Needed:**
+
+* Cloud security (AWS, Azure)
+* Network design
+* Risk assessment
+
+---
+
+## 🔥 Quick Career Path Insight
+
+```
+Tier 1 → Tier 2 → Tier 3 → Specialist Roles → Architect / CISO
+```
+
+* Start with SOC (L1)
+* Move into investigation (L2)
+* Then specialize:
+
+  * Threat Hunting (L3)
+  * Reverse Engineering
+  * Forensics
+  * Detection Engineering
+* Long-term: Architect or CISO
+
+---
+
+## 🚀 Reality Check (No Sugar-Coating)
+
+* SOC Tier 1 = repetitive, alert fatigue
+* Tier 2 = real learning starts
+* Tier 3 = where skill meets creativity
+* Special roles = high skill, high demand
+* CISO = less technical, more leadership
+
+---
+
+## 💡 Pro Tip
+
+If you're just starting:
+
+1. Learn Networking + Linux
+2. Practice log analysis
+3. Get hands-on with SIEM labs
+4. Build small detection rules
+5. Then specialize
+
+---
+
+## 🧠 One-Line Summary
+
+* **SOC** = Defense team
+* **Tier 1/2/3** = Skill progression
+* **CISO** = Strategy
+* **Reverse Engineer** = Deep tech
+* **Forensics** = Investigation
+* **Detection Analyst** = Alert builder
+* **Security Architect** = System designer
+
+---
