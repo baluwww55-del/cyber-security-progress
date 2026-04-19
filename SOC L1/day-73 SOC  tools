@@ -1,0 +1,117 @@
+# 🛡️ SOC (Security Operations Center) Notes
+
+## 📌 Overview
+A Security Operations Center (SOC) monitors, detects, investigates, and responds to cybersecurity threats using structured processes and tools.
+
+---
+
+## 👨‍💻 SOC Analyst Tiers
+
+### 🔰 Tier 1 – Alert Monitoring & Triage (L1)
+
+**Responsibilities:**
+- Monitor alerts from SIEM
+- Perform event log analysis
+- Normalize data (clean and structure logs)
+- Alert triage (filter false positives)
+
+**Key Role:**
+- Reduce alert noise
+- Handle basic incidents
+- Escalate real threats to Tier 2
+
+**Example:**
+1000 alerts → filtered to 100 real alerts
+
+---
+
+### 🔍 Tier 2 – Incident Investigation (L2)
+
+**Responsibilities:**
+- Investigate security incidents
+- Correlate logs from multiple sources
+- Analyze network, user, and system activity
+
+**Key Role:**
+- Confirm real attacks
+- Handle medium-level incidents
+- Escalate advanced threats to Tier 3
+
+---
+
+### 🧬 Tier 3 – Threat Hunting & Advanced Analysis (L3)
+
+**Responsibilities:**
+- Handle advanced threats (APT, zero-day)
+- Perform malware analysis
+- Conduct threat hunting
+- Create detection rules
+
+**Key Role:**
+- Investigate complex attacks
+- Improve security systems
+
+---
+
+## 🔥 Incident Response Lifecycle
+
+1. Detection – Alerts generated (SIEM)
+2. Triage – Tier 1 filters alerts
+3. Investigation – Tier 2 analyzes incidents
+4. Response – Contain the threat (block IP, isolate system)
+5. Recovery – Restore systems
+6. Documentation – Record incident details
+
+---
+
+## 🛠️ Core SOC Tools
+
+### 📊 SIEM (Security Information and Event Management)
+- Collects and analyzes logs
+- Generates alerts
+
+Examples:
+- Splunk
+- IBM QRadar
+- ArcSight
+
+---
+
+### ⚙️ SOAR (Security Orchestration, Automation, and Response)
+- Automates security tasks
+- Reduces manual effort
+
+Examples:
+- Auto-block IPs
+- Auto-create tickets
+
+---
+
+### 👤 UEBA (User and Entity Behavior Analytics)
+- Detects abnormal behavior
+
+Example:
+- Login from unusual location/time
+
+---
+
+### 🧪 Sandboxing
+- Runs suspicious files safely
+- Detects malware behavior
+
+---
+
+## 🧠 Key Takeaways
+
+- Tier 1 → Alert filtering & triage  
+- Tier 2 → Investigation  
+- Tier 3 → Advanced threat handling  
+
+- SOC follows a structured incident response process  
+- Core tools: SIEM, SOAR, UEBA, Sandboxing  
+
+---
+
+## 🎯 One-Line Summary
+
+Tier 1 filters alerts, Tier 2 investigates incidents, and Tier 3 handles advanced threats using SOC tools within the incident response lifecycle.
