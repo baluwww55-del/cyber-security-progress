@@ -1,0 +1,140 @@
+# SOC Learning Notes: Ports, Protocols & Threat Detection
+
+## 📌 Core Concept
+- **Ports** = Entry points into a system  
+- **Protocols** = Rules governing communication  
+
+Attackers target exposed or weak ports to gain access or move laterally.
+
+---
+
+## 🚨 High-Risk Ports & Threat Use Cases
+
+### 🔓 SMB (Port 445)
+- Used for Windows file sharing  
+- Common in:
+  - Ransomware spread
+  - Worm propagation
+- Indicators:
+  - Unusual internal traffic spikes
+  - Large file transfers
+  - Lateral movement behavior  
+
+---
+
+### 💻 RDP (Port 3389)
+- Remote Desktop access  
+- High-risk exposure if public  
+- Indicators:
+  - Brute force login attempts
+  - Multiple failed logins
+  - Logins from unusual locations  
+
+---
+
+### 🌐 DNS (Port 53)
+- Domain name resolution  
+- Abuse cases:
+  - Data exfiltration (DNS tunneling)
+  - Command & Control (C2)
+- Detection:
+  - Unusual domain queries
+  - High-frequency requests
+- JA3:
+  - TLS fingerprinting to detect suspicious encrypted traffic  
+
+---
+
+## 📡 Common Ports & SOC Relevance
+
+| Port | Protocol | Risk / Use Case |
+|------|---------|----------------|
+| 21 | FTP | Plaintext credentials |
+| 22 | SSH | Brute force attempts |
+| 23 | Telnet | Insecure legacy protocol |
+| 25 | SMTP | Spam, phishing |
+| 53 | DNS | Tunneling, beaconing |
+| 80 | HTTP | Web attacks |
+| 110 | POP3 | Email credential theft |
+| 123 | NTP | Amplification attacks |
+| 135 | RPC | Windows exploitation |
+| 137-139 | NetBIOS | Lateral movement |
+| 143 | IMAP | Email abuse |
+| 161/162 | SNMP | Information leakage |
+| 389 | LDAP | Active Directory attacks |
+| 443 | HTTPS | Encrypted malicious traffic |
+| 445 | SMB | Ransomware, worms |
+| 3306 | MySQL | Database compromise |
+| 3389 | RDP | Unauthorized access |
+
+---
+
+## 🧠 Threat Detection Mapping
+
+- **Port 445 spike** → Possible worm / lateral movement  
+- **Port 3389 failed logins** → Brute force attack  
+- **DNS anomalies (Port 53)** → Data exfiltration / C2  
+- **JA3 mismatch** → Suspicious encrypted traffic  
+
+---
+
+## 🔍 Incident Investigation Workflow
+
+1. Validate alert (true positive / false positive)
+2. Identify:
+   - Source IP
+   - Destination IP
+   - Port used
+   - Timestamp & frequency
+3. Analyze logs:
+   - Network logs
+   - Authentication logs
+4. Check:
+   - Historical behavior
+   - Known baselines
+5. Determine:
+   - Malicious vs normal activity  
+
+---
+
+## ⚡ Triage Process
+
+### Priority Levels:
+- 🔴 Critical → Active attack (Immediate response)
+- 🟠 High → Likely malicious
+- 🟡 Medium → Suspicious activity
+- 🟢 Low → Likely benign / false positive  
+
+---
+
+## 🎯 Key Takeaway
+
+Do NOT focus only on ports.
+
+Focus on:
+- Behavior patterns  
+- Traffic anomalies  
+- Context of activity  
+
+> Example:
+> - Port 443 traffic → Normal  
+> - Repeated traffic to unknown IP every few seconds → Possible beaconing  
+
+---
+
+## 🚀 Analyst Mindset Shift
+
+From:
+- "What port is this?"
+
+To:
+- "What behavior does this indicate?"
+
+---
+
+## 🧭 Summary
+
+- Ports are entry points attackers target  
+- Certain ports (445, 3389, 53) are high-risk  
+- Detection is based on behavior, not just port numbers  
+- Triage helps prioritize incidents effectively  
