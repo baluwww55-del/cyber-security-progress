@@ -10,7 +10,7 @@ Attackers target exposed or weak ports to gain access or move laterally.
 
 ## 🚨 High-Risk Ports & Threat Use Cases
 
-### 🔓 SMB (Port 445)
+### 🔓 SMB (Port 445) 
 - Used for Windows file sharing  
 - Common in:
   - Ransomware spread
