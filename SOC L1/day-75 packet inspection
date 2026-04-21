@@ -1,0 +1,129 @@
+# Packet Inspection Notes
+
+## What is a Data Packet?
+
+A data packet is the smallest unit of data transmitted over a network.
+It contains both actual data and control information required for delivery.
+
+---
+
+## Structure of a Data Packet
+
+### 1. Header
+- Contains metadata about the packet
+- Includes:
+  - Source IP address
+  - Destination IP address
+  - Protocol (TCP/UDP)
+  - Sequence number
+- Purpose:
+  - Routing the packet
+  - Ensuring correct delivery and reassembly
+
+### 2. Payload
+- The actual data being transmitted
+- Examples:
+  - File content
+  - HTTP requests/responses
+  - Emails
+- This is the useful information for the user
+
+### 3. Trailer (Footer)
+- Contains error-checking data
+- Example:
+  - CRC (Cyclic Redundancy Check)
+- Purpose:
+  - Detect transmission errors
+
+---
+
+## What is Packet Inspection?
+
+Packet inspection is the process of analyzing network packets to understand:
+- What data is being transmitted
+- Source and destination
+- Whether the traffic is safe or malicious
+
+---
+
+## Types of Packet Inspection
+
+### Shallow Packet Inspection (SPI)
+- Examines only packet headers
+
+### Deep Packet Inspection (DPI)
+- Examines both header and payload
+- Used for advanced security analysis
+
+---
+
+## Tools for Packet Inspection
+
+### Wireshark
+- GUI-based tool
+- Features:
+  - Real-time packet capture
+  - Deep protocol analysis
+  - Packet filtering
+- Use case:
+  - Visual analysis and learning
+
+### tcpdump
+- Command-line tool
+- Lightweight and fast
+- Use case:
+  - Server environments
+  - Debugging and scripting
+
+### SolarWinds
+- Enterprise-level tool
+- Features:
+  - Network monitoring
+  - Performance tracking
+  - Security analysis
+- Use case:
+  - Large-scale networks
+
+---
+
+## Why Packet Inspection is Used
+
+### Threat Detection
+- Detect malware and suspicious traffic
+- Identify intrusion attempts
+
+### Incident Triage
+- Analyze security incidents quickly
+- Identify affected systems and attack patterns
+
+### Attribution and Context
+- Identify:
+  - Source of traffic
+  - Destination
+  - Protocol used
+- Provides context to network activity
+
+### Anomaly Discovery
+- Detect unusual behavior:
+  - Traffic spikes
+  - Unknown protocols
+  - Data exfiltration
+- Useful for detecting unknown or zero-day attacks
+
+---
+
+## Key Takeaways
+
+- Packet = Header + Payload + Trailer
+- Packet inspection provides visibility into network traffic
+- Tools help monitor, analyze, and secure networks
+- Main goals:
+  - Security
+  - Troubleshooting
+  - Network monitoring
+
+---
+
+## Summary
+
+Packet inspection converts raw network traffic into meaningful insights for security, debugging, and control.
