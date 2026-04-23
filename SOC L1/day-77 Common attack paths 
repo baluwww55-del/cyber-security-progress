@@ -1,0 +1,102 @@
+# Common Attack Paths
+
+## Overview
+A common attack path is the sequence of steps an attacker follows to compromise a system, from initial access to achieving their objective.
+
+---
+
+## Attack Flow
+
+Infiltration → Exploitation → Lateral Movement → Execution / Objective
+
+---
+
+## 1. Infiltration (Initial Access)
+
+Goal: Gain entry into the system.
+
+Methods:
+- Phishing (emails, fake login pages)
+- Credential harvesting
+- Port scanning
+- Exploiting exposed services
+
+---
+
+## 2. Exploitation
+
+Goal: Take advantage of vulnerabilities.
+
+Examples:
+- Exploiting public-facing applications
+- Targeting outdated software
+- Using known vulnerabilities (CVEs)
+
+---
+
+## 3. Lateral Movement
+
+Goal: Move within the system after initial compromise.
+
+Techniques:
+- Privilege escalation
+- Credential reuse
+- Accessing internal systems
+
+---
+
+## Key Concepts
+
+### Attack Vector
+Entry point used to gain access.
+Examples:
+- Phishing email
+- Open port
+
+### Attack Path
+Route taken inside the system after entry.
+
+---
+
+## Common Attack Techniques
+
+### 1. Phishing + Credential Use
+- User clicks malicious link
+- Enters credentials
+- Attacker logs in
+
+---
+
+### 2. Exploiting Public Applications
+- Target web apps or exposed services
+- Attack backend systems (e.g., database servers)
+
+---
+
+### 3. Malicious Documents / Scripts
+- Macro-based attacks (Word/Excel files)
+- Script-based injection
+
+Payload behavior:
+- Executes automated scripts/software
+- Creates parent-child processes
+- Analyzes payload
+- Delivers malicious actions
+
+---
+
+## Example Attack Chain
+
+Phishing → Credential Theft → Login Access → Internal Movement → Data Extraction
+
+---
+
+## Key Takeaways
+
+- Attacks follow structured paths
+- Weak entry points are primary targets
+- Attackers expand access after entry
+- Security should focus on:
+  - Prevention
+  - Detection
+  - Response
