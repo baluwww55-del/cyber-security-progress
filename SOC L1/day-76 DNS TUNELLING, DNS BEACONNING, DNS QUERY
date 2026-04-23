@@ -1,0 +1,180 @@
+DNS Tunneling & DNS Beaconing (SOC L1 Notes)
+
+## 📌 Overview
+- Tool Mentioned: Wireshark (for network traffic analysis)
+- DNS is often called the "phonebook of the internet"
+
+---
+
+## 🌐 What is DNS?
+**DNS (Domain Name System)** translates:
+- Human-friendly domain names → IP addresses
+- IP addresses → domain names
+
+👉 Example:google.com → 142.250.x.x
+---
+
+## 🔁 DNS Tunneling
+
+### 📌 Definition
+DNS Tunneling is the practice of **encapsulating data from another protocol inside DNS queries and responses**.
+
+### 🎯 Purpose
+- Bypass firewall restrictions
+- Evade network filtering systems
+- Exfiltrate data
+- Establish Command & Control (C2) communication
+
+---
+
+### ⚙️ How it Works
+1. Data from another protocol (HTTP, SSH, files, etc.) is encoded
+2. Encoded data is placed inside DNS queries
+3. Queries are sent to attacker-controlled DNS server
+4. Server decodes and responds with data
+
+---
+
+### 💡 Example
+- HTTP traffic over port 80 is blocked
+- Attacker sends data through DNS (port 53)
+- Firewall allows it because DNS is trusted
+
+---
+
+### 🛠 Key Points
+- Uses DNS queries & responses
+- Often bypasses firewalls
+- Requires attacker-controlled authoritative DNS server
+
+---
+
+### 🚨 Why It Works
+- Firewalls usually allow DNS traffic
+- DNS is rarely deeply inspected
+
+---
+
+## 📡 DNS Query Structure
+
+A DNS query consists of:
+
+1. **Header**
+   - Transaction ID
+   - Flags
+
+2. **Question Section**
+   - Domain Name
+   - Type (A, TXT, etc.)
+   - Class
+
+3. **Answer Section**
+   - Empty in query
+
+4. **Authority Section** (Optional)
+
+5. **Additional Section** (Optional)
+
+---
+
+## 🧱 DNS Query Encoding (Tunneling Use Case)
+
+- Data is encoded into subdomains
+
+👉 Example:data.attacker.com- Encoded chunks are sent via multiple queries
+
+---
+
+### 📦 Encoding Details
+- Data split into small chunks
+- Each chunk placed in subdomain
+- DNS label size limits apply
+
+---
+
+### 🔄 Server Response
+- Data often returned in:
+  - TXT records
+  - A records
+
+---
+
+## 🧠 DNS Tunneling Communication
+
+### Client Side
+- Encodes command/data into DNS queries
+
+### Server Side
+- Decodes incoming queries
+- Sends response with encoded data
+
+---
+
+### ⚡ Tools Behavior
+- Split large payloads into multiple DNS queries
+- Maintain communication via DNS channel
+
+---
+
+## 📶 DNS Beaconing
+
+### 📌 Definition
+DNS Beaconing occurs when:
+> A compromised host sends DNS queries at regular intervals to an attacker-controlled domain
+
+---
+
+### 🎯 Purpose
+- Maintain persistent communication
+- Check for commands from attacker
+
+---
+
+### 🔍 Characteristics
+- Regular time intervals (e.g., every 5 seconds)
+- Repeated queries to same domain
+- Low data volume but consistent pattern
+
+---
+
+### 🚨 Detection Indicators
+- Periodic DNS requests
+- Unusual domain names (random-looking strings)
+- High number of DNS queries
+- Queries to suspicious domains
+
+---
+
+## 🛡 SOC Analyst Notes
+
+### 🔎 What to Look For
+- High frequency DNS traffic
+- Long/random subdomains
+- Repeated queries to same domain
+- DNS requests at fixed intervals
+
+---
+
+### 🧰 Tools
+- Wireshark
+- SIEM tools
+- DNS logs
+
+---
+
+## 🧾 Summary
+
+| Concept         | Description |
+|----------------|------------|
+| DNS            | Translates domain ↔ IP |
+| DNS Tunneling  | Data exfiltration via DNS |
+| DNS Beaconing  | Periodic attacker communication |
+| Risk           | Firewall bypass, stealthy C2 |
+
+---
+
+## 💭 Final Thought
+DNS is trusted — and attackers love trusted systems.
+
+If something looks repetitive, slow, and oddly structured in DNS traffic…  
+👉 It's probably not normal.
