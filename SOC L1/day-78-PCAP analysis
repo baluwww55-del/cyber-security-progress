@@ -1,0 +1,139 @@
+# 📡 PCAP Analysis with Wireshark
+
+## 🧠 Overview
+Packet Capture (PCAP) analysis involves inspecting network traffic to understand how devices communicate.
+
+It is commonly used in:
+- Network troubleshooting
+- Cybersecurity analysis
+- Digital forensics
+- Performance monitoring
+
+Wireshark is a widely used tool for analyzing network packets.
+
+---
+
+## 📦 What is a Packet?
+A packet is a small unit of data transmitted over a network.
+
+Each packet typically contains:
+- Source IP address
+- Destination IP address
+- Protocol (TCP, UDP, ICMP)
+- Payload (actual data)
+
+---
+
+## 📂 PCAP Files
+- File formats: `.pcap`, `.pcapng`
+- Store captured network traffic
+- Used for analysis and investigation
+
+---
+
+## 🖥️ Wireshark Interface
+
+Wireshark displays packet data in three main sections:
+
+1. Packet List Pane  
+   Displays all captured packets  
+
+2. Packet Details Pane  
+   Shows protocol layers and structured data  
+
+3. Packet Bytes Pane  
+   Displays raw packet data in hexadecimal and ASCII  
+
+---
+
+## 🌐 Common Protocols
+
+| Protocol | Description |
+|----------|------------|
+| TCP      | Reliable, connection-based communication |
+| UDP      | Fast, connectionless communication |
+| HTTP     | Web traffic (unsecured) |
+| HTTPS    | Encrypted web traffic |
+| DNS      | Domain name resolution |
+| ICMP     | Network diagnostics (ping) |
+
+---
+
+## 🔌 Common Ports
+
+| Port | Service |
+|------|--------|
+| 80   | HTTP |
+| 443  | HTTPS |
+| 53   | DNS |
+| 22   | SSH |
+| 21   | FTP |
+| 25   | SMTP |
+
+---
+
+## 🔎 Filtering in Wireshark
+
+Filters help isolate specific traffic:
+
+- By protocol (TCP, UDP, DNS, HTTP)
+- By IP address
+- By port number
+- By combining multiple conditions
+
+Efficient filtering is essential for analyzing large packet captures.
+
+---
+
+## 📊 Packet Analysis Workflow
+
+1. Capture network traffic  
+2. Identify relevant packets using filters  
+3. Inspect:
+   - Source and destination IPs  
+   - Protocol used  
+   - Port numbers  
+   - Packet structure and data  
+4. Correlate multiple packets to understand communication flow  
+
+---
+
+## 🧪 Example Traffic Flow
+
+When accessing a website:
+
+1. DNS request resolves the domain name  
+2. TCP connection is established  
+3. HTTP/HTTPS request retrieves the content  
+
+---
+
+## 🔐 Security Insights
+
+- Communication with unknown IP addresses may indicate risk  
+- Unusual port usage can signal suspicious activity  
+- Repeated failed connections may indicate brute-force attempts  
+- Unencrypted protocols (HTTP, FTP) expose sensitive data  
+
+---
+
+## ⚡ Key Takeaways
+
+- Network communication happens through packets  
+- Protocols define how data is transmitted  
+- Ports indicate the type of service  
+- Encryption protects data but not metadata  
+- Effective analysis depends on understanding traffic patterns  
+
+---
+
+## 🧠 Analyst Mindset
+
+Focus on understanding behavior, not just tools:
+
+- Who is communicating?
+- What protocol is being used?
+- Why is a specific port involved?
+- Does the behavior appear normal?
+
+Strong analysis comes from asking the right questions.
