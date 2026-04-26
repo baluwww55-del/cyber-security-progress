@@ -1,0 +1,112 @@
+# 🦈 Wireshark Notes – Analysis Tools
+
+## 📊 Statistics Overview
+- Provides summary of captured packets
+- Helps identify traffic patterns and anomalies
+- Located under: `Statistics` menu
+
+---
+
+## 🌐 Resolve Addresses (Name Resolution)
+- Converts numeric values into readable names
+
+### Types:
+- MAC → Vendor name  
+- IP → Hostname  
+- Port → Service name  
+
+### Benefits:
+- Improves readability
+- Easier packet analysis
+
+### Path:
+`View → Name Resolution`
+
+---
+
+## 🧬 Protocol Hierarchy
+- Displays distribution of protocols in capture
+
+### Shows:
+- Protocol percentages  
+- Packet counts  
+- Traffic composition  
+
+### Use:
+- Identify dominant protocols (HTTP, TCP, DNS)
+- Detect unusual traffic
+
+---
+
+## 💬 Conversations
+- Tracks communication between two endpoints
+
+### Types:
+- Ethernet  
+- IPv4 / IPv6  
+- TCP / UDP  
+
+### Shows:
+- Source & Destination  
+- Packet count  
+- Bytes transferred  
+
+### Use:
+- Identify heavy traffic pairs
+- Analyze connections
+
+---
+
+## 🔗 Endpoints
+- Lists all unique devices in the capture
+
+### Shows:
+- IP / MAC address  
+- Packets sent/received  
+- Bytes sent/received  
+
+### Use:
+- Identify active devices
+- Detect suspicious hosts
+
+---
+
+## 📛 Name Resolution (Detailed)
+- Converts addresses into readable formats
+
+### Types:
+- MAC Resolution → Manufacturer  
+- Network Resolution → DNS  
+- Transport Resolution → Port to service  
+
+### Note:
+- Can slow down analysis if enabled
+
+---
+
+## 📈 I/O Graphs
+- Visual representation of traffic over time
+
+### Features:
+- Packets/bytes per second  
+- Filter-based graphs  
+- Multiple graphs support  
+
+### Use:
+- Detect spikes in traffic  
+- Analyze bandwidth  
+- Identify anomalies  
+
+---
+
+## 🧠 Summary Table
+
+| Tool               | Purpose                      | Benefit                      |
+|--------------------|-----------------------------|------------------------------|
+| Statistics         | Overall analysis            | Traffic insights             |
+| Resolve Addresses  | Numeric → readable          | Better understanding         |
+| Protocol Hierarchy | Protocol breakdown          | Traffic composition          |
+| Conversations      | Endpoint communication      | Identify heavy connections   |
+| Endpoints          | Device list                 | Detect active hosts          |
+| Name Resolution    | Address translation         | Improved readability         |
+| I/O Graphs         | Traffic visualization       | Spot trends & anomalies      |
