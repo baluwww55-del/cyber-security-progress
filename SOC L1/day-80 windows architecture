@@ -1,0 +1,93 @@
+# Module 3: Windows & Linux — OS Internals
+
+## Windows Architecture
+
+- Widely used for end-point devices (PCs, laptops)
+- Designed for user-friendly interaction
+- Linux is more prominent in servers and enterprise systems
+
+---
+
+## Modes of Operation
+
+Operating systems use dual-mode operation for security:
+
+### 1. User Mode
+- Runs applications
+- Limited access to system resources
+- Cannot directly access hardware
+
+Examples:
+- Applications
+- Background services
+- Security software
+- User-level processes
+
+---
+
+### 2. Kernel Mode (Privileged Mode)
+- Full access to hardware and memory
+- Executes critical OS functions
+
+Features:
+- System-level operations
+- Root/administrator access
+- Highly sensitive (can crash system if misused)
+
+Components:
+- OS Kernel
+- Device drivers
+- Process management
+- Memory management
+- File system handling
+
+---
+
+## System Calls
+
+- Interface between User Mode and Kernel Mode
+- Allows applications to request OS services
+
+Examples:
+- File operations (read/write)
+- Process creation
+- Device access
+
+---
+
+## SSDT (System Service Descriptor Table)
+
+- Used in Windows OS
+- Maps system calls to kernel functions
+
+---
+
+## Windows NT Kernel
+
+- Core of the Windows operating system
+
+Responsibilities:
+- Process scheduling
+- Memory management
+- Hardware abstraction
+- Security enforcement
+
+---
+
+## Key Kernel Components
+
+- OS Kernel Core
+- Device Drivers
+- Core System Management
+- Executive Services
+
+---
+
+## Summary
+
+- OS operates in two modes: User Mode and Kernel Mode
+- User Mode is restricted and safe
+- Kernel Mode has full system access
+- System Calls connect User Mode to Kernel Mode
+- SSDT maps system calls to kernel functions
+- Windows NT Kernel is the heart of the OS
