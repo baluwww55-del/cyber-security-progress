@@ -1,0 +1,96 @@
+# Windows Core Processes (Boot Sequence & Key Components)
+
+## 🔹 Boot Process Overview
+Windows boot process involves multiple core system processes that initialize the OS and prepare the user environment.
+
+---
+
+## ⚙️ Step-by-Step Boot Flow
+
+1. **SMSS.exe (Session Manager Subsystem)**
+   - First user-mode process started by the kernel
+   - Creates system environment
+   - Starts session
+   - Launches essential processes
+
+2. **WININIT.exe**
+   - Initializes core system services
+   - Starts:
+     - Services.exe
+     - LSASS.exe
+
+3. **SERVICES.exe (Service Control Manager)**
+   - Manages Windows services
+   - Starts and stops background services
+
+4. **LSASS.exe (Local Security Authority Subsystem Service)**
+   - Enforces security policies
+   - Handles user authentication
+   - Manages access tokens
+
+5. **WINLOGON.exe**
+   - Manages user logon process
+   - Handles Ctrl + Alt + Del sequence
+   - Loads user profile
+
+6. **USERINIT.exe**
+   - Prepares user environment
+   - Launches the Windows shell
+
+7. **EXPLORER.exe**
+   - Final step of boot process
+   - Provides GUI (Desktop, Taskbar, File Explorer)
+
+---
+
+## 🔧 Supporting Processes
+
+### 🧩 SMSS.exe
+- Session manager subsystem
+- Creates environment for user sessions
+- Runs before kernel completes startup
+
+---
+
+### 🔐 LSASS.exe
+- Local Security Authority
+- Handles:
+  - Security policy enforcement
+  - User authentication
+  - Credential validation
+
+---
+
+### ⚙️ SERVICES.exe
+- Service Control Manager (SCM)
+- Controls background services
+
+---
+
+### 🧠 CSRSS.exe (Client Server Runtime Subsystem)
+- Handles user-mode side of Win32 subsystem
+- Responsible for:
+  - Console windows
+  - Process/thread creation (partial role)
+
+---
+
+### 📦 DLLHOST.exe
+- Hosts Dynamic Link Libraries (DLLs)
+- Used for COM objects
+- Provides isolation for stability
+
+---
+
+## 🧵 Additional Notes
+
+- **NTDLL.dll**
+  - Provides system-level APIs
+  - Acts as interface between user-mode and kernel-mode
+
+---
+
+## 📌 Summary Flow
+
+```text
+Kernel → SMSS → WININIT → SERVICES + LSASS → WINLOGON → USERINIT → EXPLORER
