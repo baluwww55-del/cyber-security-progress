@@ -1,0 +1,120 @@
+#  Sysinternals Suite (Windows Tools)
+
+## 🔹 Overview
+**Sysinternals Suite** is a collection of advanced system utilities used for:
+- Process monitoring
+- System troubleshooting
+- Security analysis
+- Performance diagnostics
+
+---
+
+##  Key Tools in Sysinternals
+
+### 1. Process Explorer
+- Advanced version of Task Manager
+- Shows:
+  - Running processes
+  - CPU & memory usage
+  - Process hierarchy
+- Useful for detecting malware and analyzing processes
+
+---
+
+### 2. Process Monitor (Procmon)
+- Real-time monitoring tool
+- Tracks:
+  - File system activity
+  - Registry changes
+  - Process/thread activity
+- Used for debugging and troubleshooting
+
+---
+
+### 3. Sysmon (System Monitor)
+- Logs detailed system activity
+- Tracks:
+  - Process creation
+  - Network connections
+  - File changes
+- Used for security monitoring
+
+---
+
+### 4. Autoruns
+- Shows programs that start automatically
+- Includes:
+  - Startup apps
+  - Services
+  - Drivers
+- Helps identify unwanted startup entries
+
+---
+
+### 5. PsTools
+- Collection of command-line tools
+- Includes utilities like:
+  - PsExec (run processes remotely)
+  - PsList (list processes)
+- Used for remote administration
+
+---
+
+### 6. RAMMap
+- Displays memory usage details
+- Helps analyze:
+  - Physical memory
+  - File cache
+  - Memory leaks
+
+---
+
+### 7. TCPView
+- Shows active TCP/UDP connections
+- Displays:
+  - Local & remote addresses
+  - Connection state
+- Useful for network troubleshooting
+
+---
+
+### 8. Sigcheck
+- Verifies file signatures
+- Detects:
+  - Unsigned files
+  - Malware
+- Provides file version info
+
+---
+
+### 9. SDelete
+- Securely deletes files
+- Ensures data cannot be recovered
+
+---
+
+##  Key Takeaways
+
+- Sysinternals tools are essential for:
+  - Debugging
+  - Monitoring
+  - Security analysis
+
+- Most commonly used tools:
+  - Process Explorer
+  - Process Monitor
+  - Autoruns
+  - TCPView
+
+---
+
+##  Quick Summary
+
+```text
+Sysinternals = Advanced Windows Troubleshooting Toolkit
+
+Core Uses:
+- Process Analysis
+- System Monitoring
+- Security Investigation
+- Network Tracking
