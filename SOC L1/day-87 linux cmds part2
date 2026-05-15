@@ -1,0 +1,174 @@
+Markdown
+# 🐧 Linux Commands Part 2: Authentication, Networking, and Log Analysis
+
+> Essential Linux commands for user authentication, network troubleshooting, and log/file analysis. These commands are widely used in system administration, cybersecurity, and digital forensics.
+
+---
+
+# 🔐 Authentication and User Connectivity Commands
+
+These commands help identify users, review login history, and inspect authentication activity.
+
+---
+
+## `whoami`
+
+Displays the username of the currently logged-in user.
+
+```bash
+whoami
+Example Output
+Plain text
+balu
+Use Cases
+Confirm the current user account
+Verify privilege context
+last
+Shows login history of users.
+Bash
+last
+Information Displayed
+Username
+Login time
+Logout time
+IP address or terminal
+Use Cases
+Audit user access
+Investigate suspicious logins
+cat /etc/passwd
+Displays user account information.
+Bash
+cat /etc/passwd
+What It Contains
+Username
+User ID (UID)
+Group ID (GID)
+Home directory
+Default shell
+Example Entry
+Plain text
+root:x:0:0:root:/root:/bin/bash
+Note: Password hashes are stored in /etc/shadow.
+Search Authentication Logs
+Bash
+grep "Failed password" /var/log/auth.log
+Purpose
+Detect failed login attempts and possible brute-force attacks.
+🌐 Network and Connectivity Commands
+These commands help analyze IP addresses, packets, and DNS resolution.
+ifconfig
+Displays network interface information (older command).
+Bash
+ifconfig
+ip a
+Modern replacement for ifconfig.
+Bash
+ip a
+Shows
+IP addresses
+Network interfaces
+MAC addresses
+Interface state
+tcpdump
+Captures network packets.
+Bash
+sudo tcpdump
+Capture Traffic on a Specific Interface
+Bash
+sudo tcpdump -i eth0
+Use Cases
+Packet analysis
+Incident response
+Malware traffic investigation
+dig
+Performs DNS lookups.
+Bash
+dig google.com
+nslookup
+Queries DNS records.
+Bash
+nslookup google.com
+Use Cases
+Verify DNS resolution
+Troubleshoot domain issues
+📄 Log and File Analysis Commands
+Used to inspect logs and search for specific events.
+grep
+Searches for matching text patterns.
+Bash
+grep "error" /var/log/syslog
+Variants
+egrep (supports extended regular expressions)
+grep -i (case-insensitive)
+grep -r (recursive search)
+tail -f
+Displays the last lines of a file and follows updates in real time.
+Bash
+tail -f /var/log/syslog
+Use Cases
+Monitor live logs
+Watch service activity
+journalctl
+Views logs managed by systemd.
+Bash
+journalctl
+Useful Options
+Bash
+journalctl -xe        # Detailed errors
+journalctl -u ssh     # Logs for SSH service
+journalctl -f         # Follow logs live
+journalctl -k         # Kernel logs
+🛡️ Cybersecurity Use Cases
+These commands help detect:
+Failed login attempts
+Brute-force attacks
+Unauthorized access
+DNS anomalies
+Suspicious network traffic
+Service failures
+📌 Quick Reference Table
+Command
+Purpose
+whoami
+Show current username
+last
+Display login history
+cat /etc/passwd
+View user accounts
+grep "Failed password" /var/log/auth.log
+Find failed login attempts
+ifconfig
+Show network configuration
+ip a
+Display interface details
+tcpdump
+Capture packets
+dig
+DNS lookup
+nslookup
+DNS query
+grep
+Search logs/files
+tail -f
+Monitor logs live
+journalctl
+View systemd logs
+📝 Practical Examples
+Check Current User
+Bash
+whoami
+View Recent Logins
+Bash
+last
+Show IP Address
+Bash
+ip a
+Capture Packets
+Bash
+sudo tcpdump -i eth0
+Search Failed SSH Logins
+Bash
+grep "Failed password" /var/log/auth.log
+Monitor System Logs
+Bash
+tail -f /var/log/syslog
