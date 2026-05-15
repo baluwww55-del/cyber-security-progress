@@ -1,0 +1,218 @@
+Markdown
+# 🐧 Linux Commands for Process Monitoring, Network Analysis, File Permissions, and Integrity Checking
+
+> Complete notes on essential Linux commands used for process analysis, network investigation, file permission auditing, and file integrity verification.
+
+---
+
+# 📌 Why These Commands Matter
+
+In Linux system administration and cybersecurity, it is crucial to understand:
+
+- Which processes are running
+- Which ports are open
+- Which files have dangerous permissions
+- Whether important files have been modified
+
+The commands in this document are widely used in:
+- SOC analysis
+- Digital forensics
+- Incident response
+- Malware analysis
+- System administration
+
+---
+
+# 🔍 Process Analysis Commands
+
+Process analysis helps identify active programs and resource usage.
+
+---
+
+## `ps aux`
+
+Lists all currently running processes.
+
+```bash
+ps aux
+Option Breakdown
+Option
+Meaning
+a
+Show processes for all users
+u
+Display user and resource usage
+x
+Include background processes
+Example Output
+Plain text
+USER   PID %CPU %MEM COMMAND
+root     1  0.0  0.1 systemd
+balu  1234  2.1  1.5 firefox
+Common Uses
+View all running processes
+Detect suspicious programs
+Find process IDs (PID)
+top
+Displays real-time system and process information.
+Bash
+top
+Shows
+CPU usage
+Memory usage
+Load average
+Running processes
+htop
+Interactive process viewer.
+Bash
+htop
+Features
+Color-coded interface
+Process search
+Sorting
+Easy process termination
+🌐 Network Analysis Commands
+These commands help inspect active network connections and listening ports.
+lsof -i
+Lists open network files and connections.
+Bash
+lsof -i
+Example
+Bash
+lsof -i :80
+Shows which process is using port 80.
+netstat -tulnp
+Displays listening ports and associated processes.
+Bash
+netstat -tulnp
+Option Breakdown
+Option
+Meaning
+t
+TCP sockets
+u
+UDP sockets
+l
+Listening ports
+n
+Numeric output
+p
+Process info
+ss -tulnp
+Modern and faster replacement for netstat.
+Bash
+ss -tulnp
+Advantages
+Faster
+Better filtering
+Included in modern Linux systems
+📁 File and Permission Analysis
+Used to inspect file permissions, metadata, and privilege risks.
+ls -lah
+Detailed file listing.
+Bash
+ls -lah
+Shows
+Permissions
+Owner
+Group
+Size
+Hidden files
+find / -perm -4000
+Finds files with the SUID bit set.
+Bash
+find / -perm -4000 2>/dev/null
+What is SUID?
+SUID allows a file to run with the owner's privileges (often root).
+Security Risk
+Misconfigured SUID binaries can allow privilege escalation.
+stat filename
+Displays detailed metadata.
+Bash
+stat filename
+Information Shown
+Size
+Permissions
+Inode
+Access time
+Modification time
+Change time
+🔐 File Integrity Verification
+Hashes are used to confirm that a file has not been altered.
+md5sum
+Generates an MD5 hash.
+Bash
+md5sum file.txt
+MD5 is fast but not cryptographically secure.
+sha256sum
+Generates a SHA-256 hash.
+Bash
+sha256sum file.txt
+Preferred For
+Integrity verification
+Secure file comparison
+🔍 Example Hash Output
+Plain text
+9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08  file.txt
+🛡️ Cybersecurity Use Cases
+These commands help analysts to:
+Detect malware processes
+Identify suspicious network connections
+Audit dangerous permissions
+Verify file tampering
+Investigate compromise indicators
+🧪 Practical Investigation Workflow
+Step 1: Check Running Processes
+Bash
+ps aux
+Step 2: Monitor in Real Time
+Bash
+top
+Step 3: Inspect Network Connections
+Bash
+ss -tulnp
+Step 4: Find SUID Files
+Bash
+find / -perm -4000 2>/dev/null
+Step 5: Verify File Integrity
+Bash
+sha256sum suspicious_file
+📌 Quick Reference Table
+Command
+Purpose
+ps aux
+List all processes
+top
+Real-time monitoring
+htop
+Interactive process viewer
+lsof -i
+Show open network connections
+netstat -tulnp
+Display listening ports
+ss -tulnp
+Modern socket viewer
+ls -lah
+Detailed file listing
+find / -perm -4000
+Find SUID files
+stat file
+Show file metadata
+md5sum file
+Generate MD5 hash
+sha256sum file
+Generate SHA-256 hash
+⚠️ Security Tips
+Review unexpected processes in ps aux.
+Check unknown listening ports with ss -tulnp.
+Audit SUID binaries regularly.
+Use SHA-256 instead of MD5 for integrity checks.
+Correlate findings with system logs.
+📝 Key Takeaways
+ps aux, top, and htop are used for process monitoring.
+lsof -i, netstat, and ss analyze network activity.
+ls -lah, find, and stat inspect file permissions and metadata.
+md5sum and sha256sum verify file integrity.
+These commands are foundational for Linux administration and cybersecurity.
+📚 One-Line Summary
+Linux provides powerful built-in commands to inspect processes, monitor network connections, audit permissions, and verify file integrity—essential skills for system administrators and cybersecurity professionals.
