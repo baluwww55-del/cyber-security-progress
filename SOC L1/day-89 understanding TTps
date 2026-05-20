@@ -1,0 +1,131 @@
+Understanding TTPs (Tactics, Techniques, and Procedures)
+
+TTPs are known as the playbook of the adversary.
+
+TTP stands for:
+
+Tactics – the overall objective or goal of the attacker.
+
+Techniques – the methods used to achieve the objective.
+
+Procedures – the specific step-by-step actions followed.
+
+
+TTPs help security teams:
+
+Monitor indicators of compromise (IOCs).
+
+Perform threat attribution and actor profiling.
+
+Improve detection use cases.
+
+Develop incident response and security playbooks.
+
+
+
+
+---
+
+Cyber Kill Chain (CKC)
+
+The Cyber Kill Chain (CKC) is a framework developed by Lockheed Martin that describes the stages of a cyberattack.
+
+It consists of 7 distinct phases:
+
+1. Reconnaissance
+
+Gathering information about the target.
+
+Activities include:
+
+DNS lookups
+
+Scanning
+
+Information collection
+
+Identifying vulnerabilities
+
+
+
+2. Weaponization
+
+Creating malware or exploit payloads based on discovered vulnerabilities.
+
+
+3. Delivery
+
+Sending the malicious payload to the victim.
+
+Examples:
+
+Phishing emails
+
+Malicious attachments
+
+Infected USB drives
+
+
+
+4. Exploitation
+
+Triggering the exploit to execute malicious code.
+
+
+5. Installation
+
+Installing malware and gaining a foothold in the system.
+
+
+6. Command and Control (C2)
+
+Establishing remote access and communication with the attacker.
+
+
+7. Actions on Objectives
+
+Performing the attacker’s intended goals, such as:
+
+Data exfiltration (file transfer)
+
+Privilege escalation
+
+System destruction
+
+
+
+
+---
+
+Quick Memory Trick
+
+Think of the Cyber Kill Chain like a burglar breaking into a house:
+
+1. Reconnaissance – Watching the house.
+
+
+2. Weaponization – Preparing tools.
+
+
+3. Delivery – Entering through a door/window.
+
+
+4. Exploitation – Unlocking the door.
+
+
+5. Installation – Hiding inside.
+
+
+6. C2 – Calling the getaway driver.
+
+
+7. Actions on Objectives – Stealing valuables.
+
+
+
+
+---
+
+One-Line Summary
+
+> TTPs describe how attackers operate, while the Cyber Kill Chain describes the sequence of steps they follow during an attack.
