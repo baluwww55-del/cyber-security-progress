@@ -1,0 +1,110 @@
+# Threat Landscape and MITRE ATT&CK
+
+Today I explored the fundamentals of the threat landscape and the :contentReference[oaicite:0]{index=0}, a globally recognized knowledge base of adversary tactics and techniques.
+
+---
+
+## What is a Threat?
+
+A threat is any potential action or event that can compromise the:
+
+- **Confidentiality**
+- **Integrity**
+- **Availability (CIA Triad)**
+
+of a system, network, or data.
+
+---
+
+## MITRE ATT&CK Framework
+
+The MITRE ATT&CK framework helps security teams understand and map attacker behavior.
+
+### Key Benefits
+
+- Behavior-based detection
+- Contextual response
+- Kill chain mapping
+- Improved threat hunting efficiency
+- Adversary profiling
+
+---
+
+## Credential Theft During Authentication
+
+Attackers often attempt to steal credentials during login and authentication processes.
+
+### Security Objectives
+
+- Improve SOC visibility
+- Detect suspicious authentication attempts
+- Respond quickly to incidents
+
+---
+
+## Fileless Malware
+
+Fileless malware executes directly in memory without writing files to disk.
+
+### Characteristics
+
+- Bypasses traditional security tools
+- Difficult to detect and investigate
+- Leaves minimal artifacts
+
+---
+
+## Lateral Movement
+
+Lateral movement is when attackers use legitimate tools and credentials to move across systems within a network.
+
+### Goal
+
+To expand access and gain control over additional systems inside the environment.
+
+---
+
+## Ransomware Behavior
+
+Ransomware attacks typically involve:
+
+- Encrypting files
+- Demanding payment for decryption
+- Disrupting business operations
+
+---
+
+## Tunneling Techniques
+
+Attackers may use tunneling to hide malicious traffic inside allowed protocols.
+
+### Common Protocols Used
+
+- DNS tunneling
+- ICMP tunneling
+- HTTP/HTTPS tunneling
+
+These methods help bypass firewalls and evade network monitoring.
+
+---
+
+## Why This Matters
+
+Understanding attacker tactics and techniques allows defenders to:
+
+- Build stronger detections
+- Improve incident response
+- Hunt threats proactively
+- Reduce dwell time
+
+---
+
+## Key Takeaway
+
+Cybersecurity is not just about blocking attacks. It is about understanding how attackers operate, detecting abnormal behavior, and responding before damage is done.
+
+Today’s lesson reinforced a simple truth:
+
+> **Know the tactics. Recognize the techniques. Defend with confidence.**
+
+#CyberSecurity #MITREATTACK #ThreatHunting #SOC #BlueTeam #DigitalForensics #IncidentResponse #Ransomware #EthicalHacking #LearningInPublic
