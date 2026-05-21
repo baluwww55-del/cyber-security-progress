@@ -1,0 +1,147 @@
+# MITRE ATT&CK Framework
+
+## What is MITRE ATT&CK?
+
+:contentReference[oaicite:0]{index=0} is a cybersecurity knowledge base developed by the MITRE organization.
+
+It explains each and every phase of a cyber attack by documenting attacker behavior, techniques, and procedures used in real-world incidents.
+
+---
+
+# Anatomy of an Attack
+
+The ATT&CK framework breaks attacker behavior into four major components:
+
+## 1. Tactic
+
+A tactic represents the attacker’s goal during a specific phase.
+
+### Example:
+- Credential Access
+
+---
+
+## 2. Technique
+
+A technique describes how the attacker achieves the tactic.
+
+### Example:
+- Brute Force
+
+---
+
+## 3. Sub-Technique
+
+A more specific implementation of a technique.
+
+### Example:
+- Password Spraying
+
+---
+
+## 4. Procedure
+
+The actual method or tool used by attackers in real attacks.
+
+### Example:
+- Kerberoasting
+- APT-style credential attacks
+
+---
+
+# Types of ATT&CK Matrices
+
+The MITRE ATT&CK framework includes different matrices for different environments:
+
+- Enterprise ATT&CK
+- Mobile ATT&CK
+- ICS ATT&CK (Industrial Control Systems)
+
+---
+
+# MITRE ATT&CK Tactics
+
+The framework defines multiple phases of attacker activity:
+
+1. Initial Access  
+2. Execution  
+3. Persistence  
+4. Privilege Escalation  
+5. Defense Evasion  
+6. Credential Access  
+7. Discovery  
+8. Lateral Movement  
+9. Collection  
+10. Command and Control (C2)  
+11. Exfiltration  
+12. Impact  
+
+---
+
+# Industrial Control Systems (ICS)
+
+ICS stands for Industrial Control Systems.
+
+These systems are used in:
+- Power plants
+- Manufacturing industries
+- Water treatment facilities
+- Critical infrastructure
+
+MITRE ATT&CK also covers threats targeting ICS environments.
+
+---
+
+# SOC Analyst Responsibilities
+
+A SOC (Security Operations Center) analyst should:
+
+- Monitor SIEM dashboards
+- Investigate and triage alerts
+- Identify attacker techniques
+- Detect suspicious behavior
+- Respond to incidents quickly
+
+---
+
+# Important ATT&CK Techniques
+
+## T1059 — Command and Scripting Interpreter
+
+Attackers use command-line interpreters and scripting tools to execute malicious commands.
+
+Examples:
+- PowerShell
+- Bash
+- CMD
+
+---
+
+## T1071 — Application Layer Protocol
+
+Attackers communicate using common application layer protocols.
+
+Examples:
+- HTTP
+- HTTPS
+- DNS
+
+These protocols help attackers blend malicious traffic with normal network activity.
+
+---
+
+# Key Takeaway
+
+MITRE ATT&CK is more than a framework.
+
+It is a practical guide to understanding how real attackers operate inside systems and networks.
+
+Learning ATT&CK helps defenders:
+- Improve detection
+- Hunt threats effectively
+- Understand adversary behavior
+- Build stronger defenses
+
+---
+
+#CyberSecurity #MITREATTACK #ThreatHunting #SOC #BlueTeam #DigitalForensics #IncidentResponse #EthicalHacking #InfoSec #LearningInPublic
