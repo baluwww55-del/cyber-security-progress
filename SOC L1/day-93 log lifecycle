@@ -1,0 +1,219 @@
+# SIEM Log Lifecycle
+
+The SIEM log lifecycle describes how security logs are collected, processed, analyzed, and transformed into actionable security intelligence.
+
+---
+
+## 1. Log Collection
+
+Logs are gathered from various sources across the environment.
+
+### Common Log Sources
+
+- Windows Security Logs
+- Linux System Logs
+- Apache Access Logs
+- Firewall Logs
+- IDS/IPS Logs
+- Endpoint Security Logs
+- Cloud Service Logs
+
+Purpose:
+
+- Centralize security data
+- Improve visibility
+- Enable threat detection
+
+---
+
+## 2. Log Parsing
+
+Parsing extracts useful information from raw logs and converts it into structured fields.
+
+Examples:
+
+- Timestamp
+- Username
+- Source IP
+- Destination IP
+- Event Type
+
+### Parsing Techniques
+
+- Regular Expressions (Regex)
+- Parsing Rules
+- Pattern Matching
+- Vendor-specific Parsers
+
+Benefits:
+
+- Easier searching
+- Better analysis
+- Accurate correlation
+
+---
+
+## 3. Log Normalization
+
+Normalization converts logs from different sources into a common format.
+
+### Benefits
+
+- Consistent data structure
+- Efficient event correlation
+- Faster investigations
+- Better reporting
+- Simplified analytics
+
+Example:
+
+Different devices may log login failures differently, but normalization converts them into a standard event format.
+
+---
+
+## 4. Log Enrichment
+
+Enrichment adds additional context to log data.
+
+### Types of Enrichment
+
+#### IP Enrichment
+
+Adds information such as:
+
+- Geolocation
+- ISP Details
+- Country Information
+
+#### Threat Enrichment
+
+Adds threat intelligence context:
+
+- Known malicious IPs
+- IOC Matches
+- Reputation Scores
+
+#### Asset Enrichment
+
+Adds asset-related information:
+
+- Hostname
+- Device Owner
+- Criticality Level
+- Department
+
+Purpose:
+
+- Improve investigation speed
+- Provide context for analysts
+
+---
+
+## 5. Correlation and Rule Writing
+
+Correlation links multiple security events together to identify suspicious activity.
+
+### Correlation Examples
+
+- Multiple failed logins followed by a successful login
+- Login from unusual locations
+- Privilege escalation after account compromise
+- Malware activity across multiple hosts
+
+### Rule Writing
+
+Rules define conditions that trigger alerts.
+
+Example Rule:
+
+```
+IF failed_login_attempts > 10
+WITHIN 5 minutes
+THEN generate alert
+```
+
+---
+
+## 6. Alerting
+
+When correlation rules detect suspicious behavior, alerts are generated.
+
+### Alert Examples
+
+- Multiple failed login attempts
+- Brute-force attacks
+- Privilege escalation
+- Malware detection
+- Suspicious network activity
+
+Purpose:
+
+- Notify analysts immediately
+- Enable rapid response
+
+---
+
+## 7. Reporting
+
+SIEM platforms generate reports for:
+
+- Security Operations Centers (SOC)
+- Management Teams
+- Compliance Audits
+- Incident Investigations
+
+Benefits:
+
+- Security visibility
+- Compliance tracking
+- Threat trend analysis
+
+---
+
+# Common Log Storage Challenges
+
+### Retention Policies
+
+Determine how long logs should be stored.
+
+### Compliance Requirements
+
+Meet regulatory standards and audit requirements.
+
+### Storage Types
+
+- Hot Storage
+- Warm Storage
+- Cold Storage
+
+---
+
+# Example: Brute Force Detection Workflow
+
+1. User attempts login multiple times.
+2. Logs are collected from authentication systems.
+3. Logs are parsed and normalized.
+4. Correlation rule detects repeated failures.
+5. SIEM generates an alert.
+6. Analyst investigates the incident.
+7. Response actions are initiated.
+
+---
+
+# Key Takeaway
+
+A SIEM is not just a log repository.
+
+It transforms raw logs into actionable security intelligence through:
+
+- Collection
+- Parsing
+- Normalization
+- Enrichment
+- Correlation
+- Alerting
+- Reporting
+
+This process enables organizations to detect threats faster and respond more effectively.
+
+#CyberSecurity #SIEM #SOC #ThreatDetection #LogManagement #BlueTeam #SecurityOperations #IncidentResponse #LearningInPublic
