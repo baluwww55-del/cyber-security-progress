@@ -1,0 +1,199 @@
+# Splunk Fundamentals
+
+## What is Splunk?
+
+0 is a software platform that collects, indexes, searches, and analyzes machine-generated data from various sources.
+
+It helps organizations monitor systems, detect security threats, troubleshoot issues, and gain operational insights.
+
+---
+
+# Key Features of Splunk
+
+## 1. Real-Time Monitoring
+
+Splunk continuously monitors incoming data and events.
+
+Benefits:
+
+- Immediate threat detection
+- Faster incident response
+- Live operational visibility
+
+---
+
+## 2. Search and Visualization
+
+Splunk uses **SPL (Search Processing Language)** to search and analyze data.
+
+Capabilities:
+
+- Search logs
+- Create dashboards
+- Generate reports
+- Visualize trends
+
+Example SPL Query:
+
+```spl
+index=main
+| stats count by host
+```
+
+---
+
+## 3. Scalability
+
+Splunk can process large volumes of data from multiple sources.
+
+Supports:
+
+- Small businesses
+- Large enterprises
+- Cloud environments
+- Hybrid infrastructures
+
+---
+
+## 4. Security and Compliance
+
+Used extensively by:
+
+- SOC Teams
+- Security Analysts
+- Incident Responders
+
+Helps with:
+
+- Threat detection
+- Log management
+- Compliance reporting
+- Security investigations
+
+---
+
+# Splunk Architecture
+
+## Universal Forwarder
+
+The Universal Forwarder is a lightweight agent installed on endpoints.
+
+Purpose:
+
+- Collect logs
+- Forward data to Splunk Indexers
+- Minimal resource usage
+
+Examples:
+
+- Windows Event Logs
+- Linux Syslogs
+- Application Logs
+
+---
+
+## Indexer
+
+The Indexer receives and processes incoming data.
+
+Functions:
+
+- Parse incoming logs
+- Transform data into searchable events
+- Store indexed data
+- Enable fast searches
+
+---
+
+## Search Head
+
+The Search Head provides the user interface.
+
+Functions:
+
+- Run searches
+- Create dashboards
+- Generate reports
+- Investigate security events
+
+### Data Flow
+
+```text
+Forwarder → Indexer → Search Head
+```
+
+---
+
+# Splunk User Roles
+
+## 1. Admin Role
+
+Highest level of access.
+
+Permissions:
+
+- Manage users
+- Configure Splunk
+- Install apps
+- Manage indexes
+- Full administrative control
+
+---
+
+## 2. Power User Role
+
+Advanced user with extended capabilities.
+
+Permissions:
+
+- Create dashboards
+- Build reports
+- Create knowledge objects
+- Manage searches
+
+---
+
+## 3. User Role
+
+Basic level permissions.
+
+Permissions:
+
+- Run searches
+- View dashboards
+- Access assigned data
+
+---
+
+# Why Organizations Use Splunk
+
+- Centralized log management
+- Security monitoring
+- Threat detection
+- Incident investigation
+- Operational intelligence
+- Compliance reporting
+
+---
+
+# Key Takeaway
+
+Splunk transforms raw machine data into actionable insights.
+
+By collecting logs through Forwarders, indexing them for fast searching, and analyzing them through Search Heads, Splunk helps organizations improve visibility, security, and operational efficiency.
+
+## Splunk Workflow
+
+```text
+Data Sources
+     ↓
+Universal Forwarder
+     ↓
+Indexer
+     ↓
+Search Head
+     ↓
+Dashboards, Reports & Alerts
+```
+
+#Splunk #CyberSecurity #SIEM #SOC #LogManagement #ThreatDetection #BlueTeam #SecurityMonitoring #LearningInPublic
