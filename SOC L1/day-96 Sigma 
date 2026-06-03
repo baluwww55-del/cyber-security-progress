@@ -1,0 +1,237 @@
+# Sigma Rules Fundamentals
+
+## What is Sigma?
+
+Sigma is a standardized format for writing and sharing detection rules across different security platforms.
+
+It is often called the **"YARA for logs"** because it provides a vendor-neutral way to describe suspicious activities and security detections.
+
+Purpose:
+
+- Standardize behavioral detections
+- Enable collaborative detection engineering
+- Share detection logic between organizations
+- Improve SOC efficiency
+
+---
+
+# Key Features of Sigma
+
+### Unified Schema
+
+Sigma provides a common rule format that is:
+
+- Human-readable
+- Machine-readable
+- Platform-independent
+
+This allows security teams to write one detection rule and convert it into queries for different SIEM platforms.
+
+Examples:
+
+- Splunk
+- Microsoft Sentinel
+- Elastic SIEM
+- QRadar
+
+---
+
+# YAML and Sigma
+
+Sigma rules are written using **YAML (YAML Ain't Markup Language)**.
+
+YAML is designed to be:
+
+- Easy to read
+- Easy to write
+- Human-friendly
+
+Example YAML Structure:
+
+```yaml
+employee:
+  name: John
+  role: SOC Analyst
+  skill: Detection Engineering
+```
+
+---
+
+# What is a Sigma Rule?
+
+A Sigma rule defines suspicious behavior that security teams want to detect.
+
+It contains metadata, log source information, detection logic, and conditions.
+
+---
+
+# Structure of a Sigma Rule
+
+## Metadata Section
+
+Contains general information about the rule.
+
+```yaml
+title:
+status:
+description:
+author:
+references:
+```
+
+### Fields
+
+#### Title
+Name of the detection rule.
+
+#### Status
+Current maturity of the rule.
+
+Common values:
+
+- stable
+- test
+- experimental
+- deprecated
+- unsupported
+
+#### Description
+Explains what the rule detects.
+
+#### Author
+Person who created the rule.
+
+#### References
+Links to documentation or threat reports.
+
+---
+
+# Log Source Section
+
+Defines where the logs originate.
+
+```yaml
+logsource:
+  category:
+  product:
+  service:
+```
+
+### Common Fields
+
+#### Category
+
+Examples:
+
+- process_creation
+- file_event
+- network_connection
+
+#### Product
+
+Examples:
+
+- windows
+- linux
+- firewall
+
+#### Service
+
+Examples:
+
+- sysmon
+- security
+- powershell
+
+---
+
+# Detection Section
+
+Contains the actual detection logic.
+
+```yaml
+detection:
+  selection:
+    field: value
+  condition: selection
+```
+
+This is the heart of every Sigma rule.
+
+---
+
+# Example Sigma Rule
+
+```yaml
+title: Suspicious PowerShell Execution
+
+status: stable
+
+description: Detects suspicious PowerShell execution
+
+author: Security Analyst
+
+logsource:
+  product: windows
+  service: powershell
+
+detection:
+  selection:
+    CommandLine|contains:
+      - "EncodedCommand"
+  condition: selection
+
+level: high
+```
+
+---
+
+# Detection Engineering Goal
+
+The goal of Sigma is to detect attacker behaviors rather than specific malware.
+
+Examples:
+
+- PowerShell abuse
+- Credential dumping
+- Brute-force attacks
+- Suspicious file downloads
+- Obfuscated scripts
+
+---
+
+# Example Use Case
+
+### Detect File Downloads with Double Extensions
+
+Examples:
+
+```text
+invoice.pdf.exe
+report.docx.scr
+salary.xlsx.bat
+```
+
+Attackers often use double extensions to trick users into executing malicious files.
+
+A Sigma rule can be created to detect such activity.
+
+---
+
+# Benefits of Sigma
+
+- Vendor-independent detections
+- Easier rule sharing
+- Faster threat detection
+- Improved SOC collaboration
+- Supports Detection-as-Code practices
+
+---
+
+# Key Takeaway
+
+Sigma provides a universal language for threat detection.
+
+By using YAML-based rules, security teams can create, share, and deploy detections across multiple SIEM and security platforms without rewriting detection logic.
+
+#Sigma #DetectionEngineering #SOC #CyberSecurity #ThreatDetection #BlueTeam #SIEM #ThreatHunting #YAML #LearningInPublic
