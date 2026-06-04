@@ -1,0 +1,209 @@
+# Alert Monitoring and Triage
+
+## Knowledge Objects
+
+Knowledge Objects are reusable Splunk components that help organize, analyze, and visualize data.
+
+Examples:
+
+- Saved Searches
+- Reports
+- Dashboards
+- Alerts
+- Lookups
+- Data Models
+
+---
+
+# Alert Monitoring and Triage
+
+Alert monitoring involves continuously monitoring events and generating alerts when specific conditions are met.
+
+Triage is the process of analyzing and prioritizing alerts to determine their importance and required response.
+
+---
+
+# Alert Triggering Logic
+
+Alerts can be generated using different methods:
+
+## 1. Matching Logic
+
+Triggers when a search query matches predefined criteria.
+
+Example:
+
+```spl
+index=windows EventCode=4625
+```
+
+Detects failed login attempts.
+
+---
+
+## 2. Filtering Logic
+
+Filters specific events from large datasets.
+
+Example:
+
+```spl
+index=firewall action=blocked
+```
+
+Shows blocked firewall events only.
+
+---
+
+# Alert Trigger Types
+
+## 1. Time-Based Alerts
+
+Run on a predefined schedule.
+
+Examples:
+
+- Every 5 minutes
+- Every hour
+- Daily
+
+Use Cases:
+
+- Compliance monitoring
+- Scheduled reporting
+- Periodic health checks
+
+---
+
+## 2. Threshold-Based Alerts
+
+Trigger when a defined threshold is exceeded.
+
+Examples:
+
+- Failed logins > 10
+- CPU usage > 90%
+- Multiple malware detections
+
+Use Cases:
+
+- Brute-force detection
+- Resource monitoring
+- Security incident detection
+
+---
+
+# Alert Severity Mapping
+
+Severity helps analysts prioritize incidents.
+
+Common Severity Levels:
+
+| Severity | Description |
+|-----------|------------|
+| Critical | Immediate response required |
+| High | Significant security risk |
+| Medium | Requires investigation |
+| Low | Minor issue or informational |
+| Informational | Monitoring purposes only |
+
+Severity can be assigned based on:
+
+- Risk score
+- Threat level
+- Asset criticality
+- Business impact
+
+---
+
+# Types of Alerts
+
+## 1. Static Alerts
+
+Rule-based alerts using predefined conditions.
+
+### Characteristics
+
+- Signature-based detection
+- Easy to implement
+- Fast detection
+
+Examples:
+
+- Malware signatures
+- Known malicious IP addresses
+- Failed login thresholds
+
+### Advantages
+
+- Simple
+- Reliable
+- Low computational cost
+
+### Limitations
+
+- Cannot detect unknown threats
+- Relies on predefined rules
+
+---
+
+## 2. Behavioral Alerts
+
+Behavior-based detection using patterns and anomalies.
+
+### Characteristics
+
+- Advanced detection
+- Baseline comparison
+- Anomaly detection
+
+Examples:
+
+- User logging in from unusual locations
+- Abnormal network traffic
+- Unusual account activity
+
+### Advantages
+
+- Detects unknown threats
+- Identifies insider threats
+- Better threat hunting capability
+
+### Limitations
+
+- More complex
+- May generate false positives
+
+---
+
+# Static vs Behavioral Detection
+
+| Feature | Static Detection | Behavioral Detection |
+|----------|----------------|---------------------|
+| Detection Type | Signature-Based | Anomaly-Based |
+| Threat Coverage | Known Threats | Known & Unknown Threats |
+| Complexity | Low | High |
+| Accuracy | High for known threats | Better for advanced attacks |
+| Resource Usage | Low | Higher |
+
+---
+
+# Alert Triage Process
+
+1. Alert Generated
+2. Validate Alert
+3. Determine Severity
+4. Investigate Evidence
+5. Identify Impact
+6. Escalate or Close
+7. Document Findings
+
+---
+
+# Key Takeaway
+
+Effective alert monitoring is not about generating more alerts—it's about generating meaningful alerts.
+
+Combining static detection with behavioral analytics helps SOC teams reduce noise, prioritize threats, and improve incident response effectiveness.
+
+#CyberSecurity #SOC #SIEM #ThreatDetection #AlertMonitoring #BlueTeam #IncidentResponse #ThreatHunting #Splunk #LearningInPublic
