@@ -1,0 +1,252 @@
+# Writing Effective Detection Rules
+
+Detection rules are used to identify suspicious activities, attacker behavior, and security threats within an environment.
+
+The effectiveness of a detection rule depends on how accurately it identifies malicious behavior while minimizing false positives.
+
+---
+
+# Common Problems in Detection Rules
+
+## False Positives
+
+A false positive occurs when legitimate activity is incorrectly flagged as malicious.
+
+### Challenges
+
+- Alert fatigue
+- Increased investigation time
+- Reduced analyst efficiency
+- Missed real threats
+
+---
+
+# Best Practices for Writing Effective Detection Rules
+
+## 1. Define Clear Detection Objectives
+
+Before creating a rule, understand:
+
+- What threat you want to detect
+- What attacker behavior is being targeted
+- What data sources are available
+
+Examples:
+
+- Brute-force attacks
+- PowerShell abuse
+- Privilege escalation
+- Data exfiltration
+
+---
+
+## 2. Use High-Fidelity Indicators
+
+Focus on indicators with a strong relationship to malicious activity.
+
+Examples:
+
+- Known malicious IPs
+- Suspicious parent-child processes
+- Credential dumping behavior
+- Unauthorized administrative actions
+
+Benefits:
+
+- Higher confidence alerts
+- Fewer false positives
+
+---
+
+## 3. Add Temporal and Threshold Logic Carefully
+
+Time-based and threshold-based conditions help improve accuracy.
+
+### Example
+
+Instead of:
+
+```text
+Failed Login Detected
+```
+
+Use:
+
+```text
+More than 10 failed logins
+within 5 minutes
+from the same source
+```
+
+Benefits:
+
+- Better context
+- Reduced noise
+- Improved detection quality
+
+---
+
+## 4. Consider Evasion Techniques
+
+Attackers often attempt to bypass detection.
+
+Examples:
+
+### Alternate Execution
+
+Using different tools or execution methods.
+
+### Command-Line Obfuscation
+
+Hiding malicious commands using:
+
+- Encoding
+- String manipulation
+- Obfuscation techniques
+
+### Missing Command-Line Fields
+
+Some logs may not contain complete command-line information.
+
+Detection rules should account for these limitations.
+
+---
+
+## 5. Continuous Tuning and Feedback Loops
+
+Detection engineering is an ongoing process.
+
+Activities include:
+
+- Reviewing alerts
+- Analyzing false positives
+- Updating rule logic
+- Improving detection accuracy
+
+Benefits:
+
+- Higher detection quality
+- Reduced alert fatigue
+- Better SOC performance
+
+---
+
+## 6. Use Tags and Metadata
+
+Tags help organize and manage detection rules.
+
+Examples:
+
+- MITRE ATT&CK Tags
+- Threat Categories
+- Severity Levels
+- Detection Types
+
+Benefits:
+
+- Easier reporting
+- Better searchability
+- Improved threat mapping
+
+---
+
+# Alert Categories
+
+Alerts can be categorized based on severity and impact.
+
+### Critical
+
+Immediate action required.
+
+Examples:
+
+- Ransomware activity
+- Domain compromise
+- Active data exfiltration
+
+---
+
+### High
+
+Significant security concern.
+
+Examples:
+
+- Privilege escalation
+- Credential dumping
+- Lateral movement
+
+---
+
+### Medium
+
+Requires investigation.
+
+Examples:
+
+- Suspicious login activity
+- Abnormal user behavior
+
+---
+
+### Low
+
+Minor security concern.
+
+Examples:
+
+- Policy violations
+- Unusual but non-malicious activity
+
+---
+
+### Informational
+
+Awareness and monitoring purposes.
+
+Examples:
+
+- Successful logins
+- System changes
+- Scheduled activities
+
+---
+
+# Detection Rule Development Process
+
+```text
+Define Objective
+        ↓
+Identify Data Sources
+        ↓
+Create Detection Logic
+        ↓
+Add Thresholds
+        ↓
+Test Detection
+        ↓
+Tune Rule
+        ↓
+Deploy
+        ↓
+Monitor & Improve
+```
+
+---
+
+# Key Takeaway
+
+Effective detection rules are not just about catching threats—they are about catching the right threats while minimizing false positives.
+
+Strong detection engineering combines:
+
+- Clear objectives
+- High-quality indicators
+- Proper thresholds
+- Continuous tuning
+- Threat intelligence
+- ATT&CK mapping
+
+The goal is to create actionable alerts that help analysts respond quickly and accurately.
+
+#CyberSecurity #DetectionEngineering #SOC #SIEM #ThreatDetection #BlueTeam #ThreatHunting #IncidentResponse #MITREATTACK #LearningInPublic
