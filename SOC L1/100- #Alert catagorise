@@ -1,0 +1,94 @@
+# Alert Categories
+
+## Why Categorize Alerts?
+
+Alert categorization helps Security Operations Center (SOC) teams manage and respond to security events more effectively.
+
+### Benefits of Alert Categorization
+
+### 1. Prioritization
+
+Categorizing alerts helps analysts focus on the most critical threats first.
+
+Examples:
+
+- Critical alerts → Immediate response
+- Medium alerts → Investigation required
+- Low alerts → Monitoring
+
+---
+
+### 2. Automation and Playbooks
+
+Different alert categories can trigger different automated response actions.
+
+Examples:
+
+- Malware Alert → Isolate Endpoint
+- Brute Force Alert → Lock User Account
+- Phishing Alert → Block Sender
+
+This improves response speed and consistency.
+
+---
+
+### 3. Noise Reduction
+
+Alert categorization helps reduce alert fatigue by filtering and organizing security events.
+
+Benefits:
+
+- Fewer false positives
+- Better analyst productivity
+- Faster investigations
+
+---
+
+### 4. Threat Hunting and Reporting
+
+Categorized alerts provide valuable insights for:
+
+- Threat Hunting
+- Incident Investigations
+- Security Reporting
+- Trend Analysis
+
+Benefits:
+
+- Better visibility into attack patterns
+- Improved security posture
+- Enhanced decision-making
+
+---
+
+# Common Alert Categories
+
+### Critical
+- Active ransomware
+- Domain compromise
+- Data exfiltration
+
+### High
+- Privilege escalation
+- Credential theft
+- Lateral movement
+
+### Medium
+- Suspicious logins
+- Unusual user activity
+
+### Low
+- Policy violations
+- Configuration changes
+
+### Informational
+- Successful logins
+- Routine system events
+
+---
+
+# Key Takeaway
+
+Alert categorization is essential for effective SOC operations. It enables prioritization, automation, noise reduction, threat hunting, and better reporting, ensuring security teams can focus on the threats that matter most.
+
+#CyberSecurity #SOC #SIEM #ThreatDetection #IncidentResponse #BlueTeam #ThreatHunting #AlertManagement #SecurityOperations #LearningInPublic
