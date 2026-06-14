@@ -1,0 +1,132 @@
+# Alert Categories in Cybersecurity
+
+Alert categorization helps SOC analysts quickly identify, prioritize, investigate, and respond to security incidents.
+
+---
+
+## 1. Reconnaissance Alerts
+
+These alerts indicate attempts to gather information about a target environment.
+
+### Examples
+- Port scanning
+- Network scanning
+- Vulnerability scanning
+- Service enumeration
+
+### Goal
+Identify attackers before they gain access.
+
+---
+
+## 2. Access and Authentication Alerts
+
+Alerts related to user authentication and access control activities.
+
+### Examples
+- Multiple failed login attempts
+- Brute-force attacks
+- Privileged account logins
+- Suspicious login locations
+
+### Goal
+Detect unauthorized access attempts.
+
+---
+
+## 3. Malware and Exploit Alerts
+
+Generated when malicious software or exploitation attempts are detected.
+
+### Examples
+- Malware execution
+- Ransomware activity
+- Exploit kit detection
+- Malicious file downloads
+
+### Goal
+Prevent system compromise and malware spread.
+
+---
+
+## 4. Lateral Movement Alerts
+
+Indicate that an attacker may be moving between systems after initial compromise.
+
+### Examples
+- Pass-the-Hash attacks
+- Remote service execution
+- Suspicious RDP activity
+- Credential reuse
+
+### Goal
+Detect attacker movement within the network.
+
+---
+
+## 5. Data Exfiltration Alerts
+
+Generated when sensitive data is transferred outside the organization.
+
+### Examples
+- Large outbound data transfers
+- Unusual file uploads
+- Cloud storage abuse
+- Suspicious FTP activity
+
+### Goal
+Protect sensitive information from theft.
+
+---
+
+## 6. Policy Violation Alerts
+
+Triggered when users or systems violate organizational security policies.
+
+### Examples
+- Unauthorized software installation
+- Use of prohibited applications
+- Security control bypass attempts
+- Compliance violations
+
+### Goal
+Maintain security standards and compliance.
+
+---
+
+## 7. Command and Control (C2) Communication Alerts
+
+Indicate communication between an infected system and an attacker-controlled server.
+
+### Examples
+- Beaconing activity
+- Suspicious DNS requests
+- Communication with known malicious IPs
+- Encrypted outbound connections to suspicious domains
+
+### Goal
+Detect active compromises and attacker infrastructure communication.
+
+---
+
+# Why Alert Categorization Matters
+
+### Prioritization
+Helps analysts focus on the most critical threats first.
+
+### Automation & Playbooks
+Different alert types can trigger automated response actions.
+
+### Noise Reduction
+Reduces alert fatigue and improves SOC efficiency.
+
+### Threat Hunting & Reporting
+Provides structured data for investigations and security reporting.
+
+---
+
+# Key Takeaway
+
+Effective alert categorization improves incident response, reduces investigation time, and helps security teams focus on genuine threats. By organizing alerts into categories such as Reconnaissance, Authentication, Malware, Lateral Movement, Data Exfiltration, Policy Violations, and C2 Communications, SOC analysts can respond faster and more accurately.
+
+#CyberSecurity #SOC #SIEM #ThreatDetection #BlueTeam #IncidentResponse #ThreatHunting #SecurityOperations #LearningInPublic
