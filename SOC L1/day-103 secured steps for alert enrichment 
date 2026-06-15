@@ -1,0 +1,238 @@
+# Alert Enrichment – Steps and Enrichment Sources
+
+## What is Alert Enrichment?
+
+Alert enrichment is the process of adding additional context and intelligence to a security alert so that analysts can investigate and respond more effectively.
+
+The goal is to transform a raw alert into an actionable security event.
+
+---
+
+# Steps of Alert Enrichment
+
+### Step 1: Alert Triggered
+
+A security tool generates an alert based on suspicious activity.
+
+Examples:
+
+- Failed login attempts
+- Malware detection
+- Suspicious PowerShell execution
+- Unusual network traffic
+
+---
+
+### Step 2: System Queries Enrichment Sources
+
+The SIEM or security platform automatically queries various enrichment sources to gather additional information.
+
+Purpose:
+
+- Collect context
+- Improve alert accuracy
+- Reduce investigation time
+
+---
+
+### Step 3: Enrichment Data Retrieved
+
+The system retrieves relevant information from internal and external sources.
+
+Examples:
+
+- User details
+- Asset information
+- Threat intelligence
+- Geolocation data
+
+---
+
+### Step 4: Alert Enriched with Context
+
+The collected information is attached to the original alert.
+
+Instead of seeing:
+
+```text
+Failed Login Detected
+```
+
+The analyst sees:
+
+```text
+Failed Login Detected
+User: John Doe
+Department: Finance
+Source IP: 45.x.x.x
+Country: Russia
+Risk Score: High
+```
+
+---
+
+### Step 5: Output
+
+The final enriched alert is sent to:
+
+- SOC Analysts
+- Incident Responders
+- SOAR Platforms
+- Security Dashboards
+
+This enables faster decision-making.
+
+---
+
+# Alert Enrichment Ecosystem
+
+Several systems contribute enrichment data.
+
+## 1. Threat Intelligence Platforms (TIP)
+
+Provide external threat information.
+
+Examples:
+
+- Malicious IP reputation
+- Malicious domains
+- Indicators of Compromise (IOCs)
+- Threat actor information
+
+Purpose:
+
+Identify known malicious activity.
+
+---
+
+## 2. Asset Management Tools
+
+Provide information about devices and assets.
+
+Examples:
+
+- Hostname
+- Asset owner
+- Device criticality
+- Operating system
+
+Purpose:
+
+Understand the importance of the affected asset.
+
+---
+
+## 3. Identity and Access Management (IAM) Systems
+
+Provide user-related information.
+
+Examples:
+
+- Username
+- Department
+- Role
+- Privilege level
+
+Purpose:
+
+Determine who is involved in the alert.
+
+---
+
+## 4. GeoIP and WHOIS Services
+
+Provide location and ownership information.
+
+### GeoIP
+
+Provides:
+
+- Country
+- City
+- Region
+
+### WHOIS
+
+Provides:
+
+- Domain ownership
+- Registration details
+
+Purpose:
+
+Identify suspicious login locations and malicious domains.
+
+---
+
+## 5. Vulnerability Scanners
+
+Provide vulnerability-related context.
+
+Examples:
+
+- CVEs
+- Vulnerability severity
+- Patch status
+
+Tools:
+
+- Nessus
+- OpenVAS
+- Qualys
+
+Purpose:
+
+Understand whether the affected system has known weaknesses.
+
+---
+
+## 6. SOAR Platforms
+
+SOAR stands for Security Orchestration, Automation, and Response.
+
+Functions:
+
+- Automated investigations
+- Automated responses
+- Playbook execution
+
+Examples:
+
+- Splunk SOAR
+- Cortex XSOAR
+
+Purpose:
+
+Accelerate incident response.
+
+---
+
+# Alert Enrichment Workflow
+
+```text
+Alert Triggered
+        ↓
+Query Enrichment Sources
+        ↓
+Collect Context Data
+        ↓
+Threat Intelligence Check
+        ↓
+Asset & User Validation
+        ↓
+GeoIP & WHOIS Lookup
+        ↓
+Vulnerability Assessment
+        ↓
+Enriched Alert Generated
+        ↓
+SOC Investigation
+```
+
+---
+
+# Key Takeaway
+
+Alert enrichment helps security teams move from raw alerts to actionable intelligence. By combining Threat Intelligence, Asset Management, Identity Systems, GeoIP, WHOIS, Vulnerability Scanners, and SOAR platforms, analysts gain the context needed to investigate incidents faster, reduce false positives, and improve overall security operations.
+
+#CyberSecurity #SOC #SIEM #AlertEnrichment #ThreatIntelligence #BlueTeam #SOAR #IncidentResponse #ThreatHunting #LearningInPublic
