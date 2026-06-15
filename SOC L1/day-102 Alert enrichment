@@ -1,0 +1,258 @@
+# Alert Enrichment
+
+## What is Alert Enrichment?
+
+Alert Enrichment is the process of adding additional context and intelligence to security alerts so analysts can investigate and respond more effectively.
+
+Instead of looking at a raw alert, analysts receive enriched information that helps them understand the threat faster.
+
+---
+
+# Why Alert Enrichment is Important
+
+### Benefits
+
+- Faster investigations
+- Better threat prioritization
+- Reduced analyst workload
+- Improved incident response
+- Lower false positives
+- Enhanced threat visibility
+
+---
+
+# Alert Enrichment Process
+
+## Phase 1: Alert Generation
+
+A security tool generates an alert based on suspicious activity.
+
+### Examples
+
+- Failed login attempts
+- Malware detection
+- Unusual network traffic
+- Suspicious PowerShell execution
+
+---
+
+## Phase 2: Data Collection
+
+Additional information is gathered from multiple sources.
+
+### Sources
+
+- SIEM Logs
+- EDR Solutions
+- Firewall Logs
+- DNS Logs
+- Active Directory
+- Cloud Platforms
+
+Purpose:
+
+Collect supporting evidence related to the alert.
+
+---
+
+## Phase 3: Context Enrichment
+
+The alert is enriched with contextual information.
+
+### User Context
+
+- Username
+- Department
+- Privilege level
+- Login history
+
+### Asset Context
+
+- Hostname
+- Device owner
+- Asset criticality
+- Operating system
+
+Purpose:
+
+Understand who and what is involved.
+
+---
+
+## Phase 4: Threat Intelligence Enrichment
+
+Threat intelligence feeds are used to enrich the alert.
+
+### Examples
+
+- Malicious IP reputation
+- Malicious domains
+- Known malware hashes
+- Indicators of Compromise (IOCs)
+
+Purpose:
+
+Determine whether the activity is linked to known threats.
+
+---
+
+## Phase 5: Correlation
+
+Related events are linked together.
+
+### Example
+
+An analyst may correlate:
+
+- Failed logins
+- Successful login
+- Privilege escalation
+- Data transfer
+
+This helps reveal the full attack chain.
+
+---
+
+## Phase 6: Risk Scoring and Prioritization
+
+The alert is assigned a risk level.
+
+### Risk Factors
+
+- Threat severity
+- Asset criticality
+- User privileges
+- IOC matches
+- Business impact
+
+### Example
+
+| Risk Score | Priority |
+|------------|----------|
+| 0-30 | Low |
+| 31-60 | Medium |
+| 61-80 | High |
+| 81-100 | Critical |
+
+---
+
+## Phase 7: Analyst Investigation
+
+The enriched alert is reviewed by a SOC analyst.
+
+Analysts can quickly determine:
+
+- Is the alert legitimate?
+- Is it malicious?
+- What systems are affected?
+- What actions should be taken?
+
+---
+
+## Phase 8: Response and Remediation
+
+Based on the investigation, response actions are initiated.
+
+### Examples
+
+- Block IP address
+- Disable compromised account
+- Isolate infected endpoint
+- Remove malware
+- Update security controls
+
+---
+
+# Types of Alert Enrichment
+
+## User Enrichment
+
+Adds information about users.
+
+Examples:
+
+- Username
+- Role
+- Department
+- Privilege level
+
+---
+
+## Asset Enrichment
+
+Adds information about devices.
+
+Examples:
+
+- Hostname
+- Asset owner
+- Criticality
+- Operating system
+
+---
+
+## Threat Intelligence Enrichment
+
+Adds external threat data.
+
+Examples:
+
+- Malicious IP reputation
+- Domain reputation
+- IOC matches
+
+---
+
+## Geolocation Enrichment
+
+Adds location-based information.
+
+Examples:
+
+- Country
+- Region
+- City
+
+Useful for detecting impossible travel and suspicious logins.
+
+---
+
+## Vulnerability Enrichment
+
+Adds vulnerability-related information.
+
+Examples:
+
+- CVE Information
+- Vulnerability Severity
+- Patch Status
+
+---
+
+# Example Alert Enrichment Workflow
+
+```text
+Raw Alert
+    ↓
+Data Collection
+    ↓
+Context Enrichment
+    ↓
+Threat Intelligence Enrichment
+    ↓
+Event Correlation
+    ↓
+Risk Scoring
+    ↓
+Investigation
+    ↓
+Response
+```
+
+---
+
+# Key Takeaway
+
+Alert Enrichment transforms raw security alerts into actionable intelligence. By adding user, asset, threat intelligence, geolocation, and vulnerability context, security teams can investigate incidents faster, reduce false positives, and improve overall incident response effectiveness.
+
+#CyberSecurity #SOC #SIEM #AlertEnrichment #ThreatDetection #BlueTeam #IncidentResponse #ThreatIntelligence #SecurityOperations #LearningInPublic
