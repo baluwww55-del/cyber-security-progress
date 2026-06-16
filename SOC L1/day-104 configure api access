@@ -1,0 +1,234 @@
+# Configuring API Access for Alert Enrichment
+
+Today I learned how Security Operations Centers (SOCs) use APIs to integrate external threat intelligence and enrichment platforms into SIEM and SOAR workflows.
+
+API integration allows security tools to automatically fetch contextual information and enrich alerts with valuable intelligence.
+
+---
+
+# Why API Integration is Important
+
+Benefits:
+
+- Automated alert enrichment
+- Faster investigations
+- Improved threat detection
+- Reduced manual effort
+- Better incident response
+
+---
+
+# Common Threat Intelligence APIs
+
+## 1. VirusTotal API
+
+A threat intelligence platform used to analyze:
+
+- Files
+- URLs
+- IP Addresses
+- Domains
+
+### Use Cases
+
+- Check file hashes
+- Investigate suspicious domains
+- Verify IP reputation
+- Detect malware
+
+Purpose:
+
+Determine whether an indicator is malicious.
+
+---
+
+## 2. AlienVault OTX API
+
+OTX stands for Open Threat Exchange.
+
+Provides:
+
+- Indicators of Compromise (IOCs)
+- Threat actor intelligence
+- Malware indicators
+- Community threat feeds
+
+### Use Cases
+
+- IOC enrichment
+- Threat intelligence lookups
+- Threat hunting
+
+Purpose:
+
+Identify known malicious indicators.
+
+---
+
+## 3. MISP API
+
+MISP stands for Malware Information Sharing Platform.
+
+Provides:
+
+- Threat intelligence sharing
+- IOC management
+- Threat event correlation
+
+### Use Cases
+
+- Indicator sharing
+- Community intelligence
+- Security collaboration
+
+Purpose:
+
+Exchange and consume threat intelligence efficiently.
+
+---
+
+## 4. Recorded Future API
+
+A commercial threat intelligence platform.
+
+Provides:
+
+- Threat actor intelligence
+- Risk scores
+- Vulnerability intelligence
+- Malware insights
+
+### Use Cases
+
+- Risk-based prioritization
+- Threat intelligence enrichment
+- Advanced investigations
+
+Purpose:
+
+Provide real-time threat context.
+
+---
+
+## 5. Anomali API
+
+A Threat Intelligence Platform (TIP).
+
+Provides:
+
+- IOC feeds
+- Threat intelligence
+- Risk scoring
+- Threat correlations
+
+### Use Cases
+
+- Alert enrichment
+- Threat detection
+- Security analytics
+
+Purpose:
+
+Improve visibility into emerging threats.
+
+---
+
+# General API Configuration Process
+
+## Step 1: Create an Account
+
+Register with the threat intelligence provider.
+
+Examples:
+
+- VirusTotal
+- AlienVault OTX
+- MISP
+- Recorded Future
+- Anomali
+
+---
+
+## Step 2: Generate API Key
+
+Most platforms provide an API key for authentication.
+
+Example:
+
+```text
+API Key: xxxxxxxxxxxxxxxxx
+```
+
+Purpose:
+
+Authenticate requests securely.
+
+---
+
+## Step 3: Configure SIEM or SOAR
+
+Integrate the API into:
+
+- Splunk
+- QRadar
+- Microsoft Sentinel
+- Cortex XSOAR
+- Splunk SOAR
+
+---
+
+## Step 4: Query Threat Intelligence Sources
+
+The platform automatically queries APIs when an alert occurs.
+
+Example:
+
+```text
+Suspicious IP Detected
+        ↓
+Query VirusTotal
+        ↓
+Query AlienVault OTX
+        ↓
+Query MISP
+```
+
+---
+
+## Step 5: Enrich Alert
+
+Additional information is added:
+
+- Reputation Score
+- Threat Classification
+- Geolocation
+- IOC Matches
+- Malware Associations
+
+---
+
+# API-Based Alert Enrichment Workflow
+
+```text
+Alert Generated
+        ↓
+API Request Sent
+        ↓
+Threat Intelligence Lookup
+        ↓
+Enrichment Data Retrieved
+        ↓
+Risk Score Calculated
+        ↓
+Alert Updated
+        ↓
+SOC Investigation
+```
+
+---
+
+# Key Takeaway
+
+APIs play a critical role in modern cybersecurity operations. By integrating threat intelligence platforms such as VirusTotal, AlienVault OTX, MISP, Recorded Future, and Anomali, organizations can automatically enrich alerts with valuable context, helping analysts investigate threats faster and make better security decisions.
+
+#CyberSecurity #ThreatIntelligence #APIIntegration #SOC #SIEM #SOAR #AlertEnrichment #ThreatHunting #IncidentResponse #LearningInPublic
