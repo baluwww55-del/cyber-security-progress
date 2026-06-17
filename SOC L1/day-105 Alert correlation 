@@ -1,0 +1,113 @@
+# Alert Correlation in SOC
+
+## What is Alert Correlation?
+
+Alert Correlation is the process of linking multiple related security alerts into a single security incident.
+
+### Example
+- Multiple failed login attempts
+- Successful login
+- RDP access from a new location
+
+These events can be correlated into a single **Credential Compromise Incident**.
+
+---
+
+# Types of Alert Correlation
+
+## 1. Rule-Based Correlation
+Uses predefined rules and conditions to connect related events.
+
+**Examples:**
+- Signature-based correlation
+- Condition matching
+
+---
+
+## 2. Temporal Correlation
+Links events based on time relationships.
+
+**Example:**
+- Sequence-based correlation
+- Events occurring within a specific timeframe
+
+---
+
+## 3. Statistical Correlation
+Uses patterns, baselines, and anomaly detection to identify suspicious activities.
+
+---
+
+## 4. Entity-Based Correlation
+Correlates alerts around a common entity such as:
+
+- User
+- Host
+- IP Address
+- Device
+
+---
+
+## 5. Threat Intelligence Enrichment
+Enhances alerts using external threat intelligence sources to provide additional context.
+
+---
+
+# Common Correlation Scenarios
+
+### Credential Compromise
+Unauthorized access using stolen credentials.
+
+### Lateral Movement
+Attackers moving between systems within a network.
+
+### Data Exfiltration
+Unauthorized transfer of sensitive data.
+
+### Persistence
+Techniques used by attackers to maintain long-term access.
+
+---
+
+# RDP (Remote Desktop Protocol)
+
+RDP is a protocol that allows users to remotely access and control another computer over a network.
+
+---
+
+# Advanced Alert Correlation Insights
+
+## Correlation Drift
+
+Occurs when correlation rules become less effective over time due to:
+
+- Changes in attacker behavior
+- Infrastructure modifications
+- New attack techniques
+
+---
+
+## Correlation Evasion Techniques
+
+Methods attackers use to avoid detection:
+
+- Spreading activities over time
+- Using multiple accounts
+- Modifying attack patterns
+- Blending with normal user behavior
+
+---
+
+# Benefits of Alert Correlation
+
+- Reduces alert fatigue
+- Improves incident detection accuracy
+- Enhances threat visibility
+- Accelerates investigations
+- Supports threat hunting
+
+---
+
+# Key Takeaway
+
+Alert Correlation helps SOC analysts connect isolated alerts, identify real security incidents, and respond to threats more effectively.
