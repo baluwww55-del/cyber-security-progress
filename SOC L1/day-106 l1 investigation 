@@ -1,0 +1,154 @@
+# L1 Investigation – Brute Force Attacks
+
+## Overview
+
+As part of my L1 SOC Investigation learning, I studied different types of brute force attacks and how attackers attempt to gain unauthorized access to systems and accounts.
+
+---
+
+# What is a Brute Force Attack?
+
+A brute force attack is a technique where an attacker repeatedly tries different username and password combinations until the correct credentials are found.
+
+### Common Indicators
+
+- Multiple failed login attempts
+- Repeated authentication failures
+- Login attempts from unusual locations
+- High volume of requests against authentication services
+- Account lockout events
+
+---
+
+# Types of Brute Force Attacks
+
+## 1. Online Brute Force
+
+The attacker continuously attempts different passwords against a single account through a live login portal.
+
+### Characteristics
+- Direct interaction with the target system
+- Generates multiple authentication failures
+- May trigger account lockout policies
+
+### Detection
+- Excessive failed login attempts
+- Multiple login attempts from the same IP address
+
+---
+
+## 2. Password Spraying
+
+The attacker uses a small set of common passwords against many user accounts.
+
+### Example
+
+Password: `Welcome123`
+
+Target Accounts:
+- user1
+- user2
+- user3
+- user4
+
+### Why Attackers Use It
+- Avoids account lockouts
+- Harder to detect than traditional brute force
+
+### Detection
+- One password attempted across multiple accounts
+- Authentication failures across many users
+
+---
+
+## 3. Credential Stuffing
+
+The attacker uses leaked username-password pairs from previous data breaches.
+
+### Example
+
+Credentials obtained from a breached website are tested against:
+- Email accounts
+- VPN portals
+- Corporate applications
+
+### Detection
+- Successful logins from unfamiliar devices
+- Multiple accounts accessed from the same IP
+- Logins using known compromised credentials
+
+---
+
+## 4. Horizontal Brute Force
+
+The attacker tries the same password across multiple accounts.
+
+### Example
+
+Password:
+```
+Spring2025!
+```
+
+Accounts:
+- user1
+- user2
+- user3
+
+### Detection
+- Same password pattern used against many users
+- Authentication failures distributed across accounts
+
+---
+
+## 5. Vertical Brute Force
+
+The attacker targets a single account and attempts many passwords.
+
+### Example
+
+Target:
+```
+admin
+```
+
+Passwords:
+- password123
+- admin123
+- welcome123
+- company2025
+
+### Detection
+- High number of failed logins for one account
+- Account lockout events
+
+---
+
+# SOC Investigation Approach
+
+When investigating brute force activity:
+
+1. Identify affected accounts
+2. Review authentication logs
+3. Check source IP addresses
+4. Determine attack type
+5. Investigate successful logins after failures
+6. Look for lateral movement
+7. Escalate if compromise is confirmed
+
+---
+
+# Key Log Sources
+
+- Windows Security Logs
+- Active Directory Logs
+- VPN Logs
+- Firewall Logs
+- Identity Provider Logs
+- Cloud Authentication Logs
+
+---
+
+# Key Takeaway
+
+Understanding the differences between Online Brute Force, Password Spraying, Credential Stuffing, Horizontal Brute Force, and Vertical Brute Force helps SOC analysts quickly identify attack patterns and respond effectively to potential account compromises.
