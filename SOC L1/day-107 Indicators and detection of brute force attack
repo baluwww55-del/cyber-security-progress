@@ -1,0 +1,96 @@
+# Brute Force Attack Indicators & Detection Strategies
+
+## Overview
+
+During an L1 SOC investigation, identifying brute force attacks early is critical to preventing unauthorized access. Security analysts monitor authentication logs and user behavior to detect suspicious login activities.
+
+---
+
+# Key Indicators of Brute Force Attacks
+
+## 1. Multiple Failed Login Attempts from the Same IP
+
+### Description
+A single IP address generates numerous failed authentication attempts against one or more user accounts.
+
+### Why It Matters
+This is one of the most common indicators of a brute force attack.
+
+### Investigation Steps
+- Identify the source IP address.
+- Count failed login attempts.
+- Check if the IP is known or malicious.
+- Review geolocation information.
+
+---
+
+## 2. Logins from Unusual Geolocations
+
+### Description
+A user account successfully logs in from a location that is unusual or unexpected.
+
+### Why It Matters
+May indicate:
+- Account compromise
+- Credential theft
+- Use of VPNs or proxy services
+
+### Investigation Steps
+- Compare with the user's normal login locations.
+- Check for impossible travel scenarios.
+- Verify user activity with identity logs.
+
+---
+
+## 3. Account Lockouts Due to Excessive Login Attempts
+
+### Description
+An account becomes locked after exceeding the maximum allowed failed login attempts.
+
+### Why It Matters
+Account lockouts are strong indicators of brute force or password spraying attacks.
+
+### Investigation Steps
+- Identify affected accounts.
+- Determine source IP addresses.
+- Check if multiple accounts are impacted.
+- Look for password spraying patterns.
+
+---
+
+## 4. Successful Login After Multiple Failed Attempts
+
+### Description
+A successful authentication occurs immediately after several failed login attempts.
+
+### Why It Matters
+This may indicate that the attacker successfully guessed the correct password.
+
+### Investigation Steps
+- Review login history.
+- Check device and IP reputation.
+- Investigate post-login activities.
+- Monitor for privilege escalation or lateral movement.
+
+---
+
+## 5. High Rate of Login Attempts Within a Short Timeframe
+
+### Description
+A large number of authentication requests are generated within minutes or seconds.
+
+### Why It Matters
+Attackers often automate brute force attacks using scripts and tools.
+
+### Investigation Steps
+- Analyze authentication logs.
+- Identify affected users.
+- Measure login frequency.
+- Check for automated attack behavior.
+
+---
+
+# Detection Strategies
+
+### Rule-Based Detection
+- Detect multiple failed logins from a
