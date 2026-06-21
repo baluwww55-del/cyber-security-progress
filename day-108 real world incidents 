@@ -1,0 +1,107 @@
+# Real-World Brute Force Attack Indicators
+
+## Overview
+
+During L1 SOC investigations, analysts look for specific indicators that may suggest a brute force attack is occurring or has already succeeded. Understanding these indicators helps security teams detect threats early and respond effectively.
+
+---
+
+## Common Brute Force Indicators
+
+### 1. Multiple Failed Logins from the Same IP Address
+
+#### Description
+A large number of failed authentication attempts originating from a single IP address.
+
+#### Why It Matters
+This often indicates an attacker is attempting to guess user credentials through automated password attacks.
+
+#### Example
+- 100+ failed login attempts
+- Same source IP
+- Multiple user accounts targeted
+
+---
+
+### 2. Logins from Unusual Geolocations
+
+#### Description
+A user account logs in from a country, city, or region that differs from the user's normal activity.
+
+#### Why It Matters
+This may indicate:
+- Stolen credentials
+- Account compromise
+- Use of VPNs or anonymization services
+
+#### Example
+A user typically logs in from India but suddenly authenticates from another country.
+
+---
+
+### 3. Account Locked Due to Excessive Login Attempts
+
+#### Description
+An account becomes locked after exceeding the organization's login threshold.
+
+#### Why It Matters
+Account lockouts are strong indicators of:
+- Brute force attacks
+- Password spraying attempts
+- Automated authentication abuse
+
+#### Example
+- Account locked after 10 failed login attempts
+- Multiple lockouts occurring across different accounts
+
+---
+
+### 4. Successful Login After Multiple Failures
+
+#### Description
+A successful authentication event occurs immediately after several failed login attempts.
+
+#### Why It Matters
+This may indicate that an attacker successfully guessed or obtained the correct password.
+
+#### Example
+```
+Failed Login × 20
+↓
+Successful Login
+↓
+Suspicious Activity Begins
+```
+
+---
+
+### 5. High Rate of Login Attempts in a Short Time
+
+#### Description
+A significant number of login attempts occur within a brief time period.
+
+#### Why It Matters
+Attackers often use automated tools to rapidly test credentials.
+
+#### Example
+- Hundreds of login attempts within minutes
+- Authentication requests generated at an abnormal rate
+
+---
+
+## SOC Investigation Checklist
+
+When these indicators are observed:
+
+- Review authentication logs
+- Identify source IP addresses
+- Check user activity history
+- Analyze geolocation data
+- Investigate successful logins following failures
+- Determine whether the activity is malicious or legitimate
+
+---
+
+## Key Takeaway
+
+Multiple failed logins, unusual login locations, account lockouts, successful logins after repeated failures, and high authentication rates are among the most common indicators of brute force attacks. Early detection of these signs helps SOC analysts prevent account compromise and reduce organizational risk.
