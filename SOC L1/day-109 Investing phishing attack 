@@ -1,0 +1,160 @@
+# Day 1 – Investigating Phishing Attacks
+
+## What is Phishing?
+
+Phishing is a type of social engineering attack where attackers attempt to trick users into revealing sensitive information such as:
+
+- Usernames
+- Passwords
+- Banking details
+- MFA codes
+- Personal information
+
+Phishing attacks are commonly delivered through emails, SMS messages, phone calls, or social media platforms.
+
+---
+
+# Common Phishing Techniques
+
+## 1. Spear Phishing
+A targeted phishing attack aimed at a specific individual or organization.
+
+**Example:**
+An email pretending to be from your manager asking for confidential information.
+
+---
+
+## 2. Vishing (Voice Phishing)
+Attackers use phone calls to trick victims into revealing sensitive information.
+
+**Example:**
+A fake bank representative requesting OTP or account details.
+
+---
+
+## 3. Smishing (SMS Phishing)
+Phishing attacks delivered through text messages.
+
+**Example:**
+"Your bank account has been suspended. Click here to verify."
+
+---
+
+## 4. Angler Phishing
+Attackers impersonate customer support accounts on social media platforms.
+
+**Example:**
+Fake support accounts responding to customer complaints.
+
+---
+
+## 5. Business Email Compromise (BEC)
+Attackers impersonate executives, vendors, or trusted business partners.
+
+**Example:**
+A fake CEO requesting an urgent fund transfer.
+
+---
+
+# Common Phishing Indicators
+
+## Suspicious Attachments
+- Fake invoices
+- Password-protected files
+- Unexpected attachments
+- Macro-enabled documents
+
+## Urgent Language
+Examples:
+- "Account will be disabled"
+- "Immediate action required"
+- "Verify now"
+
+## Suspicious Links
+- Misspelled domains
+- Shortened URLs
+- Lookalike websites
+- Hidden hyperlinks
+
+## Sender Impersonation
+- Fake company domains
+- Spoofed email addresses
+- Similar display names
+
+## QR Code Phishing (Quishing)
+Malicious QR codes redirect users to fake login pages.
+
+---
+
+# Phishing Attack Categories
+
+| Category | Threat Actor Goal | Modern Technique |
+|-----------|------------------|------------------|
+| Lure Emails | Credential Theft | QR Code Phishing |
+| Fake Attachments | Malware Delivery | HTML Smuggling |
+| Account Urgency | Credential Harvesting | MFA Fatigue |
+| Social Media Scams | User Deception | Angler Phishing |
+| Executive Impersonation | Financial Fraud | Business Email Compromise |
+
+---
+
+# L1 SOC Investigation Steps for Phishing
+
+### Step 1: Review the Alert
+- Examine email details
+- Check sender information
+- Review alert severity
+
+### Step 2: Analyze Sender
+- Sender domain
+- SPF/DKIM/DMARC results
+- Domain reputation
+
+### Step 3: Inspect URLs
+- Check destination links
+- Verify domain age
+- Analyze URL reputation
+
+### Step 4: Analyze Attachments
+- File type
+- Hash value
+- Malware scan results
+
+### Step 5: Check User Activity
+- Login attempts
+- Account compromise indicators
+- Suspicious authentication events
+
+### Step 6: Determine Impact
+- Was the email opened?
+- Was the link clicked?
+- Was malware executed?
+
+### Step 7: Escalate if Required
+- Document findings
+- Contain affected systems
+- Notify incident response team
+
+---
+
+# Key Learning
+
+Phishing remains one of the most common initial attack vectors used by cybercriminals. As an L1 SOC Analyst, understanding phishing techniques, indicators, and investigation methodologies is critical for detecting and responding to threats before they cause damage.
+
+## Skills Learned Today
+
+- Phishing Investigation
+- Social Engineering Techniques
+- Email Analysis
+- URL Inspection
+- Attachment Analysis
+- Sender Verification
+- IOC Identification
+- Incident Triage
+- Threat Detection
+
+---
+
+# Today's Takeaway
+
+Every phishing email leaves clues. The job of a SOC analyst is to identify those clues, validate the threat, and stop the attack before it impacts the organization.
