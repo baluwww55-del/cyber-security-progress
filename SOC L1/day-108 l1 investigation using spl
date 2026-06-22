@@ -1,0 +1,206 @@
+# Today I Learned: SPL Queries for L1 SOC Investigation
+
+## What is SPL?
+
+SPL (Search Processing Language) is the query language used in Splunk to search, analyze, and investigate machine-generated data.
+
+SOC analysts use SPL to:
+- Investigate security alerts
+- Analyze logs
+- Detect suspicious activities
+- Perform threat hunting
+- Create dashboards and reports
+
+---
+
+# Basic SPL Search
+
+```spl
+index=security
+```
+
+Searches all events within the security index.
+
+---
+
+# Common SPL Queries for L1 Investigations
+
+## Search Failed Login Attempts
+
+```spl
+index=security EventCode=4625
+```
+
+Used to identify failed authentication attempts.
+
+---
+
+## Search Successful Logins
+
+```spl
+index=security EventCode=4624
+```
+
+Used to identify successful user authentications.
+
+---
+
+## Count Failed Logins by User
+
+```spl
+index=security EventCode=4625
+| stats count by user
+```
+
+Helps identify targeted user accounts.
+
+---
+
+## Count Failed Logins by Source IP
+
+```spl
+index=security EventCode=4625
+| stats count by src_ip
+```
+
+Helps identify suspicious source IP addresses.
+
+---
+
+## Find Top Source IPs
+
+```spl
+index=security
+| top src_ip
+```
+
+Displays the most active source IPs.
+
+---
+
+## Search Events for a Specific User
+
+```spl
+index=security user="admin"
+```
+
+Investigates activities associated with a particular account.
+
+---
+
+## Search Events from Last 24 Hours
+
+```spl
+index=security earliest=-24h
+```
+
+Retrieves events generated during the previous 24 hours.
+
+---
+
+## Detect Possible Brute Force Attacks
+
+```spl
+index=security EventCode=4625
+| stats count by user
+| where count > 10
+```
+
+Identifies accounts experiencing excessive failed logins.
+
+---
+
+## Search by IP Address
+
+```spl
+index=security src_ip="192.168.1.10"
+```
+
+Investigates activity originating from a specific IP address.
+
+---
+
+## View Recent Events
+
+```spl
+index=security
+| head 20
+```
+
+Displays the first 20 matching events.
+
+---
+
+# Important SPL Commands
+
+| Command | Purpose |
+|----------|----------|
+| search | Search events |
+| stats | Generate statistics |
+| top | Show most common values |
+| table | Display selected fields |
+| sort | Sort results |
+| head | Show first results |
+| tail | Show last results |
+| where | Apply conditions |
+| dedup | Remove duplicate events |
+
+---
+
+# L1 SOC Investigation Workflow Using SPL
+
+### Step 1: Receive Alert
+Review alert details and identify affected assets.
+
+### Step 2: Identify Indicators
+- Username
+- IP Address
+- Hostname
+- Event ID
+
+### Step 3: Search Related Logs
+Use SPL queries to gather relevant evidence.
+
+### Step 4: Analyze Authentication Events
+Check:
+- Failed logins
+- Successful logins
+- Account lockouts
+
+### Step 5: Investigate Source IP
+Review:
+- Geolocation
+- Reputation
+- Previous activity
+
+### Step 6: Determine Impact
+Assess whether the activity is:
+- Benign
+- Suspicious
+- Malicious
+
+### Step 7: Escalate if Required
+Document findings and escalate confirmed incidents.
+
+---
+
+# Key Takeaway
+
+SPL is one of the most important skills for an L1 SOC Analyst. It enables analysts to search logs efficiently, investigate alerts, identify attack patterns, and support incident response activities.
+
+## Skills Practiced
+
+- Log Analysis
+- Alert Investigation
+- Authentication Monitoring
+- Brute Force Detection
+- IP Investigation
+- Splunk Search Operations
+- Incident Triage
+- Security Monitoring
+
+---
+
+# Learning Outcome
+
+By understanding SPL queries, an L1 SOC Analyst can quickly investigate alerts, correlate events, validate security incidents, and improve overall detection and response capabilities.
