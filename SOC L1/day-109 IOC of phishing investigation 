@@ -1,0 +1,154 @@
+# Day 2 – Phishing Investigation (L1 SOC Analyst)
+
+## Indicators of Compromise (IOCs)
+
+Indicators of Compromise (IOCs) are forensic artifacts that suggest a system, account, or network may have been compromised by an attacker.
+
+### Common IOCs
+
+1. **Phishing Domains**
+   - Lookalike domains
+   - Newly registered domains
+   - Suspicious URLs
+
+2. **Email Authentication Failures**
+   - SPF Failures
+   - DKIM Failures
+   - DMARC Failures
+
+3. **Malicious Attachments**
+   - Macro-enabled documents
+   - Executable files
+   - Compressed malicious files
+
+4. **Suspicious IP Addresses**
+   - Known malicious IPs
+   - Foreign login sources
+   - TOR exit nodes
+
+5. **Credential Abuse**
+   - Multiple failed logins
+   - Password spraying attempts
+   - Account lockouts
+
+6. **Behavioral Anomalies**
+   - Unusual login locations
+   - Abnormal user activity
+   - Unexpected privilege escalation
+
+---
+
+# Post-Incident Analysis
+
+After identifying a phishing incident, analysts review activities that occurred before, during, and after the attack.
+
+### Key Areas to Analyze
+
+### 1. User Email Activity
+- Emails received
+- Suspicious messages opened
+- Links clicked
+
+### 2. Downloaded Attachments
+- Malware downloads
+- Suspicious documents
+- Executable files
+
+### 3. Login Activity
+- Successful logins
+- Failed login attempts
+- Unusual authentication behavior
+
+### 4. Abnormal User Behavior
+- Unexpected file access
+- Privilege changes
+- Unauthorized actions
+
+---
+
+# Dashboards and Visualization
+
+SOC dashboards help analysts quickly identify threats and suspicious activity.
+
+### Benefits
+
+- Display security events graphically
+- Simplify investigation workflows
+- Improve threat visibility
+- Speed up incident response
+
+---
+
+# Important Log Sources for Phishing Investigations
+
+### 1. Proxy and Firewall Logs
+Used to identify:
+- Malicious websites visited
+- Suspicious outbound connections
+- Command-and-control communications
+
+### 2. Authentication Logs
+Used to identify:
+- Failed logins
+- Successful logins after failures
+- Account lockouts
+- Credential abuse
+
+### 3. Web Activity Logs
+Used to identify:
+- URL clicks
+- Website access history
+- Download activities
+
+---
+
+# Common Tools Used
+
+### VirusTotal
+Used to:
+- Check file reputation
+- Verify malicious URLs
+- Analyze hashes
+
+### Any.Run
+Interactive malware analysis sandbox used to:
+- Observe malware behavior
+- Analyze phishing payloads
+
+### Joe Sandbox
+Automated malware analysis platform used for:
+- Dynamic malware analysis
+- Threat intelligence gathering
+
+### URLScan.io
+Used to:
+- Analyze websites
+- Detect phishing pages
+- Inspect domain behavior
+
+---
+
+# Key Learning
+
+Successful phishing investigations require:
+- Identifying Indicators of Compromise (IOCs)
+- Reviewing authentication and email logs
+- Investigating malicious URLs and attachments
+- Using threat intelligence tools
+- Correlating evidence across multiple data sources
+
+### Skills Learned Today
+- IOC Analysis
+- Email Investigation
+- Authentication Log Review
+- Dashboard Monitoring
+- URL Analysis
+- Malware Analysis
+- Threat Intelligence
+- Post-Incident Investigation
+
+---
+
+## Today's Takeaway
+
+Phishing investigations are not just about finding a malicious email. They involve tracking attacker activity, analyzing logs, validating IOCs, and understanding the full impact on the organization.
