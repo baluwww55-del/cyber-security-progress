@@ -1,0 +1,143 @@
+# Day 3 – SOC Workflow for Phishing Investigation
+
+## Overview
+
+A phishing investigation follows a structured SOC workflow to identify, analyze, contain, and remediate phishing threats while minimizing business impact.
+
+---
+
+# SOC Workflow for Phishing Investigation
+
+## 1. Triage
+
+The first step is to validate and prioritize the phishing alert.
+
+### Activities:
+- Review alert details
+- Verify email authenticity
+- Determine severity level
+- Identify affected users
+- Check initial indicators of compromise (IOCs)
+
+### Goal:
+Determine whether the alert is a true positive or false positive.
+
+---
+
+## 2. IOC Hunting
+
+Search for Indicators of Compromise across the environment.
+
+### Common IOCs:
+- Malicious IP addresses
+- Suspicious domains
+- Malicious URLs
+- File hashes
+- Email sender addresses
+
+### Goal:
+Identify additional affected systems and users.
+
+---
+
+## 3. User Behavior Monitoring
+
+Analyze user activities related to the phishing attempt.
+
+### Activities:
+- Review login activity
+- Check email interactions
+- Monitor file downloads
+- Investigate unusual behavior
+- Identify unauthorized access attempts
+
+### Goal:
+Determine whether user accounts have been compromised.
+
+---
+
+## 4. Containment
+
+Limit the spread and impact of the phishing attack.
+
+### Activities:
+- Block malicious URLs
+- Quarantine phishing emails
+- Disable compromised accounts
+- Isolate infected endpoints
+- Block attacker IP addresses
+
+### Goal:
+Prevent further damage.
+
+---
+
+## 5. Remediation
+
+Remove malicious artifacts and restore normal operations.
+
+### Activities:
+- Remove phishing emails
+- Reset compromised passwords
+- Revoke active sessions
+- Remove malware
+- Patch vulnerabilities
+
+### Goal:
+Eliminate the threat completely.
+
+---
+
+## 6. Reporting
+
+Document the investigation findings.
+
+### Report Includes:
+- Incident summary
+- Timeline of events
+- Affected users and systems
+- Indicators of compromise
+- Actions taken
+- Recommendations
+
+### Goal:
+Provide visibility and maintain compliance.
+
+---
+
+## 7. Hunting
+
+Perform proactive threat hunting to uncover related attacks.
+
+### Activities:
+- Search historical logs
+- Identify similar phishing campaigns
+- Investigate attacker infrastructure
+- Analyze attack patterns
+- Correlate security events
+
+### Goal:
+Detect hidden threats and improve future detection.
+
+---
+
+# Key Learning
+
+A successful phishing investigation is not limited to analyzing a suspicious email. It requires a complete workflow involving triage, IOC hunting, user monitoring, containment, remediation, reporting, and proactive threat hunting.
+
+## Skills Learned Today
+
+- SOC Investigation Workflow
+- Alert Triage
+- IOC Hunting
+- User Behavior Analysis
+- Incident Containment
+- Remediation Techniques
+- Security Reporting
+- Threat Hunting
+
+---
+
+## Today's Takeaway
+
+A structured SOC workflow ensures phishing incidents are investigated efficiently, threats are contained quickly, and organizations remain protected against future attacks.
