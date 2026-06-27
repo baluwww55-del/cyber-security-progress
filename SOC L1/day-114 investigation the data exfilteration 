@@ -1,0 +1,105 @@
+Day 14 – Investigating Data Exfiltration Attacks
+
+Overview
+
+Today I learned about Data Exfiltration Investigation, which focuses on identifying and analyzing unauthorized data transfers from an organization's environment. Data exfiltration is commonly used by attackers to steal sensitive information while attempting to remain undetected.
+
+---
+
+Common Objectives of Data Exfiltration
+
+- Advanced Persistent Threats (APT): Long-term attacks aimed at stealing confidential data.
+- Ransomware: Data is stolen before encryption to enable double extortion.
+- Insider Threats: Authorized users intentionally or accidentally leak sensitive information.
+
+---
+
+Critical Threat Indicators
+
+1. Data Access Pattern Changes
+
+- Unusual access to sensitive files
+- Large volume of file reads
+- Access outside normal working hours
+
+2. Encrypted Outbound Traffic
+
+- Suspicious encrypted connections
+- Unusual SSL/TLS communication
+- Large outbound encrypted transfers
+
+3. Command and Control (C2) Communication
+
+- Communication with unknown external servers
+- Beaconing behavior
+- Suspicious outbound network traffic
+
+4. Steganography & Cloud Storage Misuse
+
+- Hidden data inside images or media files
+- Unauthorized uploads to cloud storage services
+- Abuse of personal cloud accounts
+
+---
+
+Regulatory Impact
+
+Data exfiltration incidents may violate major compliance standards such as:
+
+- HIPAA – Protects healthcare information
+- GDPR – Protects personal data of EU citizens
+- PCI DSS – Protects payment card information
+
+---
+
+Key Indicators of Compromise (IOCs)
+
+Network Indicators
+
+- Unusual outbound traffic
+- Connections to unknown IP addresses
+- Suspicious DNS requests
+- Data transfers to cloud services
+
+Host Indicators
+
+- Large file compression (ZIP/RAR/7z)
+- PowerShell or command-line misuse
+- Unauthorized USB activity
+- Unexpected file movement
+
+User Behavior Indicators
+
+- Access to sensitive files outside business hours
+- Downloads of confidential data
+- Excessive file copying
+- Multiple failed or abnormal login attempts
+
+---
+
+Detection Sources
+
+- SIEM (Splunk)
+- EDR/XDR solutions
+- Firewall logs
+- Proxy logs
+- DNS logs
+- DLP (Data Loss Prevention)
+- Cloud activity logs
+
+---
+
+Prevention Best Practices
+
+- Implement Data Loss Prevention (DLP)
+- Apply Least Privilege Access
+- Monitor outbound network traffic
+- Enable User Behavior Analytics (UBA)
+- Encrypt sensitive data
+- Conduct regular security awareness training
+
+---
+
+Key Takeaway
+
+Data exfiltration investigations require correlating user activity, network traffic, endpoint telemetry, and security logs to identify unauthorized data transfers. Early detection and continuous monitoring are essential for protecting sensitive organizational data.
