@@ -1,6 +1,4 @@
-Day 14 – Investigating Data Exfiltration Attacks
 
-Overview
 
 Today I learned about Data Exfiltration Investigation, which focuses on identifying and analyzing unauthorized data transfers from an organization's environment. Data exfiltration is commonly used by attackers to steal sensitive information while attempting to remain undetected.
 
