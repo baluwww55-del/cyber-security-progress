@@ -1,0 +1,57 @@
+# Common Methods Used in Data Exfiltration Attacks
+
+## 📖 Overview
+
+Data exfiltration is the unauthorized transfer of sensitive data from an organization's environment to an external destination. Attackers use multiple techniques to evade detection and steal confidential information.
+
+---
+
+## 🔍 Common Data Exfiltration Methods
+
+### 1. Email Exfiltration
+- Sending sensitive files through personal or unauthorized email accounts.
+- Often uses password-protected ZIP files or encrypted attachments.
+
+### 2. Cloud Storage Services
+- Uploading confidential data to cloud platforms such as Google Drive, Dropbox, OneDrive, or Mega.
+- Difficult to detect because cloud services are commonly used in organizations.
+
+### 3. Removable Media
+- Copying sensitive files to USB drives, external hard disks, or other removable devices.
+- Frequently associated with insider threats.
+
+### 4. Encrypted Protocols
+- Using HTTPS, SSH, VPNs, or encrypted DNS to hide stolen data during transmission.
+- Encryption makes network inspection more challenging.
+
+### 5. Covert Channels
+- Hiding data inside normal network traffic.
+- Examples include DNS tunneling, ICMP tunneling, and steganography.
+
+### 6. Browser Uploads
+- Uploading confidential files through web browsers to file-sharing websites or personal accounts.
+- Often bypasses traditional file transfer monitoring.
+
+### 7. Command and Control (C2) Channels
+- Malware communicates with an attacker-controlled server to transmit stolen information.
+- Data may be sent in small encrypted chunks to avoid detection.
+
+---
+
+## 🚨 Detection Tips for SOC Analysts
+
+- Monitor unusual outbound network traffic.
+- Detect large or abnormal file transfers.
+- Investigate uploads to unauthorized cloud storage.
+- Monitor USB device activity.
+- Analyze DNS, HTTP, and HTTPS traffic for anomalies.
+- Identify communication with suspicious external IP addresses or domains.
+- Look for abnormal user behavior and off-hours data access.
+
+---
+
+## 💡 Key Takeaway
+
+Data exfiltration rarely relies on a single technique. Attackers combine methods such as cloud storage, encrypted channels, browser uploads, and C2 communication to evade security controls. Effective detection requires continuous monitoring of network activity, endpoint behavior, user actions, and outbound connections.
+
+**#CyberSecurity #SOCAnalyst #DataExfiltration #ThreatHunting #BlueTeam #IncidentResponse #L1SOC #SIEM #Splunk #LearningInPublic**
