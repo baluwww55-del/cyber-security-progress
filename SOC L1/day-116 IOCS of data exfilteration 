@@ -1,0 +1,116 @@
+# Day XX – L1 SOC Investigation: IOCs & Detection Strategies for Data Exfiltration
+
+## 📖 What I Learned
+
+Today I learned about the **Indicators of Compromise (IOCs)** and **Detection Strategies** used to identify potential **Data Exfiltration Attacks** in a Security Operations Center (SOC).
+
+---
+
+# 🔍 Indicators of Compromise (IOCs)
+
+IOCs are pieces of evidence that indicate suspicious or malicious activity within an environment.
+
+### Common IOCs
+
+- 🌐 Network traffic anomalies
+- 🌍 Suspicious DNS requests
+- 💻 Host-based artifacts
+- ⚙️ Unusual process execution
+- 👤 Abnormal user behavior
+
+---
+
+# 🛡️ Detection Strategies
+
+A SOC analyst uses multiple log sources to detect and investigate data exfiltration attempts.
+
+### 1. Endpoint Logs
+- EDR (Endpoint Detection & Response)
+- Sysmon Logs
+- CrowdStrike Falcon
+- Microsoft Defender for Endpoint
+
+Used to detect:
+- Suspicious process execution
+- File creation/modification
+- Registry changes
+- Parent-child process relationships
+
+---
+
+### 2. Proxy / Web Gateway Logs
+
+Monitor:
+- Website access
+- File uploads/downloads
+- Cloud storage usage
+- Blocked or suspicious URLs
+
+Examples:
+- Zscaler
+- Blue Coat
+- Squid Proxy
+
+---
+
+### 3. Network Traffic Monitoring
+
+Analyze:
+- Large outbound data transfers
+- Communication with unknown IPs
+- Command & Control (C2) traffic
+- Beaconing behavior
+- Unusual protocols
+
+---
+
+### 4. DNS Logs
+
+Useful for detecting:
+- DNS tunneling
+- Suspicious domain lookups
+- Newly registered domains
+- High-frequency DNS queries
+
+---
+
+### 5. Data Loss Prevention (DLP) Logs
+
+DLP solutions help detect:
+- Unauthorized file transfers
+- Sensitive data movement
+- USB data copying
+- Cloud upload attempts
+- Policy violations
+
+---
+
+### 6. Email Logs
+
+Monitor for:
+- Large outbound attachments
+- Suspicious email forwarding
+- External recipients
+- Data leakage through email
+- Phishing-related activity
+
+---
+
+# 🎯 Key Takeaway
+
+Detecting data exfiltration requires correlating information from multiple log sources. By analyzing endpoint activity, network traffic, DNS queries, proxy logs, DLP alerts, and email logs together, SOC analysts can quickly identify, investigate, and respond to potential data theft attempts.
+
+---
+
+## 📚 Skills Covered
+
+- Indicators of Compromise (IOCs)
+- Endpoint Monitoring
+- DNS Analysis
+- Network Traffic Analysis
+- Proxy Log Investigation
+- DLP Monitoring
+- Email Security Analysis
+- L1 SOC Investigation
+
+#CyberSecurity #SOCAnalyst #BlueTeam #DataExfiltration #ThreatHunting #IncidentResponse #Splunk #SIEM #L1SOC #LearningInPublic
