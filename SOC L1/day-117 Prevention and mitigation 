@@ -1,0 +1,107 @@
+#  – L1 SOC Investigation: Data Exfiltration Prevention & Mitigation
+
+## 📖 What I Learned
+
+Today I learned about **preventing and mitigating Data Exfiltration attacks**. Prevention focuses on protecting sensitive information before it leaves an organization's environment through strong security controls and monitoring.
+
+---
+
+# 🛡️ Data Exfiltration Prevention Techniques
+
+## 1. Data Classification & Tagging
+
+Classify sensitive information based on its importance.
+
+Examples:
+- Public
+- Internal
+- Confidential
+- Restricted
+
+Benefits:
+- Helps apply appropriate security controls.
+- Simplifies monitoring and compliance.
+- Improves Data Loss Prevention (DLP) policies.
+
+---
+
+## 2. Data Loss Prevention (DLP) Policies
+
+DLP solutions monitor and prevent unauthorized movement of sensitive data.
+
+DLP can:
+- Detect sensitive information.
+- Block unauthorized file transfers.
+- Prevent accidental data leaks.
+- Generate alerts for suspicious activity.
+
+---
+
+## 3. Least Privilege Access
+
+Grant users only the permissions required to perform their job.
+
+Benefits:
+- Reduces insider threats.
+- Limits access to sensitive data.
+- Minimizes the impact of compromised accounts.
+
+---
+
+## 4. USB Device Control
+
+Restrict or disable unauthorized removable storage devices.
+
+Best Practices:
+- Block unknown USB devices.
+- Allow only approved devices.
+- Monitor USB file transfer activity.
+- Log all removable media usage.
+
+---
+
+## 5. Technical Security Controls
+
+Implement multiple layers of security such as:
+
+- Multi-Factor Authentication (MFA)
+- Encryption
+- Endpoint Detection & Response (EDR)
+- Data Loss Prevention (DLP)
+- Firewall & IDS/IPS
+- SIEM monitoring
+- Endpoint protection
+
+---
+
+## 6. Response & Recovery Controls
+
+If data exfiltration is detected:
+
+- Contain the affected system.
+- Block malicious connections.
+- Preserve forensic evidence.
+- Investigate Indicators of Compromise (IOCs).
+- Recover affected systems.
+- Update security policies to prevent recurrence.
+
+---
+
+# 🎯 Key Takeaway
+
+Preventing data exfiltration requires a combination of **strong access controls, DLP policies, endpoint security, continuous monitoring, and rapid incident response**. A layered security approach significantly reduces the risk of sensitive data leaving an organization's environment.
+
+---
+
+## 📚 Skills Covered
+
+- Data Classification
+- Data Tagging
+- Data Loss Prevention (DLP)
+- Least Privilege Access
+- USB Security Controls
+- Endpoint Protection
+- Incident Response
+- L1 SOC Investigation
+
+#CyberSecurity #SOCAnalyst #BlueTeam #DataExfiltration #DLP #ThreatDetection #IncidentResponse #SIEM #Splunk #LearningInPublic
