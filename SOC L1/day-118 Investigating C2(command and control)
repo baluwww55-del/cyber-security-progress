@@ -1,0 +1,107 @@
+#  – L1 SOC Investigation: Investigating Command & Control (C2)
+
+## 📖 What I Learned
+
+Today I learned about **Command and Control (C2)**, a critical phase in the cyber attack lifecycle. After successfully compromising a system, attackers establish communication between the infected host and a remote C2 server to control the victim machine, execute commands, and exfiltrate data.
+
+---
+
+# 🎯 What is Command & Control (C2)?
+
+Command & Control (C2) is the communication channel between an attacker and a compromised endpoint. Through this channel, attackers can remotely manage infected systems and perform malicious activities.
+
+---
+
+# 🔹 Components of C2
+
+### 1. C2 Server
+A remote server controlled by the attacker that sends commands and receives data from infected hosts.
+
+### 2. Commands
+Instructions sent from the C2 server to perform malicious actions such as:
+- Execute malware
+- Download additional payloads
+- Run scripts
+- Delete files
+
+### 3. Control
+Allows attackers to remotely manage compromised systems and maintain persistence.
+
+### 4. Malware
+The malicious software installed on the victim machine that communicates with the C2 server.
+
+### 5. Data Exfiltration
+Sensitive information is collected and transmitted from the victim system back to the attacker.
+
+---
+
+# 🛠️ Command & Control Attack Workflow
+
+### Step 1 – Initial Infection
+The victim host is infected through phishing emails, malicious downloads, or software vulnerabilities.
+
+⬇️
+
+### Step 2 – Beaconing
+The malware "beacons" to the attacker by sending outbound communication using protocols such as:
+- HTTP/HTTPS
+- DNS
+- TCP
+
+⬇️
+
+### Step 3 – Gateway / Proxy
+The organization's firewall, proxy, or internet gateway forwards the outbound traffic to the destination.
+
+⬇️
+
+### Step 4 – Communication with C2 Server
+The request reaches the attacker's Command & Control server.
+
+⬇️
+
+### Step 5 – Command Execution
+The C2 server responds with commands or payloads, which the malware executes on the victim machine.
+
+---
+
+# 🔍 Common Indicators of C2 Activity
+
+- Regular beaconing traffic
+- Connections to suspicious IP addresses or domains
+- DNS tunneling
+- Unusual outbound traffic
+- Encrypted communication to unknown servers
+- Unexpected PowerShell or command execution
+
+---
+
+# 🛡️ Detection Sources
+
+- Network traffic logs
+- Firewall logs
+- Proxy logs
+- DNS logs
+- EDR/XDR alerts
+- Sysmon logs
+- SIEM correlation rules
+
+---
+
+# 💡 Key Takeaway
+
+Command & Control is one of the most important stages of a cyber attack because it allows attackers to remotely control compromised systems. Detecting beaconing behavior, suspicious outbound connections, and unusual command execution is essential for SOC analysts to stop attacks before data theft or ransomware deployment occurs.
+
+---
+
+## 📚 Skills Covered
+
+- Command & Control (C2)
+- Malware Communication
+- Beaconing Detection
+- HTTP/DNS C2 Traffic
+- Data Exfiltration
+- Network Monitoring
+- SOC L1 Investigation
+
+#CyberSecurity #SOCAnalyst #BlueTeam #CommandAndControl #ThreatDetection #ThreatHunting #IncidentResponse #SIEM #Splunk #LearningInPublic
