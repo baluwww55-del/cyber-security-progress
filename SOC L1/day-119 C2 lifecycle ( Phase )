@@ -1,0 +1,111 @@
+#  – L1 SOC Investigation: Investigating Command & Control (C2) Techniques
+
+## 📖 What I Learned
+
+Today I continued learning about **Command & Control (C2) Investigation**. I explored the later stages of the C2 lifecycle, common communication techniques used by attackers, and how SOC analysts detect malicious C2 traffic.
+
+---
+
+# 🔄 Command & Control (C2) Lifecycle
+
+Understanding the complete C2 attack lifecycle helps analysts identify and respond to attacks effectively.
+
+### 1. Initial Access
+The attacker gains access to the victim's system through phishing, malicious attachments, exploit kits, or software vulnerabilities.
+
+### 2. Setup
+Malware installs itself, establishes persistence, and prepares communication with the attacker's infrastructure.
+
+### 3. Command & Control (C2)
+The compromised host establishes a communication channel with the attacker's C2 server to receive commands and send information.
+
+### 4. Execution
+The attacker executes malicious commands such as:
+- Downloading additional malware
+- Running PowerShell or scripts
+- Creating new user accounts
+- Moving laterally across the network
+
+### 5. Response
+The infected host responds to the commands and sends execution results back to the C2 server.
+
+### 6. Data Exfiltration
+Sensitive information is collected and transferred outside the organization through the established C2 channel.
+
+---
+
+# 🛠️ Common Command & Control Techniques
+
+### 1. Application Layer Protocols
+Attackers commonly use normal web protocols such as:
+- HTTP
+- HTTPS
+- WebSockets
+
+These protocols blend with legitimate traffic, making detection more difficult.
+
+---
+
+### 2. DNS Tunneling
+Attackers tunnel data inside DNS requests and responses to bypass firewall restrictions and communicate with C2 servers.
+
+---
+
+### 3. Custom Protocols
+Malware may use proprietary or custom communication protocols designed specifically to evade security monitoring.
+
+---
+
+### 4. File Transfer
+Attackers transfer:
+- Additional malware
+- Configuration files
+- Stolen documents
+- Updated payloads
+
+between the victim and the C2 infrastructure.
+
+---
+
+### 5. Remote Access Software
+Legitimate remote administration tools can be abused to maintain persistent access and remotely control compromised systems.
+
+Examples include:
+- AnyDesk
+- TeamViewer
+- Remote Desktop Protocol (RDP)
+
+---
+
+# 🔍 Detection Tips
+
+SOC analysts should monitor for:
+- Unusual outbound HTTP/HTTPS traffic
+- Repeated DNS requests to unknown domains
+- Long-lived encrypted connections
+- Unexpected remote administration tool usage
+- Large outbound file transfers
+- Beaconing behavior from endpoints
+
+---
+
+# 🛡️ Key Takeaway
+
+Command & Control is one of the most critical stages of a cyber attack. Attackers rely on stealthy communication channels to control compromised systems and steal sensitive data. Detecting abnormal network behavior, DNS tunneling, encrypted traffic, and unauthorized remote access is essential for effective L1 SOC investigations.
+
+---
+
+## 📚 Skills Covered
+
+- Command & Control (C2)
+- C2 Lifecycle
+- Initial Access
+- Malware Execution
+- DNS Tunneling
+- HTTP/HTTPS C2 Communication
+- Remote Access Software
+- File Transfer Techniques
+- L1 SOC Investigation
+- Threat Detection
+
+#CyberSecurity #SOCAnalyst #BlueTeam #CommandAndControl #ThreatHunting #IncidentResponse #SIEM #NetworkSecurity #MalwareAnalysis #LearningInPublic
