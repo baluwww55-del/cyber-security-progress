@@ -1,0 +1,135 @@
+# Day XX – L1 SOC Investigation: Host-Based IOCs & Common C2 Frameworks
+
+## 📖 What I Learned
+
+Today I learned about **Host-Based Indicators of Compromise (IOCs)** used to identify Command & Control (C2) activity on endpoints. I also explored common C2 frameworks that SOC analysts frequently encounter during investigations.
+
+---
+
+# 🖥️ Host-Based IOCs of Command & Control (C2)
+
+Host-based IOCs are suspicious activities observed on an endpoint that may indicate malware communicating with a Command & Control server.
+
+## 1. Suspicious Processes Establishing External Connections
+- Unknown or unexpected processes communicating with external IP addresses.
+- Connections to suspicious or known malicious domains.
+
+**Example:**
+- `svchost.exe` connecting to an unknown external IP.
+- Unknown executable making outbound HTTPS connections.
+
+---
+
+## 2. PowerShell or CMD Initiating Network Traffic
+Attackers often abuse built-in Windows utilities to execute malicious commands.
+
+Common tools:
+- PowerShell
+- Command Prompt (CMD)
+- Windows Script Host (WSH)
+
+**Indicators:**
+- PowerShell downloading remote payloads.
+- CMD launching network-based commands.
+- Encoded PowerShell commands.
+
+---
+
+## 3. Scheduled Tasks for Persistence
+Attackers create scheduled tasks to maintain persistence after compromising a system.
+
+Look for:
+- Newly created scheduled tasks.
+- Tasks executing unknown scripts or binaries.
+- Tasks running from unusual directories.
+
+---
+
+## 4. Encrypted Traffic from Non-Browser Processes
+Applications that normally do not access the internet suddenly generating encrypted HTTPS traffic.
+
+Examples:
+- Unknown executables
+- PowerShell
+- CMD
+- Malware processes
+
+This may indicate hidden C2 communication.
+
+---
+
+# 🛠️ Common C2 Frameworks
+
+SOC analysts should be familiar with popular Command & Control frameworks used by attackers and red teams.
+
+## 1. Cobalt Strike
+A widely used adversary simulation and post-exploitation framework.
+
+Features:
+- Beacon communication
+- Remote command execution
+- Lateral movement
+- Credential dumping
+- Persistence
+
+**Detection Tips**
+- Beaconing patterns
+- Suspicious HTTP/HTTPS traffic
+- Unusual PowerShell activity
+- Unexpected parent-child process relationships
+
+---
+
+## 2. PowerShell Empire
+An open-source post-exploitation framework that relies heavily on PowerShell.
+
+Capabilities:
+- Remote access
+- Credential theft
+- Privilege escalation
+- Persistence
+- Command execution
+
+**Detection Tips**
+- Encoded PowerShell commands
+- AMSI bypass attempts
+- Suspicious PowerShell logs
+- Network connections initiated by PowerShell
+
+---
+
+# 🔍 SOC Analyst Detection Strategies
+
+Monitor the following log sources:
+
+- EDR Alerts
+- Sysmon Logs
+- Windows Event Logs
+- PowerShell Operational Logs
+- DNS Logs
+- Firewall Logs
+- Proxy Logs
+- SIEM Correlation Rules
+
+---
+
+# 🛡️ Key Takeaway
+
+Host-based Indicators of Compromise (IOCs) provide valuable evidence of malware activity during Command & Control investigations. Monitoring suspicious processes, PowerShell activity, scheduled tasks, and encrypted outbound traffic helps analysts detect hidden threats. Familiarity with frameworks like **Cobalt Strike** and **PowerShell Empire** improves an analyst's ability to identify real-world attack techniques.
+
+---
+
+## 📚 Skills Covered
+
+- Host-Based IOCs
+- Command & Control (C2)
+- PowerShell Investigation
+- CMD Investigation
+- Scheduled Task Persistence
+- Encrypted Network Traffic
+- Cobalt Strike
+- PowerShell Empire
+- Endpoint Monitoring
+- L1 SOC Investigation
+
+#CyberSecurity #SOCAnalyst #BlueTeam #ThreatHunting #CommandAndControl #IncidentResponse #WindowsSecurity #PowerShell #CobaltStrike #LearningInPublic
