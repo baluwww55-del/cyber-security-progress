@@ -1,0 +1,154 @@
+# - Root Cause Analysis (RCA) in SOC Incident Response
+
+## 📖 What I Learned
+
+Today I learned about **Root Cause Analysis (RCA)**, an important post-incident activity in cybersecurity. RCA helps identify **how an attack occurred, why it succeeded, and what improvements are needed to prevent similar incidents in the future.**
+
+---
+
+# 🔍 What is Root Cause Analysis (RCA)?
+
+Root Cause Analysis is the process of investigating a security incident to determine the **underlying cause** rather than only addressing its symptoms. It enables organizations to strengthen their security posture by identifying weaknesses in people, processes, and technology.
+
+---
+
+# 🛠️ Steps of Root Cause Analysis
+
+## 1. Define the Problem Clearly
+- Identify the affected systems.
+- Understand the impact of the incident.
+- Define the scope of the investigation.
+
+---
+
+## 2. Collect Evidence
+
+Gather all relevant forensic evidence, including:
+
+- Endpoint logs
+- Network logs
+- SIEM alerts and correlation rules
+- Memory dumps
+- Digital forensic reports
+
+---
+
+## 3. Construct the Timeline
+
+Build a chronological timeline of the attack by identifying:
+
+- Initial compromise
+- Lateral movement
+- Persistence techniques
+- Privilege escalation
+- Data exfiltration
+- Incident detection time
+
+---
+
+## 4. Identify the Initial Attack Vector
+
+Determine how the attacker gained access.
+
+Examples:
+- Phishing email
+- Exploited vulnerability
+- Weak passwords
+- Exposed Remote Desktop (RDP)
+- Malware infection
+
+---
+
+## 5. Trace the Attacker's Progression
+
+Follow the attack path through the environment.
+
+Examples:
+- Command & Control (C2) communication
+- Credential theft
+- Lateral movement
+- Persistence mechanisms
+- Data exfiltration
+
+---
+
+## 6. Map the Attack to MITRE ATT&CK
+
+Identify the MITRE ATT&CK techniques used during the attack to better understand attacker behavior.
+
+Examples:
+- Initial Access
+- Execution
+- Persistence
+- Credential Access
+- Discovery
+- Lateral Movement
+- Command & Control
+- Exfiltration
+
+---
+
+## 7. Document the Entire Root Cause
+
+Prepare detailed documentation including:
+
+- Timeline of events
+- Root cause
+- Evidence collected
+- Impact analysis
+- Affected assets
+- Lessons learned
+
+---
+
+## 8. Recommend Corrective & Preventive Actions
+
+### Technical Improvements
+- Patch vulnerable systems
+- Strengthen endpoint security
+- Improve SIEM detection rules
+- Enable MFA
+- Block malicious IOCs
+
+### Process Improvements
+- Update incident response playbooks
+- Conduct user awareness training
+- Improve monitoring and logging
+- Strengthen security policies
+
+---
+
+# 📝 Root Cause Analysis (RCA) Report Template
+
+A standard RCA report should include:
+
+1. Incident Summary
+2. Timeline of Events
+3. Root Cause
+4. MITRE ATT&CK Techniques (TTPs)
+5. Failed Security Controls
+6. Actions Taken During Response
+7. Preventive Measures and Recommendations
+
+---
+
+# 🎯 Key Takeaway
+
+Root Cause Analysis is one of the most important stages of incident response. Instead of only resolving the immediate issue, RCA focuses on discovering the real cause of the incident, documenting the attack lifecycle, mapping attacker techniques to the MITRE ATT&CK framework, and implementing preventive measures to reduce the risk of future attacks.
+
+---
+
+## 📚 Skills Covered
+
+- Root Cause Analysis (RCA)
+- Digital Forensics
+- Evidence Collection
+- Incident Timeline Analysis
+- Initial Attack Vector Identification
+- MITRE ATT&CK Mapping
+- Security Control Analysis
+- Corrective & Preventive Actions
+- Incident Documentation
+- L1 SOC Investigation
+
+#CyberSecurity #SOCAnalyst #IncidentResponse #RootCauseAnalysis #MITREATTACK #BlueTeam #ThreatHunting #DigitalForensics #SIEM #LearningInPublic
