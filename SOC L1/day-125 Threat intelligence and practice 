@@ -1,0 +1,110 @@
+#  – Threat Intelligence in Practice
+
+## 📖 What I Learned
+
+Today, I learned about **Threat Intelligence in Practice**, specifically **Threat Actor Profiling**. Threat intelligence helps organizations understand attacker behavior, motivations, capabilities, and tactics to improve detection, response, and overall cybersecurity posture.
+
+---
+
+# 🔍 What is Threat Intelligence?
+
+**Threat Intelligence** is the collection, analysis, and application of information about cyber threats to help organizations detect, prevent, and respond to cyber attacks.
+
+One important aspect is **Threat Actor Profiling**, which focuses on identifying and understanding the behavior of attackers.
+
+---
+
+# 👤 Threat Actor Profiling
+
+Threat Actor Profiling is the process of identifying, categorizing, and analyzing attackers based on their behavior, objectives, capabilities, and attack methods.
+
+It enables security teams to predict attacker behavior and strengthen defenses.
+
+---
+
+# 🔑 Key Elements of Threat Actor Profiling
+
+### 1. Motivation
+- Financial gain
+- Espionage
+- Political objectives
+- Ideological reasons
+- Personal revenge
+
+### 2. Capabilities
+- Technical expertise
+- Available tools
+- Resources
+- Skill level
+
+### 3. Tactics, Techniques & Procedures (TTPs)
+- Attack methods used by adversaries.
+- Helps map attacker behavior using frameworks like MITRE ATT&CK.
+
+### 4. Infrastructure
+- Domains
+- IP addresses
+- Command & Control (C2) servers
+- Malware infrastructure
+
+### 5. Targets
+- Individuals
+- Businesses
+- Government organizations
+- Critical infrastructure
+- Specific industries
+
+---
+
+# 🎯 Benefits of Threat Intelligence
+
+- Prioritized detection engineering.
+- Better threat hunting with context.
+- Faster incident response.
+- Improved strategic risk assessment.
+- Stronger security decision-making.
+
+---
+
+# 🏷️ Categories of Threat Actors
+
+### 1. Political / Nation-State Actors
+Government-backed groups conducting espionage or cyber warfare.
+
+### 2. Professional Cybercriminals
+Organized groups focused on financial gain through ransomware, phishing, and fraud.
+
+### 3. Terrorist Groups
+Use cyber attacks to spread fear, disrupt services, or support ideological goals.
+
+### 4. Criminal Hackers
+Individuals or groups performing illegal cyber activities for profit or reputation.
+
+### 5. Hacktivists
+Attack organizations to promote political or social causes.
+
+---
+
+# 📝 Key Takeaways
+
+- Threat intelligence provides valuable context for cyber defense.
+- Understanding attacker motivations and capabilities improves detection and response.
+- Threat actor profiling helps analysts anticipate future attacks.
+- TTPs and attacker infrastructure are critical for effective threat hunting.
+
+---
+
+## 📚 Skills Covered
+
+- Threat Intelligence
+- Threat Actor Profiling
+- Threat Hunting
+- Detection Engineering
+- Incident Response
+- MITRE ATT&CK
+- Threat Actors
+- Cyber Threat Analysis
+- SOC Operations
+- Blue Team
+
+#CyberSecurity #SOCAnalyst #ThreatIntelligence #ThreatHunting #BlueTeam #MITREATTACK #IncidentResponse #InfoSec #LearningInPublic #GitHub
