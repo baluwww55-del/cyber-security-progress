@@ -1,0 +1,129 @@
+# – MITRE ATT&CK & Diamond Model of Intrusion Analysis
+
+## 📖 What I Learned
+
+Today, I learned about the **Diamond Model of Intrusion Analysis** and how it complements the **MITRE ATT&CK Framework** during threat investigations. The Diamond Model helps SOC analysts understand the relationship between attackers, victims, infrastructure, and capabilities, making it easier to correlate incidents and identify malicious campaigns.
+
+---
+
+# 🔷 What is the Diamond Model?
+
+The **Diamond Model of Intrusion Analysis** is a cybersecurity framework used to analyze and investigate cyber attacks by focusing on the relationship between four core components of an intrusion.
+
+Unlike traditional approaches, the Diamond Model emphasizes **observable adversary activities**, allowing analysts to build context around an attack.
+
+---
+
+# 💎 Four Core Components
+
+### 1. Adversary
+The threat actor responsible for carrying out the attack.
+
+**Examples:**
+- Nation-state groups
+- Cybercriminals
+- Hacktivists
+- Insider threats
+
+---
+
+### 2. Infrastructure
+The resources used by the attacker to conduct operations.
+
+**Examples:**
+- Command & Control (C2) servers
+- Domains
+- IP addresses
+- VPNs
+- Cloud infrastructure
+
+---
+
+### 3. Capability
+The tools, malware, exploits, or techniques used during the attack.
+
+**Examples:**
+- Malware
+- Phishing kits
+- Ransomware
+- PowerShell scripts
+- Exploits
+
+---
+
+### 4. Victim
+The individual, organization, or system targeted by the attacker.
+
+**Examples:**
+- End users
+- Servers
+- Corporate networks
+- Cloud environments
+
+---
+
+# 🔗 Correlation in the Diamond Model
+
+SOC analysts correlate incidents by identifying common characteristics such as:
+
+- Same attacker infrastructure
+- Same malware or capability
+- Same victim profile
+- Similar attack techniques
+- Reused domains or IP addresses
+
+Correlation helps identify larger attack campaigns instead of treating each incident separately.
+
+---
+
+# 🛡️ Relationship with MITRE ATT&CK
+
+The **MITRE ATT&CK Framework** describes the **Tactics, Techniques, and Procedures (TTPs)** used by attackers.
+
+The **Diamond Model** complements MITRE ATT&CK by providing context around:
+
+- Who performed the attack (Adversary)
+- What tools were used (Capability)
+- Which infrastructure was involved
+- Who was targeted (Victim)
+
+Together, they provide a more complete understanding of cyber threats.
+
+---
+
+# 🎯 Practical Uses in SOC
+
+The Diamond Model helps SOC analysts to:
+
+- Correlate alerts across multiple data sources.
+- Identify attacker campaigns.
+- Improve threat hunting.
+- Provide context during incident escalation.
+- Enhance investigation accuracy.
+- Support incident response and reporting.
+
+---
+
+# 📝 Key Takeaways
+
+- The Diamond Model focuses on the relationship between **Adversary, Infrastructure, Capability, and Victim**.
+- Correlation across incidents helps identify coordinated attacks.
+- Combining the Diamond Model with MITRE ATT&CK provides deeper threat intelligence.
+- Context-rich investigations lead to faster and more effective incident response.
+
+---
+
+## 📚 Skills Covered
+
+- Diamond Model of Intrusion Analysis
+- MITRE ATT&CK Framework
+- Threat Intelligence
+- Threat Hunting
+- Incident Correlation
+- SOC Investigation
+- Cyber Threat Analysis
+- Indicators of Compromise (IOCs)
+- Incident Response
+- Blue Team Operations
+
+#CyberSecurity #SOCAnalyst #ThreatIntelligence #MITREATTACK #DiamondModel #BlueTeam #ThreatHunting #IncidentResponse #LearningInPublic #GitHub #InfoSec
