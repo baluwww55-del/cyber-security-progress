@@ -1,0 +1,279 @@
+Operationalizing Threat Feeds
+Overview
+Threat feeds provide continuously updated information about known or suspected malicious activity.
+Common indicators include:
+Malicious IP addresses
+Malicious domains
+URLs
+File hashes
+Malware indicators
+Phishing infrastructure
+Botnet infrastructure
+Known attacker infrastructure
+Operationalizing threat feeds means converting raw threat intelligence into actionable detections, alerts, security controls, investigations, and response actions.
+Threat Feed Lifecycle
+Threat Intelligence Sources
+          ↓
+       Collection
+          ↓
+       Validation
+          ↓
+      Normalization
+          ↓
+       Enrichment
+          ↓
+   Correlation / Detection
+          ↓
+        Alerting
+          ↓
+ Investigation & Response
+          ↓
+        Feedback
+1. Threat Intelligence Sources
+Threat intelligence can come from:
+OSINT (Open-Source Intelligence)
+Commercial threat intelligence platforms
+Government / CERT feeds
+Security vendors
+Internal security incidents
+ISAC / information-sharing communities
+Common Indicators
+Indicator
+Example
+IP Address
+203.0.113.10
+Domain
+malicious-example.com
+URL
+https://example.com/payload
+File Hash
+SHA-256 hash
+Email
+Phishing sender address
+2. Collection
+The first step is collecting indicators from trusted intelligence sources.
+The collection process should record:
+Indicator
+Indicator type
+Source
+Timestamp
+Confidence
+Reputation
+Expiration information
+3. Validation
+Not every indicator should automatically be trusted.
+Before using a feed:
+Check source reputation
+Validate indicator format
+Check indicator age
+Remove duplicates
+Check confidence level
+Identify false positives
+Verify whether the indicator is still active
+More indicators do not automatically mean better security.
+A low-quality feed can generate a large number of false positives.
+4. Normalization
+Different feeds may represent the same indicator in different formats.
+Normalization converts them into a consistent format.
+Example:
+Source A:
+192.0.2.10
+
+Source B:
+IP: 192.0.2.10
+
+Source C:
+indicator_type=ipv4
+indicator=192.0.2.10
+Normalized format:
+Type: IPv4
+Indicator: 192.0.2.10
+Source: ThreatFeed
+Confidence: High
+First Seen: <timestamp>
+Last Seen: <timestamp>
+5. Enrichment
+Enrichment adds additional context to an indicator.
+IP Address Enrichment
+ASN
+Country
+ISP
+WHOIS information
+Passive DNS
+Reputation
+Previous sightings
+Related domains
+File Hash Enrichment
+Malware family
+File type
+Detection results
+First-seen timestamp
+Related campaigns
+Enrichment helps analysts understand what the indicator is, why it matters, and how risky it is.
+6. Correlation
+Threat intelligence becomes more useful when correlated with internal security data.
+Threat Feed
+     ↓
+Malicious IP
+     ↓
+SIEM
+     ↓
+Firewall Logs
+     ↓
+Internal Host Connected to IP
+     ↓
+Security Alert
+Common Data Sources
+SIEM logs
+Firewall logs
+DNS logs
+Proxy logs
+EDR telemetry
+Email security logs
+Authentication logs
+Network traffic
+7. Detection
+Threat feeds can be used to create security detections.
+Network Detection
+Internal Host
+      ↓
+Network Connection
+      ↓
+Known Malicious IP
+      ↓
+Generate Alert
+DNS Detection
+DNS Query
+    ↓
+Known Malicious Domain
+    ↓
+Generate Alert
+File Detection
+File Hash
+    ↓
+Threat Intelligence Match
+    ↓
+Known Malware
+    ↓
+Generate Alert
+8. Alerting
+When an indicator matches internal telemetry, the security system can generate an alert.
+A useful alert should provide:
+Matched indicator
+Source of intelligence
+Confidence level
+Affected host
+User involved
+Timestamp
+Related events
+Recommended investigation steps
+Example:
+Alert: Malicious IP Match
+
+Indicator: 203.0.113.10
+Type: IPv4
+Confidence: High
+Source: Threat Intelligence Feed
+Host: WORKSTATION-01
+Time: 10:32 UTC
+Action: Investigate connection
+9. Investigation
+After an alert is generated, analysts investigate the event.
+Important questions:
+Which host contacted the indicator?
+Which user was logged in?
+When did the activity occur?
+How frequently did the connection happen?
+What process generated the connection?
+Was data transferred?
+Are there other affected systems?
+Is the indicator associated with known malware or campaigns?
+Investigation should combine threat intelligence with internal telemetry.
+10. Automated Response
+High-confidence indicators can be integrated into security controls.
+Possible actions:
+Block malicious IP addresses
+Block malicious domains
+Block malicious URLs
+Quarantine malicious files
+Isolate affected endpoints
+Disable compromised accounts
+Update proxy blocklists
+Create firewall rules
+Important
+Automation should consider:
+Confidence
+Indicator age
+False-positive risk
+Business impact
+Expiration time
+Avoid blindly blocking every indicator.
+11. STIX
+STIX — Structured Threat Information Expression
+STIX provides a standardized way to represent and share threat intelligence.
+It can describe:
+Indicators
+Malware
+Threat actors
+Campaigns
+Attack patterns
+Relationships
+Observed data
+STIX = Standard way to represent threat intelligence
+12. TAXII
+TAXII — Trusted Automated Exchange of Intelligence Information
+TAXII provides a standardized mechanism for exchanging threat intelligence between systems.
+STIX = How threat intelligence is represented
+
+TAXII = How threat intelligence is exchanged
+Together:
+       STIX
+        ↓
+Threat Intelligence Format
+        ↓
+       TAXII
+        ↓
+Threat Intelligence Exchange
+13. Feed Quality
+A threat feed should be evaluated based on:
+Accuracy
+Confidence
+Freshness
+Coverage
+Context
+False-positive rate
+Update frequency
+Source reputation
+Simple Model
+Accuracy
+   +
+Freshness
+   +
+Context
+   ↓
+Better Threat Intelligence
+   ↓
+Better Detection
+   ↓
+Better Security Decisions
+14. Indicator Lifecycle
+Indicators should not remain active forever.
+New Indicator
+      ↓
+Validation
+      ↓
+Enrichment
+      ↓
+Active
+      ↓
+Monitoring
+      ↓
+Expired / Retired
+Important metadata:
+First seen
+Last seen
+Confidence
+Source
+Expiration time
+Current status
+Old indicators can become inaccurate and increase false positives.
